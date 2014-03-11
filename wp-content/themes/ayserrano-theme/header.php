@@ -9,6 +9,7 @@
 	<?php } ?>
 
 	<title>
+		   
 		   <?php
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
@@ -27,13 +28,19 @@
 		      if ($paged>1) {
 		         echo ' - page '. $paged; }
 		   ?>
+
 	</title>
+
+	
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
 
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
@@ -42,9 +49,113 @@
 
 <body <?php body_class(); ?>>
 	
+
+	
+
+
 	<div id="page-wrap">
 
-		<div id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
-		</div>
+		<header id="header">
+
+			<div class="social-menu">
+				<div class="main">
+					
+					<div class="signin">
+						<a href="#">ingreso asesores</a>
+						| tel. 5598 9394 | 
+						<a href="mailto:ayserranosc@gmail.com">
+							
+							ayserranosc@gmail.com
+						</a> 
+					</div>
+
+
+				</div>
+				
+			</div>
+			<div class="main-menu">
+				<div class="main">
+					<div class="logo">
+						
+						<img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="AySerrano">
+						
+					</div>
+					<div class="menu1">
+						<ul>
+							<li><a href="#">Inicio</a></li>
+							<li><a href="#">Coberturas</a></li>
+							<li><a href="#">Servicios</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-cont">
+				
+
+
+
+				<div class="slide1">
+
+
+					<!--Slide Bootstrap-->
+	             
+					     <div id="myCarousel" class="carousel slide">
+				 
+				                <ol class="carousel-indicators">
+				 
+				                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				                  <li data-target="#myCarousel" data-slide-to="1"></li>
+				                  <li data-target="#myCarousel" data-slide-to="2"></li>
+				                  <li data-target="#myCarousel" data-slide-to="3"></li>
+				 
+				                </ol>
+				 
+				                <!-- Carousel items -->
+				                <div class="carousel-inner">
+				 
+				                  
+									<div class="active item">
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld1.png" class="slide-img" alt="DF">
+							        </div>
+							        <div class="item">
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld2.png" class="slide-img" alt="bienes raices">
+							        </div>
+							        <div class="item">
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld3.png" alt="seguro de arrendamiento" class="slide-img">
+							        </div>
+							        <div class="item">
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld4.png" alt="AySerrano" class="slide-img">
+							        </div>
+
+
+
+				 
+				                </div>
+				 
+				                 
+				                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				                
+				                
+				                
+				  </div> 
+
+				 
+				            
+				<!--Slide Bootstrap-->
+			</div>
+
+
+				
+		        
+		       
+			</div>
+			
+			
+		
+
+
+		
+		</header>

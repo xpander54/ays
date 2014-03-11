@@ -6,9 +6,14 @@
 	// Load jQuery
 	if ( !is_admin() ) {
 	   wp_deregister_script('jquery');
-	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"), false);
+	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"), false);
 	   wp_enqueue_script('jquery');
+       wp_register_script('script', (get_bloginfo('template_directory').'/js/script.js'));
+       wp_enqueue_script('script');
+
 	}
+
+    
 	
 	// Clean up the <head>
 	function removeHeadLinks() {
@@ -30,5 +35,8 @@
     		'after_title'   => '</h2>'
     	));
     }
+
+
+
 
 ?>

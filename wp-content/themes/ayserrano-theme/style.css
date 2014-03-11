@@ -9,6 +9,101 @@ Author: HD
 
 /*Custom CSS*/
 
+.float-right
+{
+	float: right;
+}
+
+#page-wrap 
+{ 
+	width: 100%; 
+	margin: 0px;
+	position: absolute; 
+}
+
+.main
+{
+	max-width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#header
+{
+	height: 520px;
+	background: red;
+}
+
+.social-menu
+{
+	height: 50px;
+	width: 100%;
+	background: rgb(240, 247, 254);
+}
+
+.signin
+{
+	float: right;
+	margin: 1em 0;
+}
+
+.main-menu
+{
+	height: 70px;
+	width: 100%;
+	background: rgb(93, 180, 236);
+}
+.logo
+{
+	float: left;
+}
+.menu1
+{
+	float: right;
+
+
+}
+.menu1 li
+{
+	list-style: none;
+	float: left;
+	margin: .7em 1em;
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.menu1 a
+{
+	color: rgb(240, 247, 254);
+}
+
+
+.slide-cont
+{
+	height: 400px;
+	width: 100%;
+	background: rgb(69, 91, 120);
+}
+
+.slide1
+{
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+	height: 400px;
+}
+
+#footer
+{
+	background: rgb(73, 95, 124);
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 55px;
+	color: rgb(240, 247, 254);
+	font-size: 1.1em;
+	padding: .3em 0;
+}
 /*Custom CSS*/
 
 @media screen {
@@ -20,7 +115,7 @@ body { background: white; font: 14px/1.4 Georgia, Serif; }
 .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 * html .group, *:first-child+html .group { zoom: 1; } /* First selector = IE6, Second Selector = IE 7 */
 
-#page-wrap { width: 960px; margin: 20px auto; }
+
 
 h1, h2, h3 { font-weight: normal; margin: 0 0 10px 0; }
 h1 { }

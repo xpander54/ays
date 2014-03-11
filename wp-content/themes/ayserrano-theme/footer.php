@@ -1,7 +1,20 @@
+	
+		
+			
 		<div id="footer">
-			&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>
+			<div class="main">
+
+				<div class="float-right">
+					
+				
+					&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>
+				
+				</div>
+			
+			</div>
 		</div>
 
+		
 	</div>
 
 	<?php wp_footer(); ?>
