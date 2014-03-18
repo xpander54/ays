@@ -59,14 +59,40 @@
 
 			<div class="social-menu">
 				<div class="main">
+
+					<div class="logo">
+						
+						<img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="AySerrano">
+						
+					</div>
+
+					<div class="social-icons">
+						<ul>
+							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/social-media/twitter.png" alt="Twitter"></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/social-media/facebook.png" alt="Facebook"></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/social-media/gplus.png" alt="Google Plus"></a></li>
+							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/social-media/linkdin.png" alt="Linked In"></a></li>
+						</ul>
+
+					</div>
 					
 					<div class="signin">
-						<a href="#">ingreso asesores</a>
-						| tel. 5598 9394 | 
-						<a href="mailto:ayserranosc@gmail.com">
-							
-							ayserranosc@gmail.com
-						</a> 
+						<ul>
+							<li>
+								<img src="<?php bloginfo('template_url'); ?>/img/social-media/asesores.png" alt="acceso asesores" />
+								<a href="#">ingreso asesores</a>
+							</li>
+							<li>
+								<img src="<?php bloginfo('template_url'); ?>/img/social-media/tel.png" alt="telefono" />
+								5598 9394
+							</li>
+							<li>
+								<img src="<?php bloginfo('template_url'); ?>/img/social-media/mail.png" alt="e-mail" />
+								<a href="mailto:ayserranosc@gmail.com">ayserranosc@gmail.com</a>
+							</li>
+						</ul>
+						
+						
 					</div>
 
 
@@ -75,19 +101,20 @@
 			</div>
 			<div class="main-menu">
 				<div class="main">
-					<div class="logo">
-						
-						<img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="AySerrano">
-						
-					</div>
+
+
+					
 					<div class="menu1">
-						<ul>
+						<?php wp_nav_menu(array('menu' => 'menu1')); ?>
+
+						<!-- <ul>
 							<li><a href="#">Inicio</a></li>
 							<li><a href="#">Coberturas</a></li>
 							<li><a href="#">Servicios</a></li>
 							<li><a href="#">Contacto</a></li>
-						</ul>
+						</ul> -->
 					</div>
+
 				</div>
 			</div>
 
@@ -96,7 +123,7 @@
 
 
 
-				<div class="slide1">
+				<div class="slide1 hidden-xs">
 
 
 					<!--Slide Bootstrap-->
@@ -117,16 +144,16 @@
 				 
 				                  
 									<div class="active item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld1.png" class="slide-img" alt="DF">
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld1.png" class="slide-img img" alt="DF">
 							        </div>
 							        <div class="item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld2.png" class="slide-img" alt="bienes raices">
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld2.png" class="slide-img img" alt="bienes raices">
 							        </div>
 							        <div class="item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld3.png" alt="seguro de arrendamiento" class="slide-img">
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld3.png" alt="seguro de arrendamiento" class="img slide-img">
 							        </div>
 							        <div class="item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld4.png" alt="AySerrano" class="slide-img">
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld4.png" alt="AySerrano" class="img slide-img">
 							        </div>
 
 
@@ -145,6 +172,7 @@
 				 
 				            
 				<!--Slide Bootstrap-->
+
 			</div>
 
 
