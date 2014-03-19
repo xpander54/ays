@@ -1,0 +1,441 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: User Files\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-25 19:07-0500\n"
+"PO-Revision-Date: 2012-08-25 19:12-0500\n"
+"Last-Translator: Scriptonite <Tom@whereyoursolutionis.com>\n"
+"Language-Team: Innovative Solutions <Sales@whereyoursolutionis.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: G:\\SkyDrive\\web projects\\01-SVN\\user-files"
+"\\trunk\n"
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:214
+#: projects\01-SVN\user-files\trunk/user_files.php:837
+msgid "No Files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:230
+msgid "User Files Settings"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:230
+#: projects\01-SVN\user-files\trunk/user_files.php:444
+msgid "User Files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:232
+#: projects\01-SVN\user-files\trunk/functions.php:250
+msgid "Manage Files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:234
+#: projects\01-SVN\user-files\trunk/functions.php:445
+#: projects\01-SVN\user-files\trunk/user_files.php:1383
+msgid "Add Files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:236
+msgid "Categories"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:238
+msgid "Manage Icons"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:240
+msgid "FTP Paths"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:243
+msgid "Help"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:280
+#: projects\01-SVN\user-files\trunk/user_files.php:462
+#: projects\01-SVN\user-files\trunk/user_files.php:1236
+msgid "The file has been deleted"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:284
+#: projects\01-SVN\user-files\trunk/user_files.php:466
+#: projects\01-SVN\user-files\trunk/user_files.php:1240
+msgid "There was an error deleting the file, please try again!"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:321
+msgid "An adminisrator has successfully been notified of your upload."
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:328
+#: projects\01-SVN\user-files\trunk/user_files.php:1127
+#: projects\01-SVN\user-files\trunk/user_files.php:1861
+msgid "There was an error uploading the file, please try again!"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:355
+#: projects\01-SVN\user-files\trunk/user_files.php:612
+#: projects\01-SVN\user-files\trunk/user_files.php:1278
+msgid "or"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:358
+#: projects\01-SVN\user-files\trunk/user_files.php:615
+#: projects\01-SVN\user-files\trunk/user_files.php:1281
+msgid "Show all categories"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:373
+#: projects\01-SVN\user-files\trunk/user_files.php:657
+#: projects\01-SVN\user-files\trunk/user_files.php:1296
+msgid "Filter"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:381
+#: projects\01-SVN\user-files\trunk/user_files.php:1451
+msgid "Your Files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:421
+#: projects\01-SVN\user-files\trunk/user_files.php:1361
+msgid "No files found for"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:425
+#: projects\01-SVN\user-files\trunk/user_files.php:1365
+msgid "Nothing found for category"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:431
+#: projects\01-SVN\user-files\trunk/user_files.php:1370
+#: projects\01-SVN\user-files\trunk/user_files.php:1485
+#: projects\01-SVN\user-files\trunk/widget.php:49
+msgid "You have no files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:457
+msgid "Choose a file to upload, your upload limit is"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:484
+#: projects\01-SVN\user-files\trunk/user_files.php:1186
+#: projects\01-SVN\user-files\trunk/user_files.php:1422
+#: projects\01-SVN\user-files\trunk/widget.php:150
+msgid "Upload File"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:581
+msgid "A new file at"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:581
+msgid "has just uploaded"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:581
+msgid "to category"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:582
+msgid "An administrator has successfully been notified of your upload."
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/functions.php:589
+msgid "Error with file upload"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:244
+#: projects\01-SVN\user-files\trunk/user_files.php:492
+msgid "The folder has been deleted"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:248
+#: projects\01-SVN\user-files\trunk/user_files.php:496
+msgid "There was an error deleting the folder, please try again!"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:262
+msgid "File Manager Options"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:278
+msgid ""
+"This will delete all files, folders, categories, icons, etc. Are you sure "
+"you want to do this?"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:279
+msgid "Yes"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:279
+msgid "No"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:355
+msgid "Settings Saved"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:373
+msgid "Show Dashboard Widget"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:377
+msgid "Show dashboard menu link"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:380
+msgid "Allow users to add files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:383
+msgid "Allow users to delete files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:387
+msgid "Show credit link on user page? Not expected, but certainly appreciated!"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:387
+msgid "All other banners and ads are visible to user file admins only."
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:395
+msgid "Send email upload notifcations to"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:395
+msgid "leave blank to not be notified of uploads"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:399
+msgid ""
+"User File Manager supports custom email notifications to be sent out when "
+"you upload a file for a user. Variables allowed are"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:403
+msgid "Email Subject"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:414
+msgid "update"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:415
+msgid "Save Options"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:431
+msgid "Uninstall User File Manager"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:565
+msgid "Changes Saved"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:569
+msgid "There was an error changing"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:609
+msgid "Search for File"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:631
+msgid "For all users"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:683
+msgid "Change"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:725
+#: projects\01-SVN\user-files\trunk/user_files.php:796
+#: projects\01-SVN\user-files\trunk/user_files.php:813
+#: projects\01-SVN\user-files\trunk/user_files.php:867
+#: projects\01-SVN\user-files\trunk/user_files.php:930
+msgid "User Login"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:725
+#: projects\01-SVN\user-files\trunk/user_files.php:796
+#: projects\01-SVN\user-files\trunk/user_files.php:813
+#: projects\01-SVN\user-files\trunk/user_files.php:867
+#: projects\01-SVN\user-files\trunk/user_files.php:930
+msgid "User Name"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:725
+#: projects\01-SVN\user-files\trunk/user_files.php:796
+#: projects\01-SVN\user-files\trunk/user_files.php:813
+#: projects\01-SVN\user-files\trunk/user_files.php:867
+#: projects\01-SVN\user-files\trunk/user_files.php:930
+msgid "Delete Folder"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:767
+#: projects\01-SVN\user-files\trunk/user_files.php:802
+#: projects\01-SVN\user-files\trunk/user_files.php:848
+#: projects\01-SVN\user-files\trunk/user_files.php:893
+#: projects\01-SVN\user-files\trunk/user_files.php:936
+msgid "Update"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:778
+msgid "No Files Found"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:841
+msgid "No files found"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:889
+msgid "No files found for this user in category"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:976
+msgid ""
+"is the default category. You cannot delete this unless you change the "
+"default category."
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:993
+msgid "This is already a cataegory."
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1003
+msgid " has been added"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1009
+msgid "There was an error adding the category"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1023
+msgid "is now default"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1060
+msgid "Add Category"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1069
+msgid "Upload Files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1122
+msgid "The file "
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1123
+msgid "has been uploaded to "
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1142
+msgid "Files for user"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1180
+msgid "Notify User of Upload"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1395
+#: projects\01-SVN\user-files\trunk/widget.php:123
+msgid "Choose a file to upload, your upload limit is "
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1430
+msgid "You must be logged in to view files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1476
+msgid "Download"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1850
+msgid "The file"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1850
+msgid "has been uploaded"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1881
+msgid ""
+"Extension already exists, please delete the current extension set before "
+"uploading a new one."
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1916
+msgid "You must have both a file and extension"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1930
+msgid "File Deleted"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1935
+msgid "There was an error deleting this extension"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1945
+msgid "Icons"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1962
+msgid "New Icon"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1963
+msgid "Upload Icon file"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1968
+msgid "Extension"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1970
+msgid "Add"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:1991
+msgid ""
+"Files can be uploaded to the users folder via FTP as well as through the "
+"upload page. If the users has no folder press create folder to create the "
+"users file folder."
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:2005
+msgid "User Paths for FTP upload"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:2005
+msgid "User files folder is located"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:2005
+msgid "Folder Number"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/user_files.php:2028
+msgid "Create Folder"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/widget.php:54
+msgid "You must log in to view files"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/widget.php:77
+#: projects\01-SVN\user-files\trunk/widget.php:176
+msgid "Title:"
+msgstr ""
+
+#: G:\SkyDrive\web projects\01-SVN\user-files\trunk/widget.php:157
+msgid "You must login to upload files"
+msgstr ""

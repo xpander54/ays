@@ -1,0 +1,493 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: User Files Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-01 22:19+0100\n"
+"PO-Revision-Date: 2012-01-01 22:19+0100\n"
+"Last-Translator: Hubert CAMPAN <hcampan@mac.com>\n"
+"Language-Team: OmniMaki <admin@omnimaki.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: functions.php:195
+#: user_files.php:768
+#@ userfiles
+msgid "No Files"
+msgstr "Aucun Fichier"
+
+#: functions.php:211
+#@ userfiles
+msgid "User Files Settings"
+msgstr "Paramètres de User Files"
+
+#: functions.php:211
+#: user_files.php:596
+#@ userfiles
+msgid "User Files"
+msgstr "User Files"
+
+#: functions.php:213
+#: functions.php:231
+#@ userfiles
+msgid "Manage Files"
+msgstr "Gérer les Fichiers"
+
+#: functions.php:215
+#: functions.php:421
+#: user_files.php:1293
+#@ userfiles
+#@ default
+msgid "Add Files"
+msgstr "Ajouter des Fichiers"
+
+#: functions.php:217
+#@ userfiles
+msgid "Categories"
+msgstr "Catégories"
+
+#: functions.php:219
+#@ userfiles
+msgid "Manage Icons"
+msgstr "Gérer les icones"
+
+#: functions.php:221
+#@ userfiles
+msgid "FTP Paths"
+msgstr "Chemins FTP"
+
+#: functions.php:224
+#@ userfiles
+msgid "Help"
+msgstr "Aide"
+
+#: functions.php:261
+#: user_files.php:413
+#: user_files.php:1147
+#@ userfiles
+msgid "The file has been deleted"
+msgstr "Le fichier a été effacé"
+
+#: functions.php:265
+#: user_files.php:417
+#: user_files.php:1151
+#@ userfiles
+msgid "There was an error deleting the file, please try again!"
+msgstr "Il y a eu une erreur à la suppression du fichier, essayez à nouveau!"
+
+#: functions.php:302
+#@ userfiles
+msgid "An adminisrator has successfully been notified of your upload."
+msgstr "Un administrateur a été notifié avec succès de votre téléversement."
+
+#: functions.php:309
+#: user_files.php:1050
+#: user_files.php:1657
+#@ userfiles
+msgid "There was an error uploading the file, please try again!"
+msgstr "Il y a eu une erreur au téléversement du fichier, veuillez essayer à nouveau!"
+
+#: functions.php:336
+#: user_files.php:543
+#: user_files.php:1190
+#@ userfiles
+#@ default
+msgid "or"
+msgstr "ou"
+
+#: functions.php:339
+#: user_files.php:546
+#: user_files.php:1193
+#@ userfiles
+#@ default
+msgid "Show all categories"
+msgstr "Montrer toutes les catégories"
+
+#: functions.php:397
+#: user_files.php:1271
+#@ userfiles
+msgid "No files found for"
+msgstr "Aucun fichier pour"
+
+#: functions.php:401
+#: user_files.php:1275
+#@ userfiles
+msgid "Nothing found for category"
+msgstr "Aucun fichier pour la catégorie"
+
+#: functions.php:407
+#: user_files.php:1280
+#: user_files.php:1395
+#: widget.php:49
+#@ userfiles
+msgid "You have no files"
+msgstr "Vous n'avez aucun fichier"
+
+#: functions.php:433
+#@ userfiles
+msgid "Choose a file to upload, your upload limit is"
+msgstr "Sélectionnez un fichier à téléverser, votre limite est"
+
+#: functions.php:460
+#: user_files.php:1332
+#: widget.php:150
+#@ userfiles
+#@ default
+msgid "Upload File"
+msgstr "Téléverser un fichier"
+
+#: functions.php:551
+#@ userfiles
+msgid "A new file at"
+msgstr "Un nouveau fichier à"
+
+#: functions.php:551
+#@ userfiles
+msgid "has just uploaded"
+msgstr "vient juste de téléverser"
+
+#: functions.php:551
+#@ userfiles
+msgid "to category"
+msgstr "à la catégorie"
+
+#: functions.php:552
+#@ userfiles
+msgid "An administrator has successfully been notified of your upload."
+msgstr "Un administrateur a été prévenu avec succès de votre téléversement."
+
+#: functions.php:559
+#@ userfiles
+msgid "Error with file upload"
+msgstr "Erreur avec le fichier à téléverser"
+
+#: functions.php:577
+#@ default
+msgid "User Files has been updated, if you experience any issues please deactivate and reactivate the plugin"
+msgstr "User Files a été mis à jour, si vous avez le moindre problème veuillez désactiver puis réactiver l'extension"
+
+#: user_files.php:201
+#: user_files.php:443
+#@ userfiles
+msgid "The folder has been deleted"
+msgstr "Le répertoire a été effacé"
+
+#: user_files.php:205
+#: user_files.php:447
+#@ userfiles
+msgid "There was an error deleting the folder, please try again!"
+msgstr "Il y a eu une erreur à l'effacement du répertoire, veuillez essayer à nouveau!"
+
+#: user_files.php:220
+#@ default
+msgid "File Manager Options"
+msgstr "Paramètres du gestionnaire de fichiers"
+
+#: user_files.php:232
+#@ userfiles
+msgid "This will delete all files, folders, categories, icons, etc. Are you sure you want to do this?"
+msgstr "Cela va effacer tous les fichiers, répertoires, catégories, icones, etc. Etes-vous sûr de vouloir faire cela?"
+
+#: user_files.php:233
+#@ userfiles
+msgid "Yes"
+msgstr "Oui"
+
+#: user_files.php:233
+#@ userfiles
+msgid "No"
+msgstr "Non"
+
+#: user_files.php:309
+#@ userfiles
+msgid "Settings Saved"
+msgstr "Paramètres Enregistrés"
+
+#: user_files.php:327
+#@ userfiles
+msgid "Show Dashboard Widget"
+msgstr "Afficher le Widget dans le Tableau de Bord"
+
+#: user_files.php:331
+#@ userfiles
+msgid "Show dashboard menu link"
+msgstr "Afficher la lien vers le Tableau de Bord"
+
+#: user_files.php:334
+#@ userfiles
+msgid "Allow users to add files"
+msgstr "Autoriser l'utilisateur à ajouter des fichiers"
+
+#: user_files.php:337
+#@ userfiles
+msgid "Allow users to delete files"
+msgstr "Autoriser l'utilisateur à supprimer des fichiers"
+
+#: user_files.php:341
+#@ userfiles
+msgid "Show credit link on user page? Not expected, but certainly appreciated!"
+msgstr "Mettre un lien vers notre site ? Inattendu, mais très apprécié!"
+
+#: user_files.php:341
+#@ userfiles
+msgid "All other banners and ads are visible to user file admins only."
+msgstr "Toutes les bannières sont visibles seulement au administrateurs."
+
+#: user_files.php:349
+#@ userfiles
+msgid "Send email upload notifcations to"
+msgstr "Envoyer une notification de téléversement par email à"
+
+#: user_files.php:349
+#@ userfiles
+msgid "leave blank to not be notified of uploads"
+msgstr "Laisser vide pour ne pas notifier"
+
+#: user_files.php:353
+#@ userfiles
+msgid "User File Manager supports custom email notifications to be sent out when you upload a file for a user. Variables allowed are"
+msgstr "User File Manager permet de personnaliser l'email de notification permettant de de prévenir l'utilisateur quand un fichier est téléversé pour lui. Voici les variables autorisées :"
+
+#: user_files.php:357
+#@ userfiles
+msgid "Email Subject"
+msgstr "Sujet de l'email"
+
+#: user_files.php:369
+#@ userfiles
+msgid "Save Options"
+msgstr "Enregistrer les paramètres"
+
+#: user_files.php:385
+#@ userfiles
+msgid "Uninstall User File Manager"
+msgstr "Désinstaller User Files Manager"
+
+#: user_files.php:496
+#@ userfiles
+msgid "Categories have been changes successfully"
+msgstr "Les catégories ont été modifiées avec succès"
+
+#: user_files.php:500
+#@ userfiles
+msgid "There was an error changing"
+msgstr "Il y a eu une erreur à la modification"
+
+#: user_files.php:562
+#@ default
+msgid "For all users"
+msgstr "Pour tous les utilisateurs"
+
+#: user_files.php:656
+#: user_files.php:727
+#: user_files.php:744
+#: user_files.php:798
+#: user_files.php:859
+#@ userfiles
+msgid "User Login"
+msgstr "Nom d'Accès"
+
+#: user_files.php:656
+#: user_files.php:727
+#: user_files.php:744
+#: user_files.php:798
+#: user_files.php:859
+#@ userfiles
+msgid "User Name"
+msgstr "Nom de l'Utilisateur"
+
+#: user_files.php:656
+#: user_files.php:727
+#: user_files.php:744
+#: user_files.php:798
+#: user_files.php:859
+#@ userfiles
+msgid "Delete Folder"
+msgstr "Effacer le répertoire"
+
+#: user_files.php:709
+#@ userfiles
+msgid "No Files Found"
+msgstr "Aucun fichier trouvé"
+
+#: user_files.php:772
+#@ userfiles
+msgid "No files found"
+msgstr "Aucun fichier trouvé"
+
+#: user_files.php:820
+#@ userfiles
+msgid "No files found for this user in category"
+msgstr "Aucun fichier trouvé pour cet utilisateur dans la catégorie"
+
+#: user_files.php:903
+#@ userfiles
+msgid "is the default category. You cannot delete this unless you change the default category."
+msgstr "est la catégorie par défaut. Vous ne pouvez pas l'effacer à moins que vous ne changiez la catégorie par défaut."
+
+#: user_files.php:918
+#@ userfiles
+msgid "This is already a cataegory."
+msgstr "C'est déjà une catégorie."
+
+#: user_files.php:928
+#@ userfiles
+msgid " has been added"
+msgstr "a été ajouté"
+
+#: user_files.php:932
+#@ userfiles
+msgid "There was an error adding the category"
+msgstr "Il y a eu une erreur à l'ajout de la catégorie"
+
+#: user_files.php:946
+#@ userfiles
+msgid "is now default"
+msgstr "est maintenant par défaut"
+
+#: user_files.php:994
+#@ userfiles
+msgid "Upload Files"
+msgstr "Téléverser des Fichiers"
+
+#: user_files.php:1045
+#@ userfiles
+msgid "The file "
+msgstr "Le fichier "
+
+#: user_files.php:1046
+#@ userfiles
+msgid "has been uploaded to "
+msgstr "a été téléversé vers "
+
+#: user_files.php:1065
+#@ userfiles
+msgid "Files for user"
+msgstr "Fichiers pour l'utilisateur"
+
+#: user_files.php:1103
+#@ userfiles
+msgid "Notify User of Upload"
+msgstr "Notifier l'utilisateur du téléversement"
+
+#: user_files.php:1305
+#: widget.php:123
+#@ default
+msgid "Choose a file to upload, your upload limit is "
+msgstr "Choisissez un fichier à téléverser, votre limite est de "
+
+#: user_files.php:1340
+#@ userfiles
+msgid "You must be logged in to view files"
+msgstr "Vous devez être connecté pour pouvoir voir les fichiers"
+
+#: user_files.php:1361
+#@ userfiles
+msgid "Your Files"
+msgstr "Vos fichiers"
+
+#: user_files.php:1386
+#@ userfiles
+msgid "Download"
+msgstr "Télécharger"
+
+#: user_files.php:1646
+#@ userfiles
+msgid "The file"
+msgstr "Le fichier"
+
+#: user_files.php:1646
+#@ userfiles
+msgid "has been uploaded"
+msgstr "a été téléversé"
+
+#: user_files.php:1677
+#@ userfiles
+msgid "Extension already exists, please delete the current extension set before uploading a new one."
+msgstr "L'extension existe déjà, veuillez d'abord effacer le jeu d'extension actuel avant d'en téléverser un nouveau."
+
+#: user_files.php:1712
+#@ userfiles
+msgid "You must have both a file and extension"
+msgstr "Vous devez avoir à la fois un fichier et une extension"
+
+#: user_files.php:1726
+#@ userfiles
+msgid "File Deleted"
+msgstr "Fichier Effacé"
+
+#: user_files.php:1731
+#@ userfiles
+msgid "There was an error deleting this extension"
+msgstr "Il y a eu une erreur à l'effacement de cette extension"
+
+#: user_files.php:1740
+#@ userfiles
+msgid "Icons"
+msgstr "Icônes"
+
+#: user_files.php:1757
+#@ userfiles
+msgid "New Icon"
+msgstr "Nouvel icône"
+
+#: user_files.php:1758
+#@ userfiles
+msgid "Upload Icon file"
+msgstr "Téléverser le Fichier de l'Icône"
+
+#: user_files.php:1763
+#@ userfiles
+msgid "Extension"
+msgstr "Extension"
+
+#: user_files.php:1765
+#@ userfiles
+msgid "Add"
+msgstr "Ajouter"
+
+#: user_files.php:1785
+#@ userfiles
+msgid "Files can be uploaded to the users folder via FTP as well as through the upload page. If the users has no folder press create folder to create the users file folder."
+msgstr "Des fichiers peuvent être téléversés vers le repertoire de l'utilisateur par FTP ainsi que par la page de téléversement. Si l'utilisateur n'a pas de répertoire, veuillez en créer un en cliquant sur le bouton Créer Repertoire."
+
+#: user_files.php:1799
+#@ userfiles
+msgid "User Paths for FTP upload"
+msgstr "Chemins FTP d'Utilisateurs pour le téléversement"
+
+#: user_files.php:1799
+#@ userfiles
+msgid "User files folder is located"
+msgstr "Le répertoire de fichiers de l'utilisateur a été trouvé"
+
+#: user_files.php:1799
+#@ userfiles
+msgid "Folder Number"
+msgstr "Répertoire numéro"
+
+#: widget.php:54
+#@ userfiles
+msgid "You must log in to view files"
+msgstr "Vous devez vous connecter pour voir les fichiers"
+
+#: widget.php:77
+#: widget.php:176
+#@ default
+msgid "Title:"
+msgstr "Titre:"
+
+#: widget.php:157
+#@ userfiles
+msgid "You must login to upload files"
+msgstr "Vous devez vous connecter pour téléverser des fichiers"
+

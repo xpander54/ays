@@ -1,0 +1,1250 @@
+# Translation of the WordPress plugin   by .
+# Copyright (C) 2010 
+# This file is distributed under the same license as the  package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/private-wordpress-access-"
+"control-manager\n"
+"POT-Creation-Date: 2010-09-27 03:38+0000\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/xfw.class.php:52
+msgid "NEW!"
+msgstr ""
+
+#: lib/xfw.class.php:140 lib/xfw_private.class.php:486
+msgid "Who are you and what are you doing in here?"
+msgstr ""
+
+#: lib/xfw.class.php:163
+msgid "Settings deleted"
+msgstr ""
+
+#: lib/xfw.class.php:169 lib/xfw.class.php:189
+msgid "User settings deleted"
+msgstr ""
+
+#: lib/xfw.class.php:174
+msgid "Brute force data deleted"
+msgstr ""
+
+#: lib/xfw.class.php:179
+msgid "Feed keys deleted"
+msgstr ""
+
+#: lib/xfw.class.php:189
+msgid "All data deleted"
+msgstr ""
+
+#: lib/xfw.class.php:200
+msgid "Settings updated"
+msgstr ""
+
+#: lib/xfw_private.class.php:86
+msgid ""
+"<strong>ERROR</strong>: Your password is weak or unsecure. Please go back "
+"and select a better one!"
+msgstr ""
+
+#: lib/xfw_private.class.php:348
+msgid "It seems there is something wrong with your capabilities."
+msgstr ""
+
+#: lib/xfw_private.class.php:351
+msgid ""
+"It seems there is something wrong with your time-based authorization. You "
+"have activated this option, but did you edit <a href=\"/wp-admin/profile."
+"php#allow_private\">your personal settings</a>?"
+msgstr ""
+
+#: lib/xfw_private.class.php:359
+#, php-format
+msgid ""
+"Oh Oh! \"Private! Wordpress Access Manager\" does not allow you to access "
+"your own blog! %s %s Please check your settings!"
+msgstr ""
+
+#: lib/xfw_private.class.php:446
+msgid "Don't encrypt my password"
+msgstr ""
+
+#: lib/xfw_private.class.php:469
+msgid ""
+" is active, but must be configured. Your blog may be visible to everyone on "
+"the web."
+msgstr ""
+
+#: lib/xfw_private.class.php:478
+msgid ""
+" has been updated. There may be some changes. Please visit the settings."
+msgstr ""
+
+#: lib/xfw_private.class.php:534
+msgid "Sorry, please login to view this blog."
+msgstr ""
+
+#: lib/xfw_private.class.php:536 lib/xfw_private.class.php:542
+#: lib/xfw_private.class.php:776
+msgid "Basic Settings"
+msgstr ""
+
+#: lib/xfw_private.class.php:537 lib/xfw_private.class.php:777
+msgid "Access Rights"
+msgstr ""
+
+#: lib/xfw_private.class.php:538 lib/xfw_private.class.php:778
+msgid "Security Settings"
+msgstr ""
+
+#: lib/xfw_private.class.php:539 lib/xfw_private.class.php:621
+#: lib/xfw_private.class.php:779
+msgid "Advanced Settings"
+msgstr ""
+
+#: lib/xfw_private.class.php:540 lib/xfw_private.class.php:641
+#: lib/xfw_private.class.php:780
+msgid "About"
+msgstr ""
+
+#: lib/xfw_private.class.php:543
+msgid "Privacy Settings"
+msgstr ""
+
+#: lib/xfw_private.class.php:543
+msgid "Enable Private! Wordpress Access Control Manager"
+msgstr ""
+
+#: lib/xfw_private.class.php:543
+msgid ""
+"Enable Private! to lock down your blog from the public. To get access to "
+"your blog, users must register. If you do not allow registrations or you "
+"blog is in a multisite environment, You must add or invite them under "
+"<strong><a href=\"user-new.php\">Users -> Add</a></strong>. Private! is very "
+"restrictive, because it's better to lock some people out in error than "
+"showing important data to the wrong people. <strong>If you just enable "
+"Private! even YOU will not be able to access your blog. Please read all "
+"option descriptions carefully!</strong>"
+msgstr ""
+
+#: lib/xfw_private.class.php:544
+msgid "Restrictions"
+msgstr ""
+
+#: lib/xfw_private.class.php:544
+msgid "Do not restrict access to any page"
+msgstr ""
+
+#: lib/xfw_private.class.php:544
+msgid ""
+"You can disable all restrictions with one click. That may be useful for "
+"debuging or if you just want to use the other features."
+msgstr ""
+
+#: lib/xfw_private.class.php:545
+msgid "Approvement"
+msgstr ""
+
+#: lib/xfw_private.class.php:545
+msgid "Do not use time based approvement"
+msgstr ""
+
+#: lib/xfw_private.class.php:545
+msgid ""
+"By default you must approve every single user for a certain time under "
+"<strong><a href=\"users.php\">Users -> Edit</a></strong> and on the user "
+"settings page at the bottom. You can skip this step by allowing every logged "
+"in user. If you don't and registration is open, make sure to tell your "
+"users, that they cannot access your blog immidiately."
+msgstr ""
+
+#: lib/xfw_private.class.php:546
+msgid "Capabilities"
+msgstr ""
+
+#: lib/xfw_private.class.php:546
+msgid ""
+"By default only administrators can access your blog. You can change it to "
+"every role you like. If you want to allow every logged in user to access "
+"your blog, you can <strong>just empty this input</strong>. You can use "
+"capabilities like \"manage_options\" and you can combine multiple "
+"capabilities with \"&&\" or match only one with \"||\".<br /><br />Examples: "
+"\"manage_options&&edit_posts&&delete_users\" matches users that can "
+"manage_options, edit posts AND delete users. \"manage_options||edit_posts||"
+"delete_users\" will match one of the capabilities. \"read_posts&&edit_posts||"
+"authors\" will match any users, who can read AND edit posts OR are at least "
+"authors. If you like, you can use userlevels too, by adding \"level_X\" (X "
+"is the userlevel). <a href=\"http://codex.wordpress.org/"
+"Roles_and_Capabilities\">Find more infos on the wordpress pages</a>."
+msgstr ""
+
+#: lib/xfw_private.class.php:548
+msgid "Capabilities for editing"
+msgstr ""
+
+#: lib/xfw_private.class.php:548
+msgid ""
+"You can change, who can edit the authorization time for single users. Please "
+"remember: The users will need at least rights to edit user profiles. The "
+"standard value is \"edit_users\"."
+msgstr ""
+
+#: lib/xfw_private.class.php:550
+msgid "Blog network"
+msgstr ""
+
+#: lib/xfw_private.class.php:550
+msgid "Do not check the relation to your blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:550
+msgid ""
+"This blog is part of a multisite network. You can allow access to all logged "
+"in the network, even if they are not directly related to your blog. If you "
+"do not check this, you have to add users as described above."
+msgstr ""
+
+#: lib/xfw_private.class.php:551
+msgid "Direct subscription"
+msgstr ""
+
+#: lib/xfw_private.class.php:551
+msgid "Allow users to subscribe directly to your blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:551
+msgid ""
+"This will change two things. First it will add a hidden field to the signup "
+"form. Every user, that signs up from your blog will be automatically added "
+"to your blog. Second it will add the ability to add himself to your blog on "
+"the \"My Blogs\" page."
+msgstr ""
+
+#: lib/xfw_private.class.php:553
+msgid "Information on Direct Subscriptions"
+msgstr ""
+
+#: lib/xfw_private.class.php:553
+msgid ""
+"To enable this feature, you must edit the private.php file in the plugin "
+"folder. Read the comments and remove // in front of the settings define"
+"('PRIVATE_ALLOW_DIRECT_SUBSCRIPTION', true) and if you want in front of "
+"define('PRIVATE_FORCE_MAIN_BLOG', true) too. First option will allow "
+"webmasters to get subscriptions directly. Second option will force all users "
+"to remain a subscriber of your main blog."
+msgstr ""
+
+#: lib/xfw_private.class.php:555
+msgid "Lock Security settings"
+msgstr ""
+
+#: lib/xfw_private.class.php:555
+msgid "Set security settings in the whole network"
+msgstr ""
+
+#: lib/xfw_private.class.php:555
+msgid ""
+"Private! gives you a lot of tools to increase security of your blog, but "
+"unfortunatly they are useless, if your member blogs don't use these "
+"features. You can force them to use them, by activating this settings. If "
+"the Private is disabled on a member blog, it will be enabled, but without "
+"any restrictions."
+msgstr ""
+
+#: lib/xfw_private.class.php:557 lib/xfw_private.class.php:579
+#: lib/xfw_private.class.php:620 lib/xfw_private.class.php:640
+msgid "Save Changes"
+msgstr ""
+
+#: lib/xfw_private.class.php:558
+msgid "Allow access to parts of your blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:559
+msgid "Front page"
+msgstr ""
+
+#: lib/xfw_private.class.php:559
+msgid "Allow access to the front page of your blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:559
+msgid ""
+"Allow all visitors to view your blog front page. This may be your blog home "
+"page or another page you have chosen under <strong><a href=\"options-reading."
+"php\">Settings -> Read</a></strong>."
+msgstr ""
+
+#: lib/xfw_private.class.php:560
+msgid "Blog home page"
+msgstr ""
+
+#: lib/xfw_private.class.php:560
+msgid "Allow access to the home page of your blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:560
+msgid ""
+"Allow all visitors to view your blog home page. This means, they can read "
+"all posts or excerpts depending on your posts settings."
+msgstr ""
+
+#: lib/xfw_private.class.php:561 lib/xfw_private.class.php:575
+msgid "Posts"
+msgstr ""
+
+#: lib/xfw_private.class.php:561
+msgid "Allow access to single posts"
+msgstr ""
+
+#: lib/xfw_private.class.php:561
+msgid "Allow all visitors to access your single posts."
+msgstr ""
+
+#: lib/xfw_private.class.php:562
+msgid "Attachments"
+msgstr ""
+
+#: lib/xfw_private.class.php:562
+msgid "Allow access to attachments"
+msgstr ""
+
+#: lib/xfw_private.class.php:562
+msgid "Allow all visitors to access attachments."
+msgstr ""
+
+#: lib/xfw_private.class.php:563
+msgid "Pages"
+msgstr ""
+
+#: lib/xfw_private.class.php:563
+msgid "Allow access to pages"
+msgstr ""
+
+#: lib/xfw_private.class.php:563
+msgid "Allow all visitors to view pages."
+msgstr ""
+
+#: lib/xfw_private.class.php:564 lib/xfw_private.class.php:571
+msgid "Categories"
+msgstr ""
+
+#: lib/xfw_private.class.php:564
+msgid "Allow access to your category archives"
+msgstr ""
+
+#: lib/xfw_private.class.php:564
+msgid "Allow all visitors to view your category archives."
+msgstr ""
+
+#: lib/xfw_private.class.php:565 lib/xfw_private.class.php:573
+#: lib/xfw_private.class.php:846
+msgid "Tags"
+msgstr ""
+
+#: lib/xfw_private.class.php:565
+msgid "Allow access to your tag archive"
+msgstr ""
+
+#: lib/xfw_private.class.php:565
+msgid "Allow all visitors to view your tag archives."
+msgstr ""
+
+#: lib/xfw_private.class.php:566
+msgid "Archives"
+msgstr ""
+
+#: lib/xfw_private.class.php:566
+msgid "Allow access to your date-based archives"
+msgstr ""
+
+#: lib/xfw_private.class.php:566
+msgid "Allow all visitors to view your date-based archives."
+msgstr ""
+
+#: lib/xfw_private.class.php:567
+msgid "Search"
+msgstr ""
+
+#: lib/xfw_private.class.php:567
+msgid "Allow access to your search"
+msgstr ""
+
+#: lib/xfw_private.class.php:567
+msgid "Allow all visitors to search your blog."
+msgstr ""
+
+#: lib/xfw_private.class.php:568
+msgid "RSS &amp; Atom feed"
+msgstr ""
+
+#: lib/xfw_private.class.php:568
+msgid "Allow access to feeds"
+msgstr ""
+
+#: lib/xfw_private.class.php:568
+msgid "Allow all visitors to access your feeds."
+msgstr ""
+
+#: lib/xfw_private.class.php:569
+msgid "Show feeds"
+msgstr ""
+
+#: lib/xfw_private.class.php:569
+msgid "Show feeds for not logged in users"
+msgstr ""
+
+#: lib/xfw_private.class.php:569
+msgid ""
+"With this options, you can show all rss in your blog header. This is only "
+"useful, if they are allowed to access."
+msgstr ""
+
+#: lib/xfw_private.class.php:570
+msgid "Use feed keys"
+msgstr ""
+
+#: lib/xfw_private.class.php:570
+msgid "Allow users to access your feeds with special keys"
+msgstr ""
+
+#: lib/xfw_private.class.php:570
+msgid ""
+"Some RSS Readers might not be capable of user authentification. You can "
+"provide your feeds anyway by generating special urls for your members."
+msgstr ""
+
+#: lib/xfw_private.class.php:571
+msgid ""
+"Please chose from the list, if you want to <strong>overide the category "
+"settings</strong> above."
+msgstr ""
+
+#: lib/xfw_private.class.php:572
+msgid "Categories filter"
+msgstr ""
+
+#: lib/xfw_private.class.php:572
+msgid "Apply category filter only to single posts"
+msgstr ""
+
+#: lib/xfw_private.class.php:572
+msgid ""
+"If you check this, you will enable users to browse restricted category "
+"archives, but they will not be able to see the full posts in these "
+"categories."
+msgstr ""
+
+#: lib/xfw_private.class.php:573
+msgid ""
+"Please chose from the list, if you want to <strong>overide the tags "
+"settings</strong> above."
+msgstr ""
+
+#: lib/xfw_private.class.php:574
+msgid "Tags filter"
+msgstr ""
+
+#: lib/xfw_private.class.php:574
+msgid "Apply tag filter only to single posts"
+msgstr ""
+
+#: lib/xfw_private.class.php:574
+msgid ""
+"If you check this, you will enable users to browse restricted tags archives, "
+"but they will not be able to see the full posts with these tags."
+msgstr ""
+
+#: lib/xfw_private.class.php:575
+msgid ""
+"Add the post ids (comma-seperated), you want to allow for all visitors. You "
+"can also restrict posts by prepend \"!\". If you want to allow access to all "
+"posts except id 1 and 2 you can add \"!1,!2\". <strong>WARNING: This option "
+"will overwrite category and tag options above</strong>, so you can make some "
+"posts temporarly available for public."
+msgstr ""
+
+#: lib/xfw_private.class.php:576
+msgid "Hide categories"
+msgstr ""
+
+#: lib/xfw_private.class.php:576
+msgid "Hide posts in forbidden categories on posts list"
+msgstr ""
+
+#: lib/xfw_private.class.php:576
+msgid ""
+"Remove all Posts in restricted categories from blog home, front page, search "
+"pages etc. If you deny access to categories by default, this will remove all "
+"posts except allowed ones. A positive post filter will not apply, that means "
+"if you remove category premium and whitelist a post in this category it will "
+"not be shown. The best way to show them, is to add a new post, that links to "
+"this post or remove this category temporarly. Use this option with care!"
+msgstr ""
+
+#: lib/xfw_private.class.php:577
+msgid "Hide tags"
+msgstr ""
+
+#: lib/xfw_private.class.php:577
+msgid "Hide posts with forbidden tags on posts list"
+msgstr ""
+
+#: lib/xfw_private.class.php:577
+msgid ""
+"Remove all Posts with restricted tags from blog home, front page, search "
+"pages etc. Please read information on hide categories."
+msgstr ""
+
+#: lib/xfw_private.class.php:578
+msgid "Hide posts"
+msgstr ""
+
+#: lib/xfw_private.class.php:578
+msgid "Hide forbidden posts on posts list"
+msgstr ""
+
+#: lib/xfw_private.class.php:578
+msgid ""
+"Remove all Posts that are manually restricted tags from blog home, front "
+"page, search pages etc. Please read information on hide categories."
+msgstr ""
+
+#: lib/xfw_private.class.php:580
+msgid "Security Features"
+msgstr ""
+
+#: lib/xfw_private.class.php:583
+msgid "Info"
+msgstr ""
+
+#: lib/xfw_private.class.php:583
+msgid "The security options are locked through the network administrator."
+msgstr ""
+
+#: lib/xfw_private.class.php:586
+msgid "Filter Incoming Requests"
+msgstr ""
+
+#: lib/xfw_private.class.php:586
+msgid "Filter incoming get requests for non admins"
+msgstr ""
+
+#: lib/xfw_private.class.php:586
+msgid ""
+"Even Wordpress is fairly secure, there may be security problems in your "
+"plugins or themes. You can get a little bit of extra security by filtering "
+"incoming Get Requests. Some typical <a href=\"http://en.wikipedia.org/wiki/"
+"SQL_injection\">sql injection</a> and <a href=\"http://en.wikipedia.org/wiki/"
+"Cross-site_scripting\">xss attacks</a> will be eliminated. Normal users will "
+"not notice this. Test it here. <a href=\"/?admin_test=%3Cscript%3Ealert"
+"(document.cookie)%3C/script%3E\">Test it here</a>."
+msgstr ""
+
+#: lib/xfw_private.class.php:588
+msgid "Filter long variables"
+msgstr ""
+
+#: lib/xfw_private.class.php:588
+msgid "Block variables longer than 255 chars"
+msgstr ""
+
+#: lib/xfw_private.class.php:588
+msgid ""
+"Private! will block all $_GET variables, that are longer than 255 chars. "
+"This will not limit your site, but the possibilities for an attacker."
+msgstr ""
+
+#: lib/xfw_private.class.php:590
+msgid "Filter XSS Requests"
+msgstr ""
+
+#: lib/xfw_private.class.php:590
+msgid "Block XSS attacks"
+msgstr ""
+
+#: lib/xfw_private.class.php:590
+#, php-format
+msgid ""
+"Private! will block most common xss requests to your blog like <a href=\"%s"
+"\">cookie theft</a> or <a href=\"%s\">session hijacking</a> attemps."
+msgstr ""
+
+#: lib/xfw_private.class.php:591
+msgid "Filter SQL Injections"
+msgstr ""
+
+#: lib/xfw_private.class.php:591
+msgid "Block SQL injection attacks"
+msgstr ""
+
+#: lib/xfw_private.class.php:591
+#, php-format
+msgid ""
+"Private! will block most common <a href=\"%s\">sql injection</a> attempts."
+msgstr ""
+
+#: lib/xfw_private.class.php:592
+msgid "Filter WP Prefix"
+msgstr ""
+
+#: lib/xfw_private.class.php:592
+msgid "Block Requests with your sql prefix"
+msgstr ""
+
+#: lib/xfw_private.class.php:592
+#, php-format
+msgid ""
+"Private! will block all requests, that contain your wp prefix \"%s\". This "
+"might lead to false positives, BUT it will protect your blog from most of "
+"all 0-day vulnerabilies."
+msgstr ""
+
+#: lib/xfw_private.class.php:593
+msgid "Filter Fields Truncation"
+msgstr ""
+
+#: lib/xfw_private.class.php:593
+msgid "Block Field Truncation Attacks"
+msgstr ""
+
+#: lib/xfw_private.class.php:593
+#, php-format
+msgid ""
+"Private! will block all requests containing uncommon whitespaces or other "
+"indications of whitespace or special characters to prevent <a href=\"%s"
+"\">Field Truncation</a> Attacks."
+msgstr ""
+
+#: lib/xfw_private.class.php:594
+msgid "Filter Directory Traversal"
+msgstr ""
+
+#: lib/xfw_private.class.php:594
+msgid "Block Directory Traversal Attacks"
+msgstr ""
+
+#: lib/xfw_private.class.php:594
+#, php-format
+msgid ""
+"Private! will block all requests containing most common path or other <a "
+"href=\"%s\">directory traversal</a> attacks."
+msgstr ""
+
+#: lib/xfw_private.class.php:595
+msgid "Filter File Uploads"
+msgstr ""
+
+#: lib/xfw_private.class.php:595
+msgid "Block File Upload Attacks"
+msgstr ""
+
+#: lib/xfw_private.class.php:595
+msgid ""
+"Private! will block all file uploads with dangerous file extensions. These "
+"attacks are quite uncommon, but possible if you use bad written plugins."
+msgstr ""
+
+#: lib/xfw_private.class.php:597
+msgid "Show 404 Error"
+msgstr ""
+
+#: lib/xfw_private.class.php:597
+msgid "Throw an 404 error on bad request"
+msgstr ""
+
+#: lib/xfw_private.class.php:597
+msgid ""
+"If activated, a bad request will lead to a normal 404 error page. An "
+"attacker might think, this is the normal behaviour."
+msgstr ""
+
+#: lib/xfw_private.class.php:598
+msgid "Log filtered requests"
+msgstr ""
+
+#: lib/xfw_private.class.php:598
+msgid "Log all bad requests"
+msgstr ""
+
+#: lib/xfw_private.class.php:598
+msgid ""
+"If you want to know, when someone sends malicious requests to your blog, you "
+"should activate this."
+msgstr ""
+
+#: lib/xfw_private.class.php:600
+msgid "Strong passwords"
+msgstr ""
+
+#: lib/xfw_private.class.php:600
+msgid "Allow only strong passwords"
+msgstr ""
+
+#: lib/xfw_private.class.php:600
+msgid ""
+"Wordpress helps you to create strong passwords, but it does not mind "
+"accepting weak passwords. That's not very useful. You can force your users "
+"to use only strong passwords."
+msgstr ""
+
+#: lib/xfw_private.class.php:601
+msgid "Login errors"
+msgstr ""
+
+#: lib/xfw_private.class.php:601
+msgid "Show custom errors on login"
+msgstr ""
+
+#: lib/xfw_private.class.php:601
+msgid ""
+"On standard installations Wordpress tells you, if the login username is "
+"correct or not. That might be a security problem, as it gives an attacker "
+"informations about your usernames. If checked, it will display your custom "
+"message. <strong>Unlike other plugins we just don't hide the error, but "
+"fully remove the original.</strong>"
+msgstr ""
+
+#: lib/xfw_private.class.php:602
+msgid "Custom error"
+msgstr ""
+
+#: lib/xfw_private.class.php:602
+msgid ""
+"This message will displayed to all users, that failed to login. If you "
+"enabled brute force protection, you can use <strong>%attempts%</strong> as a "
+"variable to display allowed attempts."
+msgstr ""
+
+#: lib/xfw_private.class.php:603
+msgid "Secure login script"
+msgstr ""
+
+#: lib/xfw_private.class.php:603
+msgid "Secure your login with javascript"
+msgstr ""
+
+#: lib/xfw_private.class.php:603
+msgid ""
+"This will add a unobstrusive javascript to your login form. On submitting "
+"the loginform, the password will be encoded with <a href=\"http://en."
+"wikipedia.org/wiki/Data_Encryption_Standard\">Triple des</a>. The encryption "
+"password will be generated with details of the user and your installation. "
+"As the key is not send with your form, it will be not that easy to find out "
+"the real password."
+msgstr ""
+
+#: lib/xfw_private.class.php:604
+msgid "Brute force protection"
+msgstr ""
+
+#: lib/xfw_private.class.php:604
+msgid "Enable brute force protection"
+msgstr ""
+
+#: lib/xfw_private.class.php:604
+msgid ""
+"This function will protect your blog against <a href=\"http://en.wikipedia."
+"org/wiki/Brute-force_search\">brute force attacks</a>. It will lock your "
+"blog down for ip addresses that failed to login multiple times."
+msgstr ""
+
+#: lib/xfw_private.class.php:605
+msgid "Max Login Attempts"
+msgstr ""
+
+#: lib/xfw_private.class.php:605
+msgid "attempts"
+msgstr ""
+
+#: lib/xfw_private.class.php:605
+msgid ""
+"Please define, how often is a user allowed to fail login, before he is "
+"locked out."
+msgstr ""
+
+#: lib/xfw_private.class.php:606
+msgid "Lockout Time"
+msgstr ""
+
+#: lib/xfw_private.class.php:606 lib/xfw_private.class.php:607
+#: lib/xfw_private.class.php:610
+msgid "seconds"
+msgstr ""
+
+#: lib/xfw_private.class.php:606
+msgid "How long should he be locked out? Default is 600 seconds => 10 minutes."
+msgstr ""
+
+#: lib/xfw_private.class.php:607
+msgid "Log Time"
+msgstr ""
+
+#: lib/xfw_private.class.php:607
+msgid ""
+"How long should do you want to keep the log? This should be longer than "
+"lockout time. If a user is allowed again to login, he has only one attempt "
+"and is locked out again. Default is 3600 seconds => 1 hour."
+msgstr ""
+
+#: lib/xfw_private.class.php:608
+msgid "Lockout message"
+msgstr ""
+
+#: lib/xfw_private.class.php:608
+msgid "You can define the error message, that locked out users will see."
+msgstr ""
+
+#: lib/xfw_private.class.php:609
+msgid "Tarpit"
+msgstr ""
+
+#: lib/xfw_private.class.php:609
+msgid "Enable tarpit protection"
+msgstr ""
+
+#: lib/xfw_private.class.php:609
+msgid ""
+"This function is somehow a copy of the <a href=\"http://en.wikipedia.org/"
+"wiki/Tarpit_%28networking%29\">tarpit function</a> for emails. With every "
+"failed login, it will increase the response time for the potential attacker. "
+"This will slow down the attack."
+msgstr ""
+
+#: lib/xfw_private.class.php:610
+msgid "Max tarpit timeout"
+msgstr ""
+
+#: lib/xfw_private.class.php:610
+msgid ""
+"To prevent server or gateway timeouts, you can specify a maximum timeout."
+msgstr ""
+
+#: lib/xfw_private.class.php:612
+msgid "Protect plugin folder"
+msgstr ""
+
+#: lib/xfw_private.class.php:612
+msgid "Protect your plugin folder"
+msgstr ""
+
+#: lib/xfw_private.class.php:612
+msgid ""
+"In some server configurations it is possible to list files in a folder. This "
+"may be a security risk, as an attacker may get direct access to your log "
+"files or backups. If checked, it will write an empty index file into your "
+"plugin folder. Private! will never overwrite your files or delete files from "
+"other plugins. This will work in all server configurations and in other "
+"servers than apache. If activated, Private! will test the existance on every "
+"change on the settings."
+msgstr ""
+
+#: lib/xfw_private.class.php:614
+msgid "Protect theme folder"
+msgstr ""
+
+#: lib/xfw_private.class.php:614
+msgid "Protect your theme folder"
+msgstr ""
+
+#: lib/xfw_private.class.php:614
+msgid "If checked, it will write an empty index file into your theme folder."
+msgstr ""
+
+#: lib/xfw_private.class.php:616
+msgid "Protect includes folder"
+msgstr ""
+
+#: lib/xfw_private.class.php:616
+msgid "Protect your includes folder"
+msgstr ""
+
+#: lib/xfw_private.class.php:616
+msgid ""
+"If checked, it will write an empty index file into your includes folder."
+msgstr ""
+
+#: lib/xfw_private.class.php:618
+msgid "Restrict Admin"
+msgstr ""
+
+#: lib/xfw_private.class.php:618
+msgid "Restrict admin pages to your current ip"
+msgstr ""
+
+#: lib/xfw_private.class.php:618
+#, php-format
+msgid ""
+"If you use a static ip and do not have any other users in your blog, you can "
+"restrict all admin pages to your <strong>current ip (%s). You can remove "
+"this setting ONLY by DELETING the ip.php in the private plugin folder. If "
+"you are unsure about anything in this text, don't use this feature.</strong>"
+msgstr ""
+
+#: lib/xfw_private.class.php:622
+msgid "WP Generator"
+msgstr ""
+
+#: lib/xfw_private.class.php:622
+msgid "Add or remove extra headers for WP Generator"
+msgstr ""
+
+#: lib/xfw_private.class.php:622
+msgid ""
+"The WP Generator Meta in the blog head is most of the time useless and a "
+"security risk. You don't need this, you should remove it from your blog."
+msgstr ""
+
+#: lib/xfw_private.class.php:622
+msgid "Add WP Generator"
+msgstr ""
+
+#: lib/xfw_private.class.php:622
+msgid "Remove Version"
+msgstr ""
+
+#: lib/xfw_private.class.php:622
+msgid "Remove WP Generator"
+msgstr ""
+
+#: lib/xfw_private.class.php:627
+msgid "This function is restricted to admins!"
+msgstr ""
+
+#: lib/xfw_private.class.php:629
+msgid "Remove readme.html"
+msgstr ""
+
+#: lib/xfw_private.class.php:629
+msgid "Remove readme.html from the root folder"
+msgstr ""
+
+#: lib/xfw_private.class.php:629
+#, php-format
+msgid ""
+"If you remove the version from you head, you should also delete the actual "
+"readme.html as an attacker can find out with this file, what version you are "
+"using. The file will be moved into the Private! tempfolder. <a href=\"%s"
+"\">View this file here</a>."
+msgstr ""
+
+#: lib/xfw_private.class.php:631
+msgid "WLW Manifest"
+msgstr ""
+
+#: lib/xfw_private.class.php:631
+msgid "Add or remove extra headers for WLW"
+msgstr ""
+
+#: lib/xfw_private.class.php:631
+msgid ""
+"If you lock down your blog, you might run into problems using software like "
+"<a href=\"http://explore.live.com/windows-live-writer\">WLW</a>. You can "
+"solve this, by sending special headers in the head of your blog. If you "
+"don't use, you should remove these headers as it may be a security risk."
+msgstr ""
+
+#: lib/xfw_private.class.php:631
+msgid "Add WLW manifest"
+msgstr ""
+
+#: lib/xfw_private.class.php:631
+msgid "Remove WLW manifest"
+msgstr ""
+
+#: lib/xfw_private.class.php:632
+msgid "RSD Link"
+msgstr ""
+
+#: lib/xfw_private.class.php:632
+msgid "Add or remove extra headers for RSD"
+msgstr ""
+
+#: lib/xfw_private.class.php:632
+msgid ""
+"If you lock down your blog, you might run into problems using software like "
+"<a href=\"http://www.blogdesk.org/de/index.htm\">Blogdesk</a>. You can solve "
+"this, by sending special headers in the head of your blog. If you don't use, "
+"you should remove these headers as it may be a security risk."
+msgstr ""
+
+#: lib/xfw_private.class.php:632
+msgid "Add RSD link"
+msgstr ""
+
+#: lib/xfw_private.class.php:632
+msgid "Remove RSD link"
+msgstr ""
+
+#: lib/xfw_private.class.php:633
+msgid "Redirection URL"
+msgstr ""
+
+#: lib/xfw_private.class.php:633
+msgid ""
+"Add a full url to which the unauthorized users will be redirected to. If you "
+"leave it blank, the user will be redirected to the login page. You can also "
+"add the url to your login, if you have problems with the regular auth "
+"redirect."
+msgstr ""
+
+#: lib/xfw_private.class.php:635
+msgid "No redirection"
+msgstr ""
+
+#: lib/xfw_private.class.php:635
+msgid "Do not redirect logged in users"
+msgstr ""
+
+#: lib/xfw_private.class.php:635
+msgid ""
+"If you use a time based authorization and don't want to add a page for "
+"unauthorized users, you can show them a simple error message."
+msgstr ""
+
+#: lib/xfw_private.class.php:636
+msgid "Deny message"
+msgstr ""
+
+#: lib/xfw_private.class.php:636
+msgid ""
+"Please provide an error message for logged in, but unauthorized users, if "
+"you do not want them to be redirected to the login."
+msgstr ""
+
+#: lib/xfw_private.class.php:638
+msgid "Login message"
+msgstr ""
+
+#: lib/xfw_private.class.php:638
+msgid ""
+"This message will be shown to unauthorized visitors above the login. HTML "
+"tags are allowed."
+msgstr ""
+
+#: lib/xfw_private.class.php:638
+msgid ""
+"To apply WordPress's default style, use <code>&lt;p class=\"message\"&gt;</"
+"code> and <code>&lt;/p&gt;</code> to wrap your own message."
+msgstr ""
+
+#: lib/xfw_private.class.php:639
+msgid "Link on login page"
+msgstr ""
+
+#: lib/xfw_private.class.php:639
+msgid ""
+"Add a link to the <a href=\"http://plugins.x-blogs.org/private/\">Private! "
+"Homepage</a>"
+msgstr ""
+
+#: lib/xfw_private.class.php:639
+msgid ""
+"If you like this script and want to tell the world, you can add a link to "
+"your login page. <a href=\"/wp-login.php?preview_link=true\">You can preview "
+"this setting here.</a> <strong>Thank you for your support!</strong>"
+msgstr ""
+
+#: lib/xfw_private.class.php:775
+msgid "Uninstall the plugin"
+msgstr ""
+
+#: lib/xfw_private.class.php:782
+msgid "Remove settings"
+msgstr ""
+
+#: lib/xfw_private.class.php:782
+msgid ""
+"This will delete all Private! data from your database. If you are not sure "
+"about reinstalling this plugin, you should keep user data."
+msgstr ""
+
+#: lib/xfw_private.class.php:782
+msgid "Remove only settings from this page"
+msgstr ""
+
+#: lib/xfw_private.class.php:782
+msgid "Remove all user settings from this blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:782
+msgid "Remove all brute force logs"
+msgstr ""
+
+#: lib/xfw_private.class.php:782
+msgid "Remove all feed keys"
+msgstr ""
+
+#: lib/xfw_private.class.php:782
+msgid "Remove all settings and user settings from this blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:784
+msgid "Delete Settings"
+msgstr ""
+
+#: lib/xfw_private.class.php:789
+msgid "Please select the profile, that comes close to your needs!"
+msgstr ""
+
+#: lib/xfw_private.class.php:789
+msgid "_private_assistant"
+msgstr ""
+
+#: lib/xfw_private.class.php:790
+msgid "Easy setup assistant"
+msgstr ""
+
+#: lib/xfw_private.class.php:791
+msgid ""
+"Private! will help you, to secure your blog and give access only to people "
+"you want to have. To make the setup as easy as possible, you should select a "
+"profile from the list below. The plugin will generate a configuration for "
+"you. You can of course change every option yourself, to get the best out of "
+"Private!"
+msgstr ""
+
+#: lib/xfw_private.class.php:793
+msgid "I want to run private blog for my family, my friends or my business"
+msgstr ""
+
+#: lib/xfw_private.class.php:794
+msgid ""
+"This might be the most common case. Your blog will be closed to the public "
+"without any exceptions. The time based authentification will be turned off "
+"and the login will get secured."
+msgstr ""
+
+#: lib/xfw_private.class.php:796
+msgid "I want to run a public blog with paid content in certain categories"
+msgstr ""
+
+#: lib/xfw_private.class.php:797
+msgid ""
+"If you are for example a designer, who sells tutorials over the web, this is "
+"for you. The blog will stay open for anyone to access your free content and "
+"there will be a time based authentification for your members. If they order "
+"access for a certain time, you can edit their profile to give them what they "
+"paid for. The login will get secured."
+msgstr ""
+
+#: lib/xfw_private.class.php:799
+msgid "I want to run a members only page"
+msgstr ""
+
+#: lib/xfw_private.class.php:800
+msgid ""
+"You have paid content only and want to sell it? Chose this option. In this "
+"setup, the whole content will be closed except your Front page. You should "
+"add a static page, where you can tell your customers, how they can get "
+"access to your treasures."
+msgstr ""
+
+#: lib/xfw_private.class.php:802
+msgid "I don't need this access voodoo, but I want secure my blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:803
+msgid ""
+"Your wish ... The whole access things will be turned off, but the security "
+"features will be set up for you."
+msgstr ""
+
+#: lib/xfw_private.class.php:805
+msgid "Don't change anything, I want to find out myself"
+msgstr ""
+
+#: lib/xfw_private.class.php:806
+msgid ""
+"Of couse you want. Private! is well documented, so please read carefully the "
+"descriptions. As admin, you cannot lock out yourself (except on multiple "
+"failed logins), so feel free to test everything."
+msgstr ""
+
+#: lib/xfw_private.class.php:808
+msgid "Setup this profile and close assistant"
+msgstr ""
+
+#: lib/xfw_private.class.php:812
+msgid "Setup Assistant"
+msgstr ""
+
+#: lib/xfw_private.class.php:820
+msgid "There are no categories."
+msgstr ""
+
+#: lib/xfw_private.class.php:822
+msgid "Category"
+msgstr ""
+
+#: lib/xfw_private.class.php:822 lib/xfw_private.class.php:846
+msgid "Special access rights"
+msgstr ""
+
+#: lib/xfw_private.class.php:831 lib/xfw_private.class.php:855
+msgid "hide"
+msgstr ""
+
+#: lib/xfw_private.class.php:831 lib/xfw_private.class.php:855
+msgid "Allow"
+msgstr ""
+
+#: lib/xfw_private.class.php:831 lib/xfw_private.class.php:855
+msgid "Deny"
+msgstr ""
+
+#: lib/xfw_private.class.php:831 lib/xfw_private.class.php:855
+msgid "Use standard"
+msgstr ""
+
+#: lib/xfw_private.class.php:844
+msgid "There are no tags."
+msgstr ""
+
+#: lib/xfw_private.class.php:879
+msgid "Private! options"
+msgstr ""
+
+#: lib/xfw_private.class.php:879
+msgid ""
+"If you want to allow this user to access your Private! areas, edit this "
+"field to a date in the future."
+msgstr ""
+
+#: lib/xfw_private.class.php:1096
+msgid " Please edit your password"
+msgstr ""
+
+#: lib/xfw_private.class.php:1132
+msgid ""
+"This blog does not allow you to subscribe directly! Please contact the blog "
+"admin."
+msgstr ""
+
+#: lib/xfw_private.class.php:1135
+msgid "There is no blog with this name!"
+msgstr ""
+
+#: lib/xfw_private.class.php:1137
+msgid "Subscribe to a blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:1139
+msgid "Type in the subdomain of the blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:1141
+msgid "Type in the path of the blog"
+msgstr ""
+
+#: lib/xfw_private.class.php:1361
+msgid "What do you think you are doing here?"
+msgstr ""

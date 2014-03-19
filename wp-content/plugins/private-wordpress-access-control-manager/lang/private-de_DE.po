@@ -1,0 +1,747 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private!\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-04 00:00+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Oliver Sperke <oliver@x-blogs.org>\n"
+"Language-Team: Alkivia | http://x-blogs.org/ <oliver@x-blogs.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "Private! Settings"
+msgstr "Private! Einstellungen"
+
+msgid "It seems there is something wrong with your capabilities."
+msgstr "Es scheint so, als wäre etwas mit Deinen Rechten falsch."
+
+msgid "It seems there is something wrong with your time-based authorization. You have activated this option, but did you edit <a href=\"/wp-admin/profile.php#allow_private\">your personal settings</a>?"
+msgstr "Es scheint, da stimmt etwas nicht mit Deiner zeitbasierten Authorisierung. Du hast diese aktiviert, aber hast Du auch <a href=\"http://x-blogs.org/wp-admin/profile.php#allow_private\">Dein Profil</a> angepasst?"
+
+msgid "Oh Oh! \"Private! Wordpress Access Manager\" does not allow you to access your own blog! %s %s Please check your settings!"
+msgstr "Oh Oh! \"Private! Wordpress Access Manager\" lässt Dich nicht auf Dein eigenes Blog! %s %s Bitte überprüfe Deine Einstellungen!"
+
+msgid " is active, but must be configured. Your blog may be visible to everyone on the web."
+msgstr " wurde aktiviert, aber muss noch konfiguriert werden. Dein Blog ist wahrscheinlich sichtbar für jeden im Netz."
+
+msgid "Who are you and what are you doing in here?"
+msgstr "Wer bist Du und was machst Du hier?"
+
+msgid "Basic Settings"
+msgstr "Basiseinstellungen"
+
+msgid "Access Rights"
+msgstr "Zugriffsregeln"
+
+msgid "More Access Rights"
+msgstr "Mehr Zugriffsregeln"
+
+msgid "Security Settings"
+msgstr "Sicherheitseinstellungen"
+
+msgid "About"
+msgstr "Über"
+
+msgid "Privacy Settings"
+msgstr "Privatsphäre"
+
+msgid "Enable Private! Wordpress Access Control Manager"
+msgstr "Aktiviere Private! Wordpress Access Control Manager"
+
+msgid "Enable Private! to lock down your blog from the public. To get access to your blog, users must register. If you do not allow registrations or you blog is in a multisite environment, You must add or invite them under <strong><a href=\"user-new.php\">Users -> Add</a></strong>. Private! is very restrictive, because it's better to lock some people out in error than showing important data to the wrong people. <strong>If you just enable Private! even YOU will not be able to access your blog. Please read all option descriptions carefully!</strong>"
+msgstr "Aktiviere Private! um Dein Blog nach aussen abzuschotten. Um Zugriff zu erhalten, muss sich ein Benutzer anmelden. Wenn Du keine Registrierungen erlaubst, musst Du die Benutzer hinzufügen oder einladen unter <strong><a href=\"user-new.php\">Benutzer -> Hinzufügen</a></strong> Private! ist sehr restriktiv, weil es besser ist jemanden zu Unrecht auszuschliessen als wichtige Daten an die falschen Leute zu schicken. <strong>Wenn Du Private! nur aktivierst, wirst Du selbst auch nicht mehr auf Dein Blog zugreifen können. Bitte lese die Beschreibungen der Einstellungen sehr gründlich!</strong>"
+
+msgid "Restrictions"
+msgstr "Zugriffsbeschränkungen"
+
+msgid "Do not restrict access to any page"
+msgstr "Deaktiviere alle Zugriffsbeschränkungen"
+
+msgid "You can disable all restrictions with one click. That may be useful for debuging or if you just want to use the other features."
+msgstr "Du kannst alle Zugriffsbeschränkungen mit einem Klick aufheben. Dies ist nützlich für Testzwecke oder wenn Du nur die anderen Funktionen nutzen möchtest."
+
+msgid "Blog network"
+msgstr "Blognetzwerk"
+
+msgid "Do not check the relation to your blog"
+msgstr "Überprüfe nicht, ob der Benutzer zu Deinem Blog gehört"
+
+msgid "This blog is part of a multisite network. You can allow access to all logged in the network, even if they are not directly related to your blog. If you do not check this, you have to add users as described above."
+msgstr "Dein Blog ist Teil eines Blognetzwerk. Du kannst jedem eingeloggtem Benutzer erlauben, auch wenn dieser nicht direkt mit Deinem Blog verbunden ist. Wenn Du diese Option nicht nutzt, wirst Du neue Benutzer hinzufügen müssen wie oben beschrieben."
+
+msgid "Approvement"
+msgstr "Freischaltung"
+
+msgid "Do not use time based approvement"
+msgstr "Keine zeitbasierte Freischaltung benutzen"
+
+msgid "By default you must approve every single user for a certain time under <strong><a href=\"users.php\">Users -> Edit</a></strong> and on the user settings page at the bottom. You can skip this step by allowing every logged in user. If you don't and registration is open, make sure to tell your users, that they cannot access your blog immidiately."
+msgstr "Standardmässig musst Du jeden einzelnen Benutzer für eine beliebige Zeit freischalten unter <strong><a href=\"users.php\">Benutzer -> bearbeiten</a></strong> und auf der Benutzerseite ganz unten das Feld mit einem gewünschtem Datum und Uhrzeit ausfüllen. Du kannst diese Prüfung überspringen und dadurch jeden eingeloggten Besucher erlauben. Wenn Du dies nicht möchtest und die Registrierung steht allen offen, solltest Du Deine Benutzer darauf hinweisen, dass Sie nicht sofort auf Dein Blog zugreifen dürfen."
+
+msgid "Capabilities"
+msgstr "Berechtigungen"
+
+msgid "By default only administrators can access your blog. You can change it to every role you like. If you want to allow every logged in user to access your blog, you can <strong>just empty this input</strong>. You can use capabilities like \"manage_options\" and you can combine multiple capabilities with \"&&\" or match only one with \"||\".<br /><br />Examples: \"manage_options&&edit_posts&&delete_users\" matches users that can manage_options, edit posts AND delete users. \"manage_options||edit_posts||delete_users\" will match one of the capabilities. \"read_posts&&edit_posts||authors\" will match any users, who can read AND edit posts OR are at least authors. If you like, you can use userlevels too, by adding \"level_X\" (X is the userlevel). <a href=\"http://codex.wordpress.org/Roles_and_Capabilities\">Find more infos on the wordpress pages</a>."
+msgstr "Standardmässig dürfen nur Administratoren auf Dein Blog zugreifen. Du kannst dies ändern, indem Du jede beliebige \"Rolle\" benutzt. Wenn Du jeden eingeloggten Besucher erlauben möchtest, kannst Du den <strong>Inhalt des Feldes einfach löschen</strong>. Du kannst auch Berechtigungen benutzen wie \"manage_options\" und Du kannst diese Möglichkeiten auch kombinieren mit \"&&\" oder einzelne Berechtigungen abfragen mit \"||\".<br /><br />Beispiel:\"manage_options&&edit_posts&&delete_users\" trifft auf alle Benutzer zu, die Blogeinstellungen ändern, Artikel ändern UND user löschen dürfen. \"manage_options||edit_posts||delete_users\" trifft auf alle zu, die EINE Bedingung erfüllen. \"read_posts&&edit_posts||authors\" trifft auf alle zu, die Artikel lesen und ändern dürfen oder mindestens Autor sind. Wenn Du möchtest, kannst Du auch Userlevel benutzen, indem Du \"level_X\" (X ist der Userlevel) benutzt. <a href=\"http://codex.wordpress.org/Roles_and_Capabilities\">Mehr Informationen findest Du auf der Wordpress Seite</a>."
+
+msgid "Allow access to parts of your blog"
+msgstr "Erlaube den Zugriff für Gäste auf Bereiche Deines Blogs"
+
+msgid "Front page"
+msgstr "Startseite"
+
+msgid "Allow access to the front page of your blog"
+msgstr "Erlaube den Zugriff auf Deine Startseite"
+
+msgid "Allow all visitors to view your blog front page. This may be your blog home page or another page you have chosen under <strong><a href=\"options-reading.php\">Settings -> Read</a></strong>."
+msgstr "Erlaube allen Besucher Deine Startseite zu sehen. Das kann Deine Blogseite sein oder eine andere Seite, die Du unter <strong><a href=\"options-reading.php\">Einstellungen -> Lesen</a></strong> festgelegt hast."
+
+msgid "Blog home page"
+msgstr "Blog Startseite"
+
+msgid "Allow access to the home page of your blog"
+msgstr "Erlaube den Zugriff auf Deine Blog Startseite"
+
+msgid "Allow all visitors to view your blog home page. This means, they can read all posts or excerpts depending on your posts settings."
+msgstr "Erlaube allen Besucher, Deine Blog Startseite zu sehen. Das bedeutet, sie können alle Artikel oder Zusammenfassungen lesen, je nachdem, wie Deine Artikel aufgebaut sind."
+
+msgid "Posts"
+msgstr "Artikel"
+
+msgid "Allow access to single posts"
+msgstr "Erlaube den Zugrif auf einzelne Artikel"
+
+msgid "Allow all visitors to access your single posts."
+msgstr "Erlaube allen Besucher, Deine Artikel auf einer Einzelseite zu lesen."
+
+msgid "Attachments"
+msgstr "Anhänge"
+
+msgid "Allow access to attachments"
+msgstr "Erlaube den Zugrif auf Anhänge"
+
+msgid "Allow all visitors to access attachments."
+msgstr "Erlaube allen Besuchern den Zugriff auf Anhänge."
+
+msgid "Pages"
+msgstr "Seiten"
+
+msgid "Allow access to pages"
+msgstr "Erlaube den Zugriff auf Seiten"
+
+msgid "Allow all visitors to view pages."
+msgstr "Erlaube allen Besuchern den Zugriff auf Seiten."
+
+msgid "Allow access to your category archives"
+msgstr "Erlaube den Zugriff auf Kategorie Übersichten"
+
+msgid "Allow all visitors to view your category archives."
+msgstr "Erlaube allen Besuchern den Zugriff auf Kategorie Übersichten."
+
+msgid "Tags"
+msgstr "Schlagwörter"
+
+msgid "Allow access to your tag archive"
+msgstr "Erlaube den Zugriff auf Schlagwörter Übersichten"
+
+msgid "Allow all visitors to view your tag archives."
+msgstr "Erlaube allen Besuchern den Zugriff auf Schlagwörter Übersichten."
+
+msgid "Archives"
+msgstr "Archive"
+
+msgid "Allow access to your date-based archives"
+msgstr "Erlaube den Zugriff auf Datum Übersichten"
+
+msgid "Allow all visitors to view your date-based archives."
+msgstr "Erlaube allen Besuchern den Zugriff auf Datum Übersichten."
+
+msgid "Search"
+msgstr "Suche"
+
+msgid "Allow access to your search"
+msgstr "Erlaube den Zugriff auf die Suche"
+
+msgid "Allow all visitors to search your blog."
+msgstr "Erlaube allen Besucher, Dein Blog zu durchsuchen."
+
+msgid "RSS &amp; Atom feed"
+msgstr "RSS &amp; Atom Feeds"
+
+msgid "Allow access to feeds"
+msgstr "Erlaube den Zugriff auf Deine Feeds"
+
+msgid "Allow all visitors to access your feeds."
+msgstr "Erlaube allen Besucher den Zugriff auf Deine Feeds."
+
+msgid "More details about allowed/forbidden areas"
+msgstr "Mehr Details über erlaubte/verbotene Bereiche"
+
+msgid "Categories"
+msgstr "Kategorien"
+
+msgid "Please chose from the list, if you want to <strong>overide the category settings</strong> above."
+msgstr "Bitte wähle von der Liste aus, welche <strong>Kategorie Einstellungen Du überschreiben</strong> möchtest."
+
+msgid "Categories filter"
+msgstr "Kategoriefilter"
+
+msgid "Apply category filter only to single posts"
+msgstr "Die Kategoriefilter nur auf Artikel anwenden"
+
+msgid "If you check this, you will enable users to browse restricted category archives, but they will not be able to see the full posts in these categories."
+msgstr "Wenn Du diese Option aktivierst, erlaubst Du jedem Benutzer auch verbotene Kategorieübersichten aufzurufen, allerdings dürfen sie die Artikel selbst nicht aufrufen."
+
+msgid "Please chose from the list, if you want to <strong>overide the tags settings</strong> above."
+msgstr "Bitte wähle von der Liste aus, welche <strong>Schlagwörter Einstellungen Du überschreiben</strong> möchtest."
+
+msgid "Tags filter"
+msgstr "Schlagwörterfilter"
+
+msgid "Apply tag filter only to single posts"
+msgstr "Die Schlagwörterfilter nur auf Artikel anwenden"
+
+msgid "If you check this, you will enable users to browse restricted tags archives, but they will not be able to see the full posts with these tags."
+msgstr "Wenn Du diese Option aktivierst, erlaubst Du jedem Benutzer auch verbotene Schlagwörterübersichten aufzurufen, allerdings dürfen sie die Artikel selbst nicht aufrufen."
+
+msgid "Add the post ids (comma-seperated), you want to allow for all visitors. You can also restrict posts by prepend \"!\". If you want to allow access to all posts except id 1 and 2 you can add \"!1,!2\". <strong>WARNING: This option will overwrite category and tag options above</strong>, so you can make some posts temporarly available for public."
+msgstr "Füge die Artikel IDs hinzu, die Du für alle Besucher freigeben möchtest. Du kannst auch den Zugriff verbieten, indem Du \"!\" voranstellst. Wenn Du den Zugriff auf alle Artikel erlauben möchtest ausser ID 1 und 2, kannst Du \"!1,!2\" eintragen. <strong>WARNUNG: Diese Option wird die Einstellungen in den Kategorie und Schlagwörtereinstellungen überschreiben</strong>, so dass Du einzelne Beiträge zeitweise für alle Besucher freigeben oder sperren kannst."
+
+msgid "Security Features"
+msgstr "Sicherheitsfunktionen"
+
+msgid "Login errors"
+msgstr "Login Fehlermeldung"
+
+msgid "Show custom errors on login"
+msgstr "Zeige eigene Fehlermeldungen beim Login"
+
+msgid "Secure login script"
+msgstr "Sichere Login Javascript"
+
+msgid "This will add a unobstrusive javascript to your login form. On submitting the loginform, the password will be encoded with <a href=\"http://en.wikipedia.org/wiki/Data_Encryption_Standard\">Triple des</a>. The encryption password will be generated with details of the user and your installation. As the key is not send with your form, it will be not that easy to find out the real password."
+msgstr "Diese Option fügt ein Javascript zu Deinem Anmeldeformular hinzu, dass beim Absenden Dein Passwort mit <a href=\"http://de.wikipedia.org/wiki/Data_Encryption_Standard\">Triple DES</a> verschlüsselt. Der Schlüssel wird aus Benutzerdaten und aus Deiner Installation generiert. Da der Schlüssel nicht mit Deinem Formular mitgesendet wird, ist es nicht leicht, Dein echtes Passwort abzufangen."
+
+msgid "Don't encrypt my password"
+msgstr "Sende mein Passwort unverschlüsselt"
+
+msgid "On standard installations Wordpress tells you, if the login username is correct or not. That might be a security problem, as it gives an attacker informations about your usernames. If checked, it will display your custom message. <strong>Unlike other plugins we just don't hide the error, but fully remove the original.</strong>"
+msgstr "In der Standardinstallation zeigt Wordpress an, ob der Benutzername richtig oder falsch war. Das könnte ein Sicherheitsproblem sein, weil es einem Angreifer Informationen über Benutzernamen gibt. Wenn ausgewählt, wird nur die eigene Fehlermeldung angezeigt. <strong>Im Gegensatz zu anderen Plugins wird die Meldung nicht nur versteckt, sondern komplett überschrieben.</strong>"
+
+msgid "Custom error"
+msgstr "Eigene Fehlermeldung"
+
+msgid "Brute force protection"
+msgstr "Brute Force Schutz"
+
+msgid "Enable brute force protection"
+msgstr "Aktiviere Brute Force Schutz"
+
+msgid "This function will protect your blog against <a href=\"http://en.wikipedia.org/wiki/Brute-force_search\">brute force attacks</a>. It will lock your blog down for ip addresses that failed to login multiple times."
+msgstr "Diese Funktion schützt Dein Blog vor <a href=\"http://de.wikipedia.org/wiki/Brute-Force-Methode\">Brute Force Attacken</a>."
+
+msgid "Max Login Attempts"
+msgstr "Maximale Login Versuche"
+
+msgid "Please define, how often is a user allowed to fail login, before he is locked out."
+msgstr "Bitte gib an, wie oft sich ein User falsch anmelden darf, bevor er ausgesperrt wird."
+
+msgid "Sorry, you are locked out until <strong>%until%</strong>."
+msgstr "Entschuldigung, Du bist ausgesperrt bis <strong>%until% Uhr</strong>."
+
+msgid "Lockout Time"
+msgstr "Sperrzeit"
+
+msgid "How long should he be locked out? Default is 600 seconds => 10 minutes."
+msgstr "Wie lange soll der Benutzer ausgesperrt bleiben? Standard ist 600 Sekunden => 10 Minuten."
+
+msgid "Log Time"
+msgstr "Prüfzeit"
+
+msgid "How long should do you want to keep the log? This should be longer than lockout time. If a user is allowed again to login, he has only one attempt and is locked out again. Default is 3600 seconds => 1 hour."
+msgstr "Wie lange sollen Fehlversuche gespeichert werden? Dieser Wert sollte länger als die Sperzeit sein. Sobald ein Benutzer sich erneut anmelden darf, wird er so bei einem Fehlerversuch direkt wieder ausgesperrt. Standard ist 3600 Sekunden => 1 Stunde."
+
+msgid "attempts"
+msgstr "Versuche"
+
+msgid "seconds"
+msgstr "Sekunden"
+
+msgid "Lockout message"
+msgstr "Sperrmeldung"
+
+msgid "You can define the error message, that locked out users will see."
+msgstr "Gib an, welche Meldung der Besucher sehen soll, sobald er ausgesperrt wurde."
+
+msgid "Tarpit"
+msgstr "Teergrube"
+
+msgid "Enable tarpit protection"
+msgstr "Aktiviere Teergruben Schutz"
+
+msgid "This function is somehow a copy of the <a href=\"http://en.wikipedia.org/wiki/Tarpit_%28networking%29\">tarpit function</a> for emails. With every failed login, it will increase the response time for the potential attacker. This will slow down the attack."
+msgstr "Diese Funktion kopiert die <a href=\"http://de.wikipedia.org/wiki/Teergrube_%28Informationstechnik%29\">Teergruben Funktionalität</a> für E-Mails. Mit jedem falschem Login wird die Reaktionszeit für den Angreifer erhöht. Dies bremst ihn aus, bis er es aufgibt."
+
+msgid "Max tarpit timeout"
+msgstr "Maximale Verzögerungszeit"
+
+msgid "To prevent server or gateway timeouts, you can specify a maximum timeout."
+msgstr "Um Timeouts oder Gateway timeouts auf Deinem Server zu verhindern, kannst Du die maximale Verzögerungszeit angeben."
+
+msgid "This message will displayed to all users, that failed to login. If you enabled brute force protection, you can use <strong>%attempts%</strong> as a variable to display allowed attempts."
+msgstr "Diese Fehlermeldung wird allen Benutzern angezeigt, die sich mit falschen Daten eingeloggen. Wenn Du den Brute Force Schutz aktiviert hast, kannst Du <strong>%attempts%</strong> als Variable benutzen, um die restlichen Versuche anzuzeigen."
+
+msgid "Advanced Settings"
+msgstr "Erweiterte Einstellungen"
+
+msgid "Add or remove extra headers for WP Generator"
+msgstr "Sende oder entferne extra Informationen über Deine Blogversion"
+
+msgid "Add WP Generator"
+msgstr "WP Generator hinzufügen"
+
+msgid "Remove Version"
+msgstr "Versionsinfo entfernen"
+
+msgid "Remove WP Generator"
+msgstr "WP Generator entfernen"
+
+msgid "Add or remove extra headers for WLW"
+msgstr "Sende oder entferne extra Informationen für WLW"
+
+msgid "Add WLW manifest"
+msgstr "WLW Manifest hinzufügen"
+
+msgid "Remove WLW manifest"
+msgstr "WLW Manifest entfernen"
+
+msgid "Add RSD link"
+msgstr "RSD Link hinzufügen"
+
+msgid "Remove RSD link"
+msgstr "RSD Link entfernen"
+
+msgid "Add or remove extra headers for RSD"
+msgstr "Sende oder entferne extra Informationen für RSD"
+
+msgid "The WP Generator Meta in the blog head is most of the time useless and a security risk. You don't need this, you should remove it from your blog."
+msgstr "Der WP Generator Tag ist in den meisten Fällen nutzlos und im Zweifel auch ein Sicherheitsproblem. Wenn Du diese Information nicht benötigst, solltest Du sie entfernen oder die Version entfernen."
+
+msgid "If you lock down your blog, you might run into problems using software like <a href=\"http://explore.live.com/windows-live-writer\">WLW</a>. You can solve this, by sending special headers in the head of your blog. If you don't use, you should remove these headers as it may be a security risk."
+msgstr "Wenn Du Dein Blog nach aussen unerreichbar machst, kann es sein, dass Du Probleme mit Software wie <a href=\"http://explore.live.com/windows-live-writer\">WLW</a> bekommst. Du kannst diese Probleme beheben, indem Du zusätzliche Informationen im Kopf Deiner Seite mit sendest. Wenn DU diese Informationen nicht benötigst, solltest Du sie entfernen, weil sie ein potentielles Sicherheitsproblem sind."
+
+msgid "If you lock down your blog, you might run into problems using software like <a href=\"http://www.blogdesk.org/de/index.htm\">Blogdesk</a>. You can solve this, by sending special headers in the head of your blog. If you don't use, you should remove these headers as it may be a security risk."
+msgstr "Wenn Du Dein Blog nach aussen unerreichbar machst, kann es sein, dass Du Probleme mit Software wie <a href=\"http://www.blogdesk.org/de/index.htm\">Blogdesk</a> bekommst. Du kannst diese Probleme beheben, indem Du zusätzliche Informationen im Kopf Deiner Seite mit sendest. Wenn DU diese Informationen nicht benötigst, solltest Du sie entfernen, weil sie ein potentielles Sicherheitsproblem sind."
+
+msgid "Redirection URL"
+msgstr "Weiterleitungsaddresse"
+
+msgid "Add a full url to which the unauthorized users will be redirected to. If you leave it blank, the user will be redirected to the login page. You can also add the url to your login, if you have problems with the regular auth redirect."
+msgstr "Gib eine komplette url, zu der nicht authorisierte Benutzer weiter geleitet werden sollen. Wenn Du dieses Feld leer lässt werden sie zur Anmeldeseite weitergeleitet. Du kannst auch eine URL zu Deinem Login angeben, wenn die reguläre Weiterleitung Probleme macht."
+
+msgid "Login message"
+msgstr "Hinweise bei Anmeldung"
+
+msgid "This message will be shown to unauthorized visitors above the login. HTML tags are allowed."
+msgstr "Diese Nachricht wird oberhalb des Anmeldeformulars für nicht authorisierte Benutzer angezeigt. HTML ist erlaubt."
+
+msgid "To apply WordPress's default style, use <code>&lt;p class=\"message\"&gt;</code> and <code>&lt;/p&gt;</code> to wrap your own message."
+msgstr "Um es besser in die Umgebung einzubetten, solltest Du den Hinweis zwischen <code>&lt;p class=\"message\"&gt;</code> und <code>&lt;/p&gt;</code> einbinden."
+
+msgid "Link on login page"
+msgstr "Link auf Anmeldeseite"
+
+msgid "Add a link to the <a href=\"http://plugins.x-blogs.org/private/\">Private! Homepage</a>"
+msgstr "Zeige einen Link zur <a href=\"http://plugins.x-blogs.org/private/\">Private! Homepage</a>"
+
+msgid "If you like this script and want to tell the world, you can add a link to your login page. <a href=\"/wp-login.php?preview_link=true\">You can preview this setting here.</a> <strong>Thank you for your support!</strong>"
+msgstr "Wenn Du dieses Plugin magst und es der Welt auch mitteilen möchtest, kannst Du einen Link auf Deiner Anmeldeseite einbauen. <a href=\"/wp-login.php?preview_link=true\">Hier kannst Du Dir ansehen, wie es dann aussieht</a> <strong>Vielen Dank für Deine Unterstützung!</strong>"
+
+msgid "Uninstall the plugin"
+msgstr "Entferne dieses Plugin"
+
+msgid "Remove settings"
+msgstr "Entferne Einstellungen"
+
+msgid "Remove settings from database"
+msgstr "Entferne Einstellungen aus der Datenbank"
+
+msgid "You should check this checkbox, if you want to uninstall this plugin. It will remove all settings from your database."
+msgstr "Du solltest diese Option nutzen, wenn Du das Plugin deinstallieren möchtest. Es werden alle Einstellungen aus der Datenbank entfernt."
+
+msgid "Remove user settings"
+msgstr "Entferne Benutzereinstellungen"
+
+msgid "Remove only settings from this page"
+msgstr "Entferne alle Einstellungen von dieser Seite"
+
+msgid "Remove all brute force logs"
+msgstr "Entferne alle Brute Force Aufzeichnungen"
+
+msgid "Remove all feed keys"
+msgstr "Entferne alle Feed Keys"
+
+msgid "Remove all user settings from this blog"
+msgstr "Entferne alle Benutzereinstellungen"
+
+msgid "Remove all settings and user settings from this blog"
+msgstr "Entferne alle Einstellungen und Benutzereinstellungen von diesem Blog"
+
+msgid "This will delete all Private! data from your database. If you are not sure about reinstalling this plugin, you should keep user data."
+msgstr "Diese Option entfernt die gewählten Einstellungen aus der Datenbank. Solltest Du das Plugin noch einmal installieren wollen, solltest Du die Benutzerdaten nicht löschen."
+
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+msgid "Delete Settings"
+msgstr "Einstellungen löschen"
+
+msgid "Allow"
+msgstr "Erlauben"
+
+msgid "Deny"
+msgstr "Verweigern"
+
+msgid "Use standard"
+msgstr "Standard"
+
+msgid "Category"
+msgstr "Kategorie"
+
+msgid "Special access rights"
+msgstr "Spezielle Zugriffsregeln"
+
+msgid "Private! options"
+msgstr "Private! Einstellungen"
+
+msgid "If you want to allow this user to access the Private! Area, please change this field to a date in the future."
+msgstr "Wenn Du diesem Benutzer den Zugriff auf Private! Bereiche erlauben möchtest, ändere das Feld auf einen Wert in der Zukunft."
+
+msgid "There are no categories."
+msgstr "Es gibt keine Kategorien."
+
+msgid "There are no tags."
+msgstr "Es gibt keine Schlagwörter."
+
+msgid "Settings updated"
+msgstr "Einstellungen gespeichert"
+
+msgid "Settings deleted"
+msgstr "Einstellungen gelöscht"
+
+msgid "User settings deleted"
+msgstr "Benutzereinstellungen gelöscht"
+
+msgid "<p class=\"message\">Sorry, you must be logged in, to see this page.</p>"
+msgstr "<p class=\"message\">Entschuldigung, Du musst angemeldet sein, um diese Seite zu sehen.</p>"
+
+msgid "<strong>ERROR</strong>: Username or password are not correct. Please check your data."
+msgstr "<strong>Fehler</strong>: Benutzername oder Passwort sind falsch. Bitte überprüfe Deine Eingaben."
+
+msgid "If you want to allow this user to access your Private! areas, edit this field to a date in the future."
+msgstr "Wenn Du diesem Benutzer den Zugriff auf Private! Bereiche erlauben möchtest, ändere das Feld auf einen Wert in der Zukunft."
+
+msgid "Setup Assistant"
+msgstr "Einstellungsassistent"
+
+msgid "Easy setup assistant"
+msgstr "Einstellungs Assistent"
+
+msgid "Please select the profile, that comes close to your needs!"
+msgstr "Bitte wähle ein Profil, dass Deinen Anforderungen am nächsten kommt!"
+
+msgid "Private! will help you, to secure your blog and give access only to people you want to have. To make the setup as easy as possible, you should select a profile from the list below. The plugin will generate a configuration for you. You can of course change every option yourself, to get the best out of Private!"
+msgstr "Private! wird Dir helfen, Dein Blog abzusichern und Zugriff nur den Leuten zu geben, denen Du ihn geben möchtes. Um die Einstellungen so einfach wie möglich zu machen, solltest Du ein Profil von der untenstehenden Liste auswählen. Das Plugin wird eine Konfiguration für Dich erstellen. Du kannst natürlich alle Einstellungen ändern, um das Beste aus Private! herauszuholen."
+
+msgid "I want to run private blog for my family, my friends or my business"
+msgstr "Ich möchte ein privates Blog für meine Familie, Freunde oder mein Geschäft"
+
+msgid "This might be the most common case. Your blog will be closed to the public without any exceptions. The time based authentification will be turned off and the login will get secured."
+msgstr "Dies dürfte der meiste genutzte Fall sein. Dein Blog wird kokmplett von der Aussenwelt abgeschottet ohne Ausnahme. Die Authentifizierung wird nicht ablaufen und Dein Login wird abgesichert."
+
+msgid "I want to run a public blog with paid content in certain categories"
+msgstr "Ich möchte ein öffentliches Blog mit Bezahlinhalten in bestimmten Kategorien"
+
+msgid "If you are for example a designer, who sells tutorials over the web, this is for you. The blog will stay open for anyone to access your free content and there will be a time based authentification for your members. If they order access for a certain time, you can edit their profile to give them what they paid for. The login will get secured."
+msgstr "Wenn Du z. B. ein Designer bist, der seine Anleitungen über das Internet verkauft, dann ist das Deine Option. Das Blog wird für jeden geöffnet, um auf Deine kostenlosen Bereich zu zu greifen und es gibt eine zeit basierte Authentifizierung für Deine Mitglieder. Wenn sie einen Zugang estellen für einen bestimmten Zeitraum bestellen, kannst Du ihr Profil freigeben für den Zeitraum, den sie bezahlt haben. Dein Login wird abgesichert."
+
+msgid "I want to run a members only page"
+msgstr "Ich möchte eine Members only Seite erstellen"
+
+msgid "You have paid content only and want to sell it? Chose this option. In this setup, the whole content will be closed except your Front page. You should add a static page, where you can tell your customers, how they can get access to your treasures."
+msgstr "Du hast nur Bezahlinhalte und möchtest diese verkaufen? Dann wähle diese Option. In diesen Einstellen wird der komplette Content gesperrt, ausser Deiner Startseite. Du solltest eine statische Seite erstellen, um Deinen Kunden zu erklären, wie sie auf Deine Schätze zugreifen können."
+
+msgid "I don't need this access voodoo, but I want secure my blog"
+msgstr "Ich will diesen Zugangsvoodoo gar nicht, aber ich will mein Blog sicherer machen"
+
+msgid "Your wish ... The whole access things will be turned off, but the security features will be set up for you."
+msgstr "Dein Wunsch ... Alle Zugriffsbeschränkungen werden abgeschaltet, aber die Sicherheitsfunktionen werden für Dich eingerichtet."
+
+msgid "Don't change anything, I want to find out myself"
+msgstr "Ändere gar nichts, ich will selbst rausfinden, wie es geht"
+
+msgid "Of couse you want. Private! is well documented, so please read carefully the descriptions. As admin, you cannot lock out yourself (except on multiple failed logins), so feel free to test everything."
+msgstr "Natürlich willst Du das. Private! ist gut dokumentiert, also lese die Beschreibungen sorgfältig. Als Admin kannst Du Dich nicht selbst aussperren (ausser bei zu vielen falschen Loginversuchen), also probiere alles in Ruhe aus."
+
+msgid "Setup this profile and close assistant"
+msgstr "Benutze dieses Profil und schliesse den Assistent"
+
+msgid "Feed keys deleted"
+msgstr "Feed keys wurden gelöscht"
+
+msgid "Show feeds"
+msgstr "Zeige Feeds im header"
+
+msgid "Show feeds for not logged in users"
+msgstr "Zeige Feeds an für nicht angemeldete Benutzer"
+
+msgid "With this options, you can show all rss in your blog header. This is only useful, if they are allowed to access."
+msgstr "Mit dieser Option kannst Du alle RSS Feeds in Deinem Blog einbinden. Das ist nur dann nützlich, wenn auch Gäste darauf zugreifen dürfen."
+
+msgid "Use feed keys"
+msgstr "Benutze Feed Keys"
+
+msgid "Allow users to access your feeds with special keys"
+msgstr "Erlaube Benutzer mit Hilfe von Feed Keys auf die Feeds zu zugreifen"
+
+msgid "Some RSS Readers might not be capable of user authentification. You can provide your feeds anyway by generating special urls for your members."
+msgstr "Einige RSS Programme können nicht mit Benutzeranmeldungen umgehen. Du kannst aber trotzdem Feeds anbieten, indem Du für Deine Mitglieder spezielle URLs erzeugst."
+
+msgid "Filter Incoming Requests"
+msgstr "Filtere einkommende Aufrufe"
+
+msgid "Filter incoming get requests for non admins"
+msgstr "Filtere einkommen URL Aufrufe für nicht administratoren"
+
+msgid "Even Wordpress is fairly secure, there may be security problems in your plugins or themes. You can get a little bit of extra security by filtering incoming Get Requests. Some typical <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">sql injection</a> and <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">xss attacks</a> will be eliminated. Normal users will not notice this. Test it here. <a href=\"/?admin_test=%3Cscript%3Ealert(document.cookie)%3C/script%3E\">Test it here</a>."
+msgstr "Auch wenn Wordpress recht sicher ist, kann es immer wieder zu Sicherheitsproblemen kommen z. B. durch Plugins oder Designs. Du kannst etwas zusätzliche Sicherheit erreichen, indem Du verdächte einkommende Aufrufe herausfilterst. Einige typische <a href=\"http://de.wikipedia.org/wiki/SQL-Injection\">SQL Injections</a> oder <a href=\"http://de.wikipedia.org/wiki/Cross-Site_Scripting\">XSS Attacken</a> können so verhindert werden. Normale Benutzer bekommen dies nicht mit. <a href=\"/?admin_test=%3Cscript%3Ealert(document.cookie)%3C/script%3E\">Teste die Ausgabe hier</a>."
+
+msgid "Strong passwords"
+msgstr "Starke Passwörter"
+
+msgid "Allow only strong passwords"
+msgstr "Nur starke Passwörter akzeptieren"
+
+msgid "Wordpress helps you to create strong passwords, but it does not mind accepting weak passwords. That's not very useful. You can force your users to use only strong passwords."
+msgstr "Wordpress hilft Dir, starke Passwörter zu generieren, aber es akzeptiert auch schwache Passwörter. Das ist nicht sehr sinnvoll. Du kannst mit dieser Einstellung Deine Benutzer zwingen, nur starke Passwörter zu verwenden."
+
+msgid "Secure your login with javascript"
+msgstr "Sichere Deinen Login mit Javascript"
+
+msgid "Hide categories"
+msgstr "Verstecke Kategorien"
+
+msgid "Hide posts in forbidden categories on posts list"
+msgstr "Verstecke Beitrage in verbotenen Kategorien in Beitragslisten"
+
+msgid "Remove all Posts in restricted categories from blog home, front page, search pages etc. If you deny access to categories by default, this will remove all posts except allowed ones. A positive post filter will not apply, that means if you remove category premium and whitelist a post in this category it will not be shown. The best way to show them, is to add a new post, that links to this post or remove this category temporarly. Use this option with care!"
+msgstr "Entfernt alle Beitrage in eingeschränkten Kategorien von Deiner Blogübersicht, Startseite, Suchseute usw. Wenn Du den Zugriff grundsätzlich auf Kategorien verbietest, werden nur erlaubte Kategorien angezeigt. Positive Sonderregeln für Beitrage greifen nicht, das bedeutet, dass wenn Du die Kategorie Premium ausblendest, aber einen Beitrag auf die Whitelist setzt, wird dieser nicht angezeigt werden. Der beste Weg, diese Beiträge zu zeigen, ist es, einen neuen Beitrag zu erstellen und auf diesen zu linken oder entferne temporär diese Kategorie. Benutze diese Option mit viel Umsicht!"
+
+msgid "Hide tags"
+msgstr "Verstecke Tags"
+
+msgid "Hide posts with forbidden tags on posts list"
+msgstr "Verstecke Beiträge mit verbotenen Schlagwörtern in Beitragslisten"
+
+msgid "Remove all Posts with restricted tags from blog home, front page, search pages etc. Please read information on hide categories."
+msgstr "Entfernt alle Beitrage mit verbotenen Schlagwörtern von Deiner Blogübersicht, Startseite, Suchseute usw. Beachte bitte auch die Informationen unter verstecke Kategorien."
+
+msgid "Hide posts"
+msgstr "Verstecke Beiträge"
+
+msgid "Hide forbidden posts on posts list"
+msgstr "Entferne verbotenen Beitrage in Beitragslisten"
+
+msgid "Remove all Posts that are manually restricted tags from blog home, front page, search pages etc. Please read information on hide categories."
+msgstr "Entfernt alle Beitrage, die manuell gesperrt wurden von Deiner Blogübersicht, Startseite, Suchseute usw. Beachte bitte auch die Informationen unter verstecke Kategorien."
+
+msgid "hide"
+msgstr "verstecken"
+
+msgid "Subscribe to a blog"
+msgstr "Schreibe Dich in ein Blog ein"
+
+msgid "Direct subscription"
+msgstr "Direktes Einschreiben"
+
+msgid "Allow users to subscribe directly to your blog"
+msgstr "Erlaube Benutzern, sich direkt in Deinem Blog einzuschreiben"
+
+msgid "This will change two things. First it will add a hidden field to the signup form. Every user, that signs up from your blog will be automatically added to your blog. Second it will add the ability to add himself to your blog on the \"My Blogs\" page."
+msgstr "Dies wird zwei Dinge ändern. Erstens werden zusätzliche Felder in das Anmeldeformular eingefügt. Jeder Benutzer, der sich von Deiner Seite aus anmeldet wird automatisch zu Deinem Blog hinzugefügt. Zweitens hat er die Möglichkeit, Teil Deines Blogs zu werden, indem er ein Formular in der Übersicht \"Meine Blogs\" ausfüllt."
+
+msgid "There is no blog with this name!"
+msgstr "Es gibt kein Blog mit diesem Namen!"
+
+msgid "This blog does not allow you to subscribe directly! Please contact the blog admin."
+msgstr "Dieses Blog erlaubt kein direktes Anmelden! Wende Dich bitte an den Eigentümer."
+
+msgid "Information on Direct Subscriptions"
+msgstr "Informationen über direktes Einschreiben"
+
+msgid "To enable this feature, you must edit the private.php file in the plugin folder. Read the comments and remove // in front of the settings define('PRIVATE_ALLOW_DIRECT_SUBSCRIPTION', true) and if you want in front of define('PRIVATE_FORCE_MAIN_BLOG', true) too. First option will allow webmasters to get subscriptions directly. Second option will force all users to remain a subscriber of your main blog."
+msgstr "Um diese Funktion nutzen zu können, musst Du die Datei private.php im Plugin Verzeichnis ändern. Lese die Kommentare und entfernen // for den Einstellungen define('PRIVATE_ALLOW_DIRECT_SUBSCRIPTION', true) und define('PRIVATE_FORCE_MAIN_BLOG', true). Die erste option erlaubt es Webmastern direkte Anmeldungen zu aktivieren. Die zweite Option wird die Benutzer zwingen, immer auch im Hauptblog angemeldet zu sein."
+
+msgid "NEW!"
+msgstr "NEU!"
+
+msgid "Lock Security settings"
+msgstr "Sperre Sicherheitseinstellungen"
+
+msgid "Set security settings in the whole network"
+msgstr "Aktiviere alle Sicherheitseinstellungen für das ganze Netzwerk"
+
+msgid "Private! gives you a lot of tools to increase security of your blog, but unfortunatly they are useless, if your member blogs don't use these features. You can force them to use them, by activating this settings. If the Private is disabled on a member blog, it will be enabled, but without any restrictions."
+msgstr "Private! gibt Dir eine ganze Menge Möglichkeiten, die Sicherheit Deines Blogs zu verbessern. Leider ist dies nutzlos, wenn Deine Mitgliederblogs diese Funktionen nicht nutzen. Du kannst sie dazu zwingen, indem Du diese Funktion aktivierst. Sollte Private! nicht aktiviert sein, so wird es aktiviert und alle Zugriffsbeschränkungen deaktiviert."
+
+msgid "Filter long variables"
+msgstr "Filtere lange Variabeln"
+
+msgid "Block variables longer than 255 chars"
+msgstr "Blockiere Variabeln, die länger als 255 Zeichen lang sind"
+
+msgid "Private! will block all $_GET variables, that are longer than 255 chars. This will not limit your site, but the possibilities for an attacker."
+msgstr "Private! Wird alle $_GET Variabeln blockieren, die länger als 255 Zeichen lang sind. Diese Funktion schränkt Dein Blog nicht ein, aber die Möglichkeiten, die ein Angreife hat."
+
+msgid "Filter XSS Requests"
+msgstr "Filtere XSS Aufrufe"
+
+msgid "Block XSS attacks"
+msgstr "Blockiere XSS Angriffe"
+
+msgid "Private! will block most common xss requests to your blog like <a href=\"%s\">cookie theft</a> or <a href=\"%s\">session hijacking</a> attemps."
+msgstr "Private! wird die üblichsten XSS Angriffe auf Dein Blog unterbinden wie <a href=\"%s\">Cookie Diebstahl</a> oder <a href=\"%s\">Session Hijacking</a>"
+
+msgid "Filter SQL Injections"
+msgstr "Filtere SQL Injections"
+
+msgid "Block SQL injection attacks"
+msgstr "Blockiere SQL Injection Angriffe"
+
+msgid "Private! will block most common <a href=\"%s\">sql injection</a> attempts."
+msgstr "Private! wird die üblichsten <a href=\"%s\">SQL Injection</a> Angriffe blockieren."
+
+msgid "Filter WP Prefix"
+msgstr "Filtere WP Präfix"
+
+msgid "Block Requests with your sql prefix"
+msgstr "Blockiere Aufrufe, die Deinen SQL Präfix enthalten"
+
+msgid "Private! will block all requests, that contain your wp prefix \"%s\". This might lead to false positives, BUT it will protect your blog from most of all 0-day vulnerabilies."
+msgstr "Private! wird alle Aufrufe blockieren, in der Dein SQL Präfix \"%s\" vorkommt. Dies könnte evtl. zu ungewünschten Ergebnissen führen, ABER es wird Dein blog vor den meisten neuen SQL Angriffen schützen."
+
+msgid "Filter Fields Truncation "
+msgstr "Filtere Feld Truncations"
+
+msgid "Private! will block all requests containing uncommon whitespaces or other indications of whitespace or special characters to prevent <a href=\"%s\">Field Truncation</a> Attacks."
+msgstr "Private! wird alle Aufrufe blockieren, die ungewöhnliche Zeilenumbrüche oder Leerzeichen oder andere spezielle Buchstaben enthalten, um <a href=\"%s\">Feld Truncation</a> Angriffe vorzubeugen."
+
+msgid "Filter Directory Traversal"
+msgstr "Filtere Directory Traversal"
+
+msgid "Block Directory Traversal Attacks"
+msgstr "Blockiere Directory Traversal Angriffe"
+
+msgid "Private! will block all requests containing most common path or other <a href=\"%s\">directory traversal</a> attacks."
+msgstr "Private! wird alle Aufrufe verhindern, die einen üblichen Pfad oder andere Anzeichen für <a href=\"%s\">directory traversal</a> Angriffe enthalten."
+
+msgid "Filter File Uploads"
+msgstr "Filtere Datei Uploads"
+
+msgid "Block File Upload Attacks"
+msgstr "Blockiere Datei Upload Angriffe"
+
+msgid "Private! will block all file uploads with dangerous file extensions. These attacks are quite uncommon, but possible if you use bad written plugins."
+msgstr "Private! wird alle Datei Uploads mit gefährlichen Endungen blockieren. Diese Attacken sind ungewöhnlich, aber möglich, sofern Du schlecht geschriebene Plugins benutzt."
+
+msgid "Show 404 Error"
+msgstr "Zeige 404 Fehler an"
+
+msgid "Throw an 404 error on bad request"
+msgstr "Werfe einen 404 Fehler aus bei falschen Anfragen"
+
+msgid "If activated, a bad request will lead to a normal 404 error page. An attacker might think, this is the normal behaviour."
+msgstr "Sofern aktiviert, wird der Besucher die normale 404 Fehlerseite angezeigt. Ein Angreifer wird dies für eine reguläre Fehlerseite halten."
+
+msgid "Log filtered requests"
+msgstr "Speichere gefilterte Aufrufe"
+
+msgid "Log all bad requests"
+msgstr "Speichere alle verdächtigen Aufrufe"
+
+msgid "If you want to know, when someone sends malicious requests to your blog, you should activate this."
+msgstr "Wenn Du wissen möchtest, wer Dir gefehrliche Aufrufe sendet, solltest Du diese Funktion aktivieren."
+
+msgid "Protect plugin folder"
+msgstr "Schütze den Plugin Ordner"
+
+msgid "Protect your plugin folder"
+msgstr "Schütze Deinen Plugin Ordner"
+
+msgid "In some server configurations it is possible to list files in a folder. This may be a security risk, as an attacker may get direct access to your log files or backups. If checked, it will write an empty index file into your plugin folder. Private! will never overwrite your files or delete files from other plugins. This will work in all server configurations and in other servers than apache. If activated, Private! will test the existance on every change on the settings."
+msgstr "In manchen Umgebungen ist es möglich, dass Dateien in einem Ordner angezeigt werden, sofern keine Indexdatei existiert. Das könnte ein Sicherheitsproblem sein, weil es dem Angreifer Dateinamen zur Verfügung stellt, die er sonst nicht kennen kann. Diese Option schreibt eine leere Indexdatei in den Pluginordner. Private wird niemals andere Dateien überschreiben oder Dateien löschen, die nicht selbst generiert wurden. Diese Funktion funktionert auch in anderen Webservern ausser Apache. Wenn aktiviert, wird Private! die Existenz bei jeder Änderung in den Einstellungen überprüfen und evtl. die Datein neu erzeugen."
+
+msgid "Protect theme folder"
+msgstr "Schütze Themen Ordner"
+
+msgid "Protect your theme folder"
+msgstr "Schütze Deinen Themen Ordner"
+
+msgid "If checked, it will write an empty index file into your theme folder."
+msgstr "Wenn aktiviert, wird Private! eine leere index Datei in Deinen Themen Ordner schreiben."
+
+msgid "Protect includes folder"
+msgstr "Schütze Includes Ordner"
+
+msgid "Protect your includes folder"
+msgstr "Schütze Deinen Includes Ordner"
+
+msgid "If checked, it will write an empty index file into your includes folder."
+msgstr "Wenn aktiviert, wird Private! eine leere index Datei in Deinen wp-includes Ordner schreiben."
+
+msgid "Restrict Admin"
+msgstr "Beschränke Admin Zugriff"
+
+msgid "Restrict admin pages to your current ip"
+msgstr "Beschränke die Adminseiten auf Deine derzeitige IP"
+
+msgid "If you use a static ip and do not have any other users in your blog, you can restrict all admin pages to your <strong>current ip (%s). You can remove this setting ONLY by DELETING the ip.php in the private plugin folder. If you are unsure about anything in this text, don't use this feature.</strong>"
+msgstr "Wenn Du eine statische IP benutzt und Du keine Mitglieder in Deinem Blog brauchst, kannst Du sämtliche Adminzugriffe auf deine <strong> derzeitige IP (%s) beschränken. Du kannst diese Einstellungen nur rückgängig machen, indem Du DIE ip.php DATEI im Private! Pluginordner LÖSCHST. Wenn Du Dir unsicher mit irgendeinem Begriff in diesem Text bist, benutze diese  Funktion nicht.</strong>"
+
+msgid "Remove readme.html"
+msgstr "Entferne readme.html"
+
+msgid "Remove readme.html from the root folder"
+msgstr "Entferne die readme.html von Deinem Hauptverzeichnis"
+
+msgid "If you remove the version from you head, you should also delete the actual readme.html as an attacker can find out with this file, what version you are using. The file will be moved into the Private! tempfolder. <a href=\"%s\">View this file here</a>."
+msgstr "Wenn Du die Version von Deinem Blog entfernst, solltest Du auch die aktuelle readme.html entfernen, da dort ebenfalls die verwendete Version zu finden ist. Diese Datei wird in den temporären Ordner verschoben. Du kannst Sie Dir hier ansehen."
+
+msgid "No redirection"
+msgstr "Keine Weiterleitung"
+
+msgid "Do not redirect logged in users"
+msgstr "Leite angemeldete Benutzer nicht weiter"
+
+msgid "If you use a time based authorization and don't want to add a page for unauthorized users, you can show them a simple error message."
+msgstr "Wenn Du die zeitbasierte Authentifizierung benutzt und Du keine spezielle Seite hinzufügen möchtest, kannst Du unerlaubten Besucher eine einfache Fehlermeldung anzeigen."
+
+msgid "Deny message"
+msgstr "Fehler Meldung"
+
+msgid "You do not have enough rights to view this page. Please contact the site administrator."
+msgstr "Du hast nicht genügend Rechte, um diese Seite zu sehen. Wenn Dich bitte an den Administrator."
+
+msgid "Please provide an error message for logged in, but unauthorized users, if you do not want them to be redirected to the login."
+msgstr "Bitte gib eine Fehlermeldung an, die angemeldeten, aber unauthorisierten Benutzern gezeigt werden sollen, sofern diese nicht zum Login weitergeleitet werden sollen."
+
+msgid "Capabilities for editing"
+msgstr "Berechtigung zum Editieren von Benutzern"
+
+msgid "You can change, who can edit the authorization time for single users. Please remember: The users will need at least rights to edit user profiles. The standard value is \"edit_users\"."
+msgstr "Du kannst hinterlegen, wer die befugt sein soll, die Berechtigungszeit für einzelne Benutzer zu ändern. Diese Benutzer müssen auch die Rechte besitzen Benutzerprofile zu ändenr. Der Standard ist \"edit_users\"."

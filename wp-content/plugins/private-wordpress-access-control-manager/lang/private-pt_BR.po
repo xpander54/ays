@@ -1,0 +1,844 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private!\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/private-wordpress-access-control-manager\n"
+"POT-Creation-Date: 2010-09-14 20:27+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Eduardo Santos <eduardo@dotweb.com.br>\n"
+"Language-Team: Eduardo Santos <eduardo@dotweb.com.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: lib/xfw.class.php:140
+#: lib/xfw_private.class.php:527
+msgid "Who are you and what are you doing in here?"
+msgstr "Quem é você e o que faz aqui?"
+
+#: lib/xfw.class.php:163
+msgid "Settings deleted"
+msgstr "Configurações excluídas"
+
+#: lib/xfw.class.php:169
+#: lib/xfw.class.php:189
+msgid "User settings deleted"
+msgstr "Configurações de usuário excluídas"
+
+#: lib/xfw.class.php:174
+msgid "Brute force data deleted"
+msgstr "Dados de força bruta excluídos"
+
+#: lib/xfw.class.php:179
+msgid "Feed keys deleted"
+msgstr "Chaves de feed excluídas"
+
+#: lib/xfw.class.php:189
+msgid "All data deleted"
+msgstr "Todas as informações excluídas"
+
+#: lib/xfw.class.php:200
+msgid "Settings updated"
+msgstr "Configurações atualizadas"
+
+#: lib/xfw_private.class.php:71
+msgid "<strong>ERROR</strong>: Your password is weak or unsecure. Please go back and select a better one!"
+msgstr "<strong>ERRO</strong>: Sua senha é fraca ou insegura. Volte e escolha uma melhor!"
+
+#: lib/xfw_private.class.php:400
+msgid "It seems there is something wrong with your capabilities."
+msgstr "Parece haver algo errado com suas permissões."
+
+#: lib/xfw_private.class.php:403
+msgid "It seems there is something wrong with your time-based authorization. You have activated this option, but did you edit <a href=\"/wp-admin/profile.php#allow_private\">your personal settings</a>?"
+msgstr "Parece haver algo errado com sua autorização baseada em tempo. Você ativou esta opção, mas será que configurou <a href=\"/wp-admin/profile.php#allow_private\">suas configurações pessoais</a>?"
+
+#: lib/xfw_private.class.php:411
+#, php-format
+msgid "Oh Oh! \"Private! Wordpress Access Manager\" does not allow you to access your own blog! %s %s Please check your settings!"
+msgstr "Oh Oh! \"Private! Wordpress Access Manager\" não permite que você acesse seu próprio blog! %s %s Verifique suas configurações!"
+
+#: lib/xfw_private.class.php:483
+msgid "Don't encrypt my password"
+msgstr "Não criptografe minha senha"
+
+#: lib/xfw_private.class.php:512
+msgid " is active, but must be configured. Your blog may be visible to everyone on the web."
+msgstr " está ativo, mas precisa ser configurado. Seu blog está visível para todos da web."
+
+#: lib/xfw_private.class.php:521
+msgid " has been updated. There may be some changes. Please visit the settings."
+msgstr " foi atualizado. Pode haver algumas mudanças. Por favor visite as configurações."
+
+#: lib/xfw_private.class.php:533
+msgid "Sorry, please login to view this blog."
+msgstr "Para acessar este blog é necessário fazer login."
+
+#: lib/xfw_private.class.php:535
+#: lib/xfw_private.class.php:541
+#: lib/xfw_private.class.php:697
+msgid "Basic Settings"
+msgstr "Configurações básicas"
+
+#: lib/xfw_private.class.php:536
+#: lib/xfw_private.class.php:698
+msgid "Access Rights"
+msgstr "Permissões de acesso"
+
+#: lib/xfw_private.class.php:537
+#: lib/xfw_private.class.php:699
+msgid "Security Settings"
+msgstr "Configurações de segurança"
+
+#: lib/xfw_private.class.php:538
+#: lib/xfw_private.class.php:592
+#: lib/xfw_private.class.php:700
+msgid "Advanced Settings"
+msgstr "Configurações avançadas"
+
+#: lib/xfw_private.class.php:539
+#: lib/xfw_private.class.php:600
+#: lib/xfw_private.class.php:701
+msgid "About"
+msgstr "Sobre"
+
+#: lib/xfw_private.class.php:542
+msgid "Privacy Settings"
+msgstr "Configurações de privacidade"
+
+#: lib/xfw_private.class.php:542
+msgid "Enable Private! Wordpress Access Control Manager"
+msgstr "Ativar Private! Wordpress Access Control Manager"
+
+#: lib/xfw_private.class.php:542
+msgid "Enable Private! to lock down your blog from the public. To get access to your blog, users must register. If you do not allow registrations or you blog is in a multisite environment, You must add or invite them under <strong><a href=\"user-new.php\">Users -> Add</a></strong>. Private! is very restrictive, because it's better to lock some people out in error than showing important data to the wrong people. <strong>If you just enable Private! even YOU will not be able to access your blog. Please read all option descriptions carefully!</strong>"
+msgstr "Ative Private! para fechar seu blog do público. Para ter acesso a seu blog, os usuários precisam fazer login. Se você não permite novos usuários ou se seu blog está em um ambiente multisite, será preciso convidá-los em <strong><a href=\"user-new.php\">Usuários -> Adicionar usuário</a></strong>. O Private! é muito restritivo, porque é melhor deixar erroneamente alguém de fora do que mostrar informaçõe importantes para as pessoas erradas. <strong>Ativando o Private! até VOCÊ não terá acesso a seu blog. Leia todas as opções com cuidado!</strong>"
+
+#: lib/xfw_private.class.php:543
+msgid "Restrictions"
+msgstr "Restrições"
+
+#: lib/xfw_private.class.php:543
+msgid "Do not restrict access to any page"
+msgstr "Não restringir acesso a nenhuma página"
+
+#: lib/xfw_private.class.php:543
+msgid "You can disable all restrictions with one click. That may be useful for debuging or if you just want to use the other features."
+msgstr "Você pode desativar todas as restrições com um clique. Isto pode ser útil para depuração ou se você quer utilizar outras funcionalidades."
+
+#: lib/xfw_private.class.php:544
+msgid "Blog network"
+msgstr "Rede de blogs"
+
+#: lib/xfw_private.class.php:544
+msgid "Do not check the relation to your blog"
+msgstr "Não verificar a relação com seu blog"
+
+#: lib/xfw_private.class.php:544
+msgid "This blog is part of a multisite network. You can allow access to all logged in the network, even if they are not directly related to your blog. If you do not check this, you have to add users as described above."
+msgstr "Este blog é parte de uma rede multisite. Você pode permitir acesso a todos os que fizerem login na rede, até mesmo se eles não estiverem relacionados diretamente com seu blog. Se você não marcar esta opção, terá que adicionar os usuários como descrito acima."
+
+#: lib/xfw_private.class.php:546
+msgid "Direct subscription"
+msgstr "Assinatura direta"
+
+#: lib/xfw_private.class.php:546
+msgid "Allow users to subscribe directly to your blog"
+msgstr "Permite que os usuários assinem diretamente seu blog"
+
+#: lib/xfw_private.class.php:546
+msgid "This will change two things. First it will add a hidden field to the signup form. Every user, that signs up from your blog will be automatically added to your blog. Second it will add the ability to add himself to your blog on the \"My Blogs\" page. <strong>This does currently only work in subdomain installations.</strong>"
+msgstr "Esta opção muda dois itens. Primeiro adiciona um campo oculto na tela de login. Cada usuário que se loga de seu blog será automaticamente adicionado a seu blog. Segundo adiciona a habilidade de se adicionar a seu blog na página \"My Blogs\" <strong>Isto somente funciona em instalações de subdomínios.</strong>"
+
+#: lib/xfw_private.class.php:549
+msgid "Information on Direct Subscriptions"
+msgstr "Informações sobre assinatura direta"
+
+#: lib/xfw_private.class.php:549
+msgid "To enable this feature, you must edit the private.php file in the plugin folder. Read the comments and remove // in front of the settings define('PRIVATE_ALLOW_DIRECT_SUBSCRIPTION', true) and if you want in front of define('PRIVATE_FORCE_MAIN_BLOG', true) too. First option will allow webmasters to get subscriptions directly. Second option will force all users to remain a subscriber of your main blog."
+msgstr "Para ativar esta funcionalidade, você deve editar o arquivo private.php na pasta de plugins. Leia os comentários e remova a barra dupla (//) em frente às configurações define('PRIVATE_ALLOW_DIRECT_SUBSCRIPTION', true) e se quiser também em frente de define('PRIVATE_FORCE_MAIN_BLOG', true). A primeira opção permite que os webmasters recebam assinaturas diretamente. A segunda força todos os usuários a permanecer como assinantes de seu blog principal."
+
+#: lib/xfw_private.class.php:551
+msgid "Approvement"
+msgstr "Aprovação"
+
+#: lib/xfw_private.class.php:551
+msgid "Do not use time based approvement"
+msgstr "Não usar aprovação baseada em tempo"
+
+#: lib/xfw_private.class.php:551
+msgid "By default you must approve every single user for a certain time under <strong><a href=\"users.php\">Users -> Edit</a></strong> and on the user settings page at the bottom. You can skip this step by allowing every logged in user. If you don't and registration is open, make sure to tell your users, that they cannot access your blog immidiately."
+msgstr "Por padrão é preciso aprovar cada usuário dentro de um um prazo em <strong><a href=\"users.php\">Usuários -> Alterar</a></strong> e na página de configurações de usuário abaixo. Você pode pular este passo permitindo acesso a todos os usuários logados.  Se o registro de novos usuários estiver habilitado e o acesso a todos os usuários logados não tiver sido ativado, avise a seus usuários que eles não poderão acessar seu blog imediatamente."
+
+#: lib/xfw_private.class.php:552
+msgid "Capabilities"
+msgstr "Permissões"
+
+#: lib/xfw_private.class.php:552
+msgid "By default only administrators can access your blog. You can change it to every role you like. If you want to allow every logged in user to access your blog, you can <strong>just empty this input</strong>. You can use capabilities like \"manage_options\" and you can combine multiple capabilities with \"&&\" or match only one with \"||\".<br /><br />Examples: \"manage_options&&edit_posts&&delete_users\" matches users that can manage_options, edit posts AND delete users. \"manage_options||edit_posts||delete_users\" will match one of the capabilities. \"read_posts&&edit_posts||authors\" will match any users, who can read AND edit posts OR are at least authors. If you like, you can use userlevels too, by adding \"level_X\" (X is the userlevel). <a href=\"http://codex.wordpress.org/Roles_and_Capabilities\">Find more infos on the wordpress pages</a>."
+msgstr "Por padrão somente os administradores podem acessar seu blog. Você pode mudar isto para qualquer função de usuário. Se você quiser permitir que qualquer usuário logado tenha acesso a seu blog, <strong>basta limpar este campo</strong>. Você pode usar as funcionalidades como  \"manage_options\" e pode combinar múltiplas permissões com \"&&\" ou definir apenas uma com \"||\".<br /><br />Exemplo:\"manage_options&&edit_posts&&delete_users\" define usuários que podem gerenciar opções, editar posts e excluir usuáros. Ao passo que \"manage_options||edit_posts||delete_users\" dará apenas uma das permissões. \"read_posts&&edit_posts||authors\" define usuários que podem ler e alterar posts ou são pelo menos autores. Se quiser, você pode usar mais de um nível, adicionando \"level_X\" (onde X é um nível de usuário). <a href=\"http://codex.wordpress.org/Roles_and_Capabilities\">Saiba mais sobre permissões de páginas</a>."
+
+#: lib/xfw_private.class.php:553
+#: lib/xfw_private.class.php:575
+#: lib/xfw_private.class.php:591
+#: lib/xfw_private.class.php:599
+msgid "Save Changes"
+msgstr "Atualizar opções"
+
+#: lib/xfw_private.class.php:554
+msgid "Allow access to parts of your blog"
+msgstr "Controle de acesso a partes de seu blog"
+
+#: lib/xfw_private.class.php:555
+msgid "Front page"
+msgstr "Capa"
+
+#: lib/xfw_private.class.php:555
+msgid "Allow access to the front page of your blog"
+msgstr "Permitir acesso à capa de seu blog"
+
+#: lib/xfw_private.class.php:555
+msgid "Allow all visitors to view your blog front page. This may be your blog home page or another page you have chosen under <strong><a href=\"options-reading.php\">Settings -> Read</a></strong>."
+msgstr "Permite a todos os visitantes acesso à capa de seu blog. A capa pode ser a primeira página do site ou aquela que você escolheu em <strong><a href=\"options-reading.php\">Configurações -> Leitura</a></strong>."
+
+#: lib/xfw_private.class.php:556
+msgid "Blog home page"
+msgstr "Página inicial do blog "
+
+#: lib/xfw_private.class.php:556
+msgid "Allow access to the home page of your blog"
+msgstr "Permitir acesso à página inicial do seu blog"
+
+#: lib/xfw_private.class.php:556
+msgid "Allow all visitors to view your blog home page. This means, they can read all posts or excerpts depending on your posts settings."
+msgstr "Permite a todos os visitantes acesso à página inicial de seu blog. Eles poderão ler todos os posts ou apenas trechos, dependendo de suas configurações de posts."
+
+#: lib/xfw_private.class.php:557
+#: lib/xfw_private.class.php:571
+msgid "Posts"
+msgstr "Posts"
+
+#: lib/xfw_private.class.php:557
+msgid "Allow access to single posts"
+msgstr "Permitir acesso a alguns posts."
+
+#: lib/xfw_private.class.php:557
+msgid "Allow all visitors to access your single posts."
+msgstr "Permite a todos os visitantes acesso à alguns posts."
+
+#: lib/xfw_private.class.php:558
+msgid "Attachments"
+msgstr "Anexos"
+
+#: lib/xfw_private.class.php:558
+msgid "Allow access to attachments"
+msgstr "Permitir acesso a anexos"
+
+#: lib/xfw_private.class.php:558
+msgid "Allow all visitors to access attachments."
+msgstr "Permite a todos os visitantes acesso a seus anexos."
+
+#: lib/xfw_private.class.php:559
+msgid "Pages"
+msgstr "Páginas"
+
+#: lib/xfw_private.class.php:559
+msgid "Allow access to pages"
+msgstr "Permitir acesso à páginas"
+
+#: lib/xfw_private.class.php:559
+msgid "Allow all visitors to view pages."
+msgstr "Permite a todos os visitantes acesso às páginas."
+
+#: lib/xfw_private.class.php:560
+#: lib/xfw_private.class.php:567
+msgid "Categories"
+msgstr "Categorias"
+
+#: lib/xfw_private.class.php:560
+msgid "Allow access to your category archives"
+msgstr "Permitir acesso por categoria"
+
+#: lib/xfw_private.class.php:560
+msgid "Allow all visitors to view your category archives."
+msgstr "Permite a todos os visitantes acesso às categorias."
+
+#: lib/xfw_private.class.php:561
+#: lib/xfw_private.class.php:569
+#: lib/xfw_private.class.php:767
+msgid "Tags"
+msgstr "Tags"
+
+#: lib/xfw_private.class.php:561
+msgid "Allow access to your tag archive"
+msgstr "Permitir acesso às tags"
+
+#: lib/xfw_private.class.php:561
+msgid "Allow all visitors to view your tag archives."
+msgstr "Permite a todos os visitantes aceso às tags."
+
+#: lib/xfw_private.class.php:562
+msgid "Archives"
+msgstr "Arquivos"
+
+#: lib/xfw_private.class.php:562
+msgid "Allow access to your date-based archives"
+msgstr "Permitir acesso baseado em data"
+
+#: lib/xfw_private.class.php:562
+msgid "Allow all visitors to view your date-based archives."
+msgstr "Permite a todos os visitantes acesso com base em datas."
+
+#: lib/xfw_private.class.php:563
+msgid "Search"
+msgstr "Busca"
+
+#: lib/xfw_private.class.php:563
+msgid "Allow access to your search"
+msgstr "Permitir acesso à busca"
+
+#: lib/xfw_private.class.php:563
+msgid "Allow all visitors to search your blog."
+msgstr "Permite a todos os visitantes realizar buscas no blog."
+
+#: lib/xfw_private.class.php:564
+msgid "RSS &amp; Atom feed"
+msgstr "Feeds RSS &amp; Atom"
+
+#: lib/xfw_private.class.php:564
+msgid "Allow access to feeds"
+msgstr "Permitir acesso a feeds"
+
+#: lib/xfw_private.class.php:564
+msgid "Allow all visitors to access your feeds."
+msgstr "Permite a todos os visitantes acesso a seus feeds."
+
+#: lib/xfw_private.class.php:565
+msgid "Show feeds"
+msgstr "Mostrar feeds"
+
+#: lib/xfw_private.class.php:565
+msgid "Show feeds for not logged in users"
+msgstr "Mostrar feeds para usuários não logados"
+
+#: lib/xfw_private.class.php:565
+msgid "With this options, you can show all rss in your blog header. This is only useful, if they are allowed to access."
+msgstr "Com esta opção, você pode mostrar todos os RSSs no cabeçalho de seu blog. Isto somente é útil se você permitir acesso a eles."
+
+#: lib/xfw_private.class.php:566
+msgid "Use feed keys"
+msgstr "Usar chaves de feeds"
+
+#: lib/xfw_private.class.php:566
+msgid "Allow users to access your feeds with special keys"
+msgstr "Permite aos visitantes acesso a seus feeds com chaves especiais"
+
+#: lib/xfw_private.class.php:566
+msgid "Some RSS Readers might not be capable of user authentification. You can provide your feeds anyway by generating special urls for your members."
+msgstr "Alguns leitores RSS podem não ser capazes de fazer autenticação de usuário. Você pode fornecer seus feeds gerando uma chave URL especial para seus membros."
+
+#: lib/xfw_private.class.php:567
+msgid "Please chose from the list, if you want to <strong>overide the category settings</strong> above."
+msgstr "Selecione a partir da lista se você quer <strong>sobrepor as configurações de categoria</strong> acima."
+
+#: lib/xfw_private.class.php:568
+msgid "Categories filter"
+msgstr "Filtro de categorias"
+
+#: lib/xfw_private.class.php:568
+msgid "Apply category filter only to single posts"
+msgstr "Aplicar filtro de categorias somente a alguns posts"
+
+#: lib/xfw_private.class.php:568
+msgid "If you check this, you will enable users to browse restricted category archives, but they will not be able to see the full posts in these categories."
+msgstr "Esta opção permite que os usuários acessem arquivos de categorias mas não todo o conteúdo do post destas categorias."
+
+#: lib/xfw_private.class.php:569
+msgid "Please chose from the list, if you want to <strong>overide the tags settings</strong> above."
+msgstr "Selecione da lista se você deseja <strong>sobrepor as configurações de tags</strong> acima."
+
+#: lib/xfw_private.class.php:570
+msgid "Tags filter"
+msgstr "Filtro de tags"
+
+#: lib/xfw_private.class.php:570
+msgid "Apply tag filter only to single posts"
+msgstr "Aplicar filtro de tag somente para alguns posts"
+
+#: lib/xfw_private.class.php:570
+msgid "If you check this, you will enable users to browse restricted tags archives, but they will not be able to see the full posts with these tags."
+msgstr "Esta opção permite que usuários acessem arquivos de tags mas não todo o conteúdo do post destes tags."
+
+#: lib/xfw_private.class.php:571
+msgid "Add the post ids (comma-seperated), you want to allow for all visitors. You can also restrict posts by prepend \"!\". If you want to allow access to all posts except id 1 and 2 you can add \"!1,!2\". <strong>WARNING: This option will overwrite category and tag options above</strong>, so you can make some posts temporarly available for public."
+msgstr "Insira os ids dos posts (separando com vírgulas), que você deseja permitir para todos os visitantes. Você pode também restringir acesso aos posts por \"!\". Se deseja permitir aceso a todos os posts menos os de id 1 e 2 você pode colocar \"!1,!2\". <strong>ATENÇÃO: Esta opção sobrepõe as de categoria e tag acima</strong>, assim você pode tornar posts temporariamente disponíveis ao público."
+
+#: lib/xfw_private.class.php:572
+msgid "Hide categories"
+msgstr "Ocultar categorias"
+
+#: lib/xfw_private.class.php:572
+msgid "Hide posts in forbidden categories on posts list"
+msgstr "Ocultar posts em categorias proibidas da lista de posts"
+
+#: lib/xfw_private.class.php:572
+msgid "Remove all Posts in restricted categories from blog home, front page, search pages etc. If you deny access to categories by default, this will remove all posts except allowed ones. A positive post filter will not apply, that means if you remove category premium and whitelist a post in this category it will not be shown. The best way to show them, is to add a new post, that links to this post or remove this category temporarly. Use this option with care!"
+msgstr "Remover todos os posts de categorias restritas da capa do site, página inicial, busca, etc. Se você negar acesso à categorias por padrão, isto irá remover todos os posts exceto os permitidos. Um filtro positivo de post não se aplica, de modo que se você remover a categoria premium e whitelist de um post ele não será mostrado. A melhor maneira de mostrá-lo é criar um novo post, com um link para este ou remover esta categoria temporariamente. Use esta opção com cuidado!"
+
+#: lib/xfw_private.class.php:573
+msgid "Hide tags"
+msgstr "Ocutar tags"
+
+#: lib/xfw_private.class.php:573
+msgid "Hide posts with forbidden tags on posts list"
+msgstr "Ocultar posts com tags proibidas da lista de posts"
+
+#: lib/xfw_private.class.php:573
+msgid "Remove all Posts with restricted tags from blog home, front page, search pages etc. Please read information on hide categories."
+msgstr "Remover todos os posts com tags restritas da capa do site, página inicial, busca, etc. Leia as informações sobre ocultar categorias."
+
+#: lib/xfw_private.class.php:574
+msgid "Hide posts"
+msgstr "Ocultar posts"
+
+#: lib/xfw_private.class.php:574
+msgid "Hide forbidden posts on posts list"
+msgstr "Ocultar posts proibidos da lista de posts"
+
+#: lib/xfw_private.class.php:574
+msgid "Remove all Posts that are manually restricted tags from blog home, front page, search pages etc. Please read information on hide categories."
+msgstr "Remover todos os Posts que têm tags manualmente restritas da capa de seu site, página inicial, busca, etc. Leia as informações sobre ocultar categorias."
+
+#: lib/xfw_private.class.php:576
+msgid "Security Features"
+msgstr "Funcionalidades de segurança"
+
+#: lib/xfw_private.class.php:577
+msgid "Filter Incoming Requests"
+msgstr "Filtrar requisições recebidas"
+
+#: lib/xfw_private.class.php:577
+msgid "Filter incoming get requests for non admins"
+msgstr "Filtrar requisições Get request para usuários não admin"
+
+#: lib/xfw_private.class.php:577
+msgid "Even Wordpress is fairly secure, there may be security problems in your plugins or themes. You can get a little bit of extra security by filtering incoming Get Requests. Some typical <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">sql injection</a> and <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">xss attacks</a> will be eliminated. Normal users will not notice this. Test it here. <a href=\"/?admin_test=%3Cscript%3Ealert(document.cookie)%3C/script%3E\">Test it here</a>."
+msgstr "O Wordpress é bem seguro por si só, pode haver problemas de segurança em seus plugins ou temas. Você pode ter um pouco mais de segurança filtrando Get Requests. Alguns ataques típicos de <a href=\"http://en.wikipedia.org/wiki/SQL_injection\">injeção sql</a> e <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">xss</a> serão eliminados. Usuários normais não perceberão isto. Teste aqui. <a href=\"/?admin_test=%3Cscript%3Ealert(document.cookie)%3C/script%3E\">Teste aqui</a>."
+
+#: lib/xfw_private.class.php:579
+msgid "Strong passwords"
+msgstr "Senhas fortes"
+
+#: lib/xfw_private.class.php:579
+msgid "Allow only strong passwords"
+msgstr "Permitir somente senhas fortes"
+
+#: lib/xfw_private.class.php:579
+msgid "Wordpress helps you to create strong passwords, but it does not mind accepting weak passwords. That's not very useful. You can force your users to use only strong passwords."
+msgstr "O Wordpress ajuda você a criar senhas fortes mas não se importa se você escolher uma senha fraca. Isto não é muito útil. Você pode forçar seus usuários a escolherem apenas senhas fortes."
+
+#: lib/xfw_private.class.php:581
+msgid "Login errors"
+msgstr "Erros de login "
+
+#: lib/xfw_private.class.php:581
+msgid "Show custom errors on login"
+msgstr "Mostrar erros de login customizados "
+
+#: lib/xfw_private.class.php:581
+msgid "On standard installations Wordpress tells you, if the login username is correct or not. That might be a security problem, as it gives an attacker informations about your usernames. If checked, it will display your custom message. <strong>Unlike other plugins we just don't hide the error, but fully remove the original.</strong>"
+msgstr "Em instalações padrão, o usuário é informado se o nome de usuário está ou não correto. Este pode ser um problema de segurança, uma vez que dá informações sobre o nome de seus usuários. Esta opção mostra uma mensagem customizada. <strong>Ao contrário de outros plugins, não apenas ocultamos o erro, nós removemos o original.</strong>"
+
+#: lib/xfw_private.class.php:582
+msgid "Custom error"
+msgstr "Erro customizado "
+
+#: lib/xfw_private.class.php:582
+msgid "This message will displayed to all users, that failed to login. If you enabled brute force protection, you can use <strong>%attempts%</strong> as a variable to display allowed attempts."
+msgstr "Esta mensagem será mostrada a todos os usuários que falharem o login. Se você ativar proteção contra força bruta, pode usar <strong>%attempts%</strong> como uma variável para mostrar o número permitido de tentativas."
+
+#: lib/xfw_private.class.php:583
+msgid "Secure login script"
+msgstr "Script de login seguro"
+
+#: lib/xfw_private.class.php:583
+msgid "Secure your login with javascript"
+msgstr "Securitizar seu login com javascript"
+
+#: lib/xfw_private.class.php:583
+msgid "This will add a unobstrusive javascript to your login form. On submitting the loginform, the password will be encoded with <a href=\"http://en.wikipedia.org/wiki/Data_Encryption_Standard\">Triple des</a>. The encryption password will be generated with details of the user and your installation. As the key is not send with your form, it will be not that easy to find out the real password."
+msgstr "Esta opção adiciona um javascript unobstrusive em sua página de login. Quando submeter as informações de login, a senha será codificada com <a href=\"http://en.wikipedia.org/wiki/Data_Encryption_Standard\">Triple des</a>. A chave de criptografia será gerada a partir de características de sua instalação. Uma vez que esta chave não é enviada com os dados, não é fácil descobrir a senha."
+
+#: lib/xfw_private.class.php:584
+msgid "Brute force protection"
+msgstr "Proteção contra força bruta"
+
+#: lib/xfw_private.class.php:584
+msgid "Enable brute force protection"
+msgstr "Ativar proteção contra força bruta"
+
+#: lib/xfw_private.class.php:584
+msgid "This function will protect your blog against <a href=\"http://en.wikipedia.org/wiki/Brute-force_search\">brute force attacks</a>. It will lock your blog down for ip addresses that failed to login multiple times."
+msgstr "Esta função protegerá seu blog contra <a href=\"http://en.wikipedia.org/wiki/Brute-force_search\">ataques de força bruta</a>. Fechará seu blog para um endereço ip que falhou o login várias vezes."
+
+#: lib/xfw_private.class.php:585
+msgid "Max Login Attempts"
+msgstr "Número máximo de tentativas de login"
+
+#: lib/xfw_private.class.php:585
+msgid "attempts"
+msgstr "tentativas"
+
+#: lib/xfw_private.class.php:585
+msgid "Please define, how often is a user allowed to fail login, before he is locked out."
+msgstr "Defina quantas vezes um usuário poderá errar o login antes de ter sua conta bloqueada."
+
+#: lib/xfw_private.class.php:586
+msgid "Lockout Time"
+msgstr "Tempo de bloqueio"
+
+#: lib/xfw_private.class.php:586
+#: lib/xfw_private.class.php:587
+#: lib/xfw_private.class.php:590
+msgid "seconds"
+msgstr "segundos"
+
+#: lib/xfw_private.class.php:586
+msgid "How long should he be locked out? Default is 600 seconds => 10 minutes."
+msgstr "Por quanto tempo a conta de usuário ficará bloqueada? O padrão são 600 segundos (10 minutos)."
+
+#: lib/xfw_private.class.php:587
+msgid "Log Time"
+msgstr "Tempo do registro"
+
+#: lib/xfw_private.class.php:587
+msgid "How long should do you want to keep the log? This should be longer than lockout time. If a user is allowed again to login, he has only one attempt and is locked out again. Default is 3600 seconds => 1 hour."
+msgstr "Por quanto tempo você deseja manter o registro? Ele deve ser maior que o tempo de bloqueio. Se um usuário for desbloqueado, terá apenas uma nova tentativa e caso falhe será bloqueado novamente. Opadrão é de 3600 segundos (1 hora)."
+
+#: lib/xfw_private.class.php:588
+msgid "Lockout message"
+msgstr "Mensagem de bloqueio"
+
+#: lib/xfw_private.class.php:588
+msgid "You can define the error message, that locked out users will see."
+msgstr "Defina a mensagem de bloqueio a ser exibida para seus usuários."
+
+#: lib/xfw_private.class.php:589
+msgid "Tarpit"
+msgstr "Poço de alcatrão"
+
+#: lib/xfw_private.class.php:589
+msgid "Enable tarpit protection"
+msgstr "Ativar proteção de poço de alcatrão"
+
+#: lib/xfw_private.class.php:589
+msgid "This function is somehow a copy of the <a href=\"http://en.wikipedia.org/wiki/Tarpit_%28networking%29\">tarpit function</a> for emails. With every failed login, it will increase the response time for the potential attacker. This will slow down the attack."
+msgstr "Esta função é inspirada na <a href=\"http://en.wikipedia.org/wiki/Tarpit_%28networking%29\">função de poço de alcatrão</a> para emails. A cada login mal sucedido, será aumentado o tempo de resposta para evitar potenciais ataques. Isto irá frear o ataque."
+
+#: lib/xfw_private.class.php:590
+msgid "Max tarpit timeout"
+msgstr "Tempo máximo de poço de alcatrão"
+
+#: lib/xfw_private.class.php:590
+msgid "To prevent server or gateway timeouts, you can specify a maximum timeout."
+msgstr "Para evitar estouro de tempo em servidores ou gateways, especifique um tempo máximo de poço de alcatrão."
+
+#: lib/xfw_private.class.php:593
+msgid "WP Generator"
+msgstr "Gerador WP "
+
+#: lib/xfw_private.class.php:593
+msgid "Add or remove extra headers for WP Generator"
+msgstr "Adiciona ou remove cabeçalhos adicionais ao WP Generator"
+
+#: lib/xfw_private.class.php:593
+msgid "The WP Generator Meta in the blog head is most of the time useless and a security risk. You don't need this, you should remove it from your blog."
+msgstr "O WP Generator Meta do blog é quase sempre inútil e é um risco de segurança. Você não precisa disto e deve removê-lo de seu blog."
+
+#: lib/xfw_private.class.php:593
+msgid "Add WP Generator"
+msgstr "Adiciona o WP Generator"
+
+#: lib/xfw_private.class.php:593
+msgid "Remove Version"
+msgstr "Remove a versão"
+
+#: lib/xfw_private.class.php:593
+msgid "Remove WP Generator"
+msgstr "Remove o WP Generator"
+
+#: lib/xfw_private.class.php:594
+msgid "WLW Manifest"
+msgstr "Manifesto WLW"
+
+#: lib/xfw_private.class.php:594
+msgid "Add or remove extra headers for WLW"
+msgstr "Adiciona ou remove cabeçalhos extra para o WLW"
+
+#: lib/xfw_private.class.php:594
+msgid "If you lock down your blog, you might run into problems using software like <a href=\"http://explore.live.com/windows-live-writer\">WLW</a>. You can solve this, by sending special headers in the head of your blog. If you don't use, you should remove these headers as it may be a security risk."
+msgstr "Se você fechar seu blog, poderá ter problemas ao usar softwares como <a href=\"http://explore.live.com/windows-live-writer\">WLW</a>. Você pode resolver isto enviando cabeçalhos especiais no topo de seu blog. Se não usa, deve remover estes cabeçalhos pois eles são um risco de segurança."
+
+#: lib/xfw_private.class.php:594
+msgid "Add WLW manifest"
+msgstr "Adiciona um manifesto WLW"
+
+#: lib/xfw_private.class.php:594
+msgid "Remove WLW manifest"
+msgstr "Remove um manifesto WLW"
+
+#: lib/xfw_private.class.php:595
+msgid "RSD Link"
+msgstr "Link RSD"
+
+#: lib/xfw_private.class.php:595
+msgid "Add or remove extra headers for RSD"
+msgstr "Adiciona ou removeor cabeçalhos adicionais para o RSD"
+
+#: lib/xfw_private.class.php:595
+msgid "If you lock down your blog, you might run into problems using software like <a href=\"http://www.blogdesk.org/de/index.htm\">Blogdesk</a>. You can solve this, by sending special headers in the head of your blog. If you don't use, you should remove these headers as it may be a security risk."
+msgstr "Se você fechar seu blog, poderá ter problemas ao usar softwares como <a href=\"http://www.blogdesk.org/de/index.htm\">Blogdesk</a>. Você pode resolver isto enviando cabeçalhos especiais no topo de seu blog. Se não usa, deve remover estes cabeçalhos pois eles são um risco de segurança."
+
+#: lib/xfw_private.class.php:595
+msgid "Add RSD link"
+msgstr "Adiciona um link RSD"
+
+#: lib/xfw_private.class.php:595
+msgid "Remove RSD link"
+msgstr "Remove um link RSD"
+
+#: lib/xfw_private.class.php:596
+msgid "Redirection URL"
+msgstr "Redirecionamento de URL"
+
+#: lib/xfw_private.class.php:596
+msgid "Add a full url to which the unauthorized users will be redirected to. If you leave it blank, the user will be redirected to the login page. You can also add the url to your login, if you have problems with the regular auth redirect."
+msgstr "Defina uma URL para a qual os usuários não autorizados devem ser redirecionados. Se deixado em branco, o usuário será redirecionado à página de login. Você pode também adicionar a url a seu login, se tiver problemas com o auto redirecionamento normal."
+
+#: lib/xfw_private.class.php:597
+msgid "Login message"
+msgstr "Mensagem de login"
+
+#: lib/xfw_private.class.php:597
+msgid "This message will be shown to unauthorized visitors above the login. HTML tags are allowed."
+msgstr "Esta mensagem será mostrada aos visitantes não autorizados sobre o login. É permitido o uso de tags HTML."
+
+#: lib/xfw_private.class.php:597
+msgid "To apply WordPress's default style, use <code>&lt;p class=\"message\"&gt;</code> and <code>&lt;/p&gt;</code> to wrap your own message."
+msgstr "Para aplicar o estilo padrão, use <code>&lt;p class=\"message\"&gt;</code> e <code>&lt;/p&gt;</code> para embrulhar sua mensagem."
+
+#: lib/xfw_private.class.php:598
+msgid "Link on login page"
+msgstr "Link da página de login"
+
+#: lib/xfw_private.class.php:598
+msgid "Add a link to the <a href=\"http://plugins.x-blogs.org/private/\">Private! Homepage</a>"
+msgstr "Adicionar um link para a <a href=\"http://plugins.x-blogs.org/private/\">página do Private!</a>"
+
+#: lib/xfw_private.class.php:598
+msgid "If you like this script and want to tell the world, you can add a link to your login page. <a href=\"/wp-login.php?preview_link=true\">You can preview this setting here.</a> <strong>Thank you for your support!</strong>"
+msgstr "Se você gostar deste script e quiser anunciar para o mundo, adicione um link à sua página de login. <a href=\"/wp-login.php?preview_link=true\">Veja aqui uma prévia.</a> <strong>Obrigado pelo suporte!</strong>"
+
+#: lib/xfw_private.class.php:696
+msgid "Uninstall the plugin"
+msgstr "Desintalar o plugin"
+
+#: lib/xfw_private.class.php:703
+msgid "Remove settings"
+msgstr "Remover configurações"
+
+#: lib/xfw_private.class.php:703
+msgid "This will delete all Private! data from your database. If you are not sure about reinstalling this plugin, you should keep user data."
+msgstr "Excluir os dados do Private! de seu banco de dados. Se pretende reinstalar o plugin é melhor manter os dados."
+
+#: lib/xfw_private.class.php:703
+msgid "Remove only settings from this page"
+msgstr "Remover somente configurações desta página"
+
+#: lib/xfw_private.class.php:703
+msgid "Remove all user settings from this blog"
+msgstr "Remover todas as configurações de usuário deste blog"
+
+#: lib/xfw_private.class.php:703
+msgid "Remove all brute force logs"
+msgstr "Remover todos os registros de força bruta"
+
+#: lib/xfw_private.class.php:703
+msgid "Remove all feed keys"
+msgstr "Remover todas as chaves de feed"
+
+#: lib/xfw_private.class.php:703
+msgid "Remove all settings and user settings from this blog"
+msgstr "Remover todas as configurações de blog e de usuário deste blog"
+
+#: lib/xfw_private.class.php:705
+msgid "Delete Settings"
+msgstr "Excluir configurações"
+
+#: lib/xfw_private.class.php:710
+msgid "Please select the profile, that comes close to your needs!"
+msgstr "Selecione o perfil mais próximo de sua necessidade!"
+
+#: lib/xfw_private.class.php:710
+msgid "_private_assistant"
+msgstr "_private_assistant"
+
+#: lib/xfw_private.class.php:711
+msgid "Easy setup assistant"
+msgstr "Assistente para configuração fácil"
+
+#: lib/xfw_private.class.php:712
+msgid "Private! will help you, to secure your blog and give access only to people you want to have. To make the setup as easy as possible, you should select a profile from the list below. The plugin will generate a configuration for you. You can of course change every option yourself, to get the best out of Private!"
+msgstr "O Private! vai ajudar você na segurança de seu blog e dar acesso somente às pessoas que você deseja. Para tornar a configuração o mais fácil possível, selecione um perfil entre os que mostramos abaixo. O plugin irá gerar uma configuração para você. Você pode sempre definir cada uma das opções para ter o melhor do Private!"
+
+#: lib/xfw_private.class.php:714
+msgid "I want to run private blog for my family, my friends or my business"
+msgstr "Desejo rodar um blog privado para minha família, meus amigos ou meu negócio"
+
+#: lib/xfw_private.class.php:715
+msgid "This might be the most common case. Your blog will be closed to the public without any exceptions. The time based authentification will be turned off and the login will get secured."
+msgstr "Este deve ser o caso mais comum. Seu blog será fechado ao público sem nenhuma exceção. A autenticação baseada em tempo será desligada e o login será securitizado."
+
+#: lib/xfw_private.class.php:717
+msgid "I want to run a public blog with paid content in certain categories"
+msgstr "Desejo rodar um blog público com conteúdo pago em certas categorias"
+
+#: lib/xfw_private.class.php:718
+msgid "If you are for example a designer, who sells tutorials over the web, this is for you. The blog will stay open for anyone to access your free content and there will be a time based authentification for your members. If they order access for a certain time, you can edit their profile to give them what they paid for. The login will get secured."
+msgstr "Se você é por exemplo um designer, que vende tutoriais pela web, este é o seu perfil. O blog vai manter-se aberto para qualquer um para acesso ao conteúdo grátis e terá uma autenticação baseada em tempo para seus membros. Se eles acessarem dentro de um certo tempo você pode editar o perfil deles para liberar acesso ao que eles compraram. O login será securitizado."
+
+#: lib/xfw_private.class.php:720
+msgid "I want to run a members only page"
+msgstr "Desejo rodar uma página somente para membros"
+
+#: lib/xfw_private.class.php:721
+msgid "You have paid content only and want to sell it? Chose this option. In this setup, the whole content will be closed except your Front page. You should add a static page, where you can tell your customers, how they can get access to your treasures."
+msgstr "Você tem apenas conteúdo pago e deseja vendê-lo? Selecione esta opção. Nela, todo o conteúdo será fechado menos a Capa de seu blog. Você deve adicionar uma página estática na qual você poderá informar a seus clientes como eles podem ter acesso a seus tesouros."
+
+#: lib/xfw_private.class.php:723
+msgid "I don't need this access voodoo, but I want secure my blog"
+msgstr "Não quero toda essa paraóia mas quero securitizar meu blog"
+
+#: lib/xfw_private.class.php:724
+msgid "Your wish ... The whole access things will be turned off, but the security features will be set up for you."
+msgstr "Seu desejo... Todo o controle de acesso será desligado mas as funções de segurança serão configuradas para você."
+
+#: lib/xfw_private.class.php:726
+msgid "Don't change anything, I want to find out myself"
+msgstr "Não faça nada. Quero eu mesmo fazer"
+
+#: lib/xfw_private.class.php:727
+msgid "Of couse you want. Private! is well documented, so please read carefully the descriptions. As admin, you cannot lock out yourself (except on multiple failed logins), so feel free to test everything."
+msgstr "Claro que você quer. O Private! é bem documenrado, então leia com cuidado as descrições. Como admin, você não pode se trancar fora (exceto com múltiplos erros de login). Então fique a vontade para testar tudo."
+
+#: lib/xfw_private.class.php:729
+msgid "Setup this profile and close assistant"
+msgstr "Configure este perfil e feche o assistente"
+
+#: lib/xfw_private.class.php:733
+msgid "Setup Assistant"
+msgstr "Assistente de configuração"
+
+#: lib/xfw_private.class.php:741
+msgid "There are no categories."
+msgstr "Não há categorias."
+
+#: lib/xfw_private.class.php:743
+msgid "Category"
+msgstr "Categoria"
+
+#: lib/xfw_private.class.php:743
+#: lib/xfw_private.class.php:767
+msgid "Special access rights"
+msgstr "Direitos de acesso especiais"
+
+#: lib/xfw_private.class.php:752
+msgid "hide"
+msgstr "ocultar"
+
+#: lib/xfw_private.class.php:752
+#: lib/xfw_private.class.php:775
+msgid "Allow"
+msgstr "Permitir"
+
+#: lib/xfw_private.class.php:752
+#: lib/xfw_private.class.php:775
+msgid "Deny"
+msgstr "Negar"
+
+#: lib/xfw_private.class.php:752
+#: lib/xfw_private.class.php:775
+msgid "Use standard"
+msgstr "Usar padrão"
+
+#: lib/xfw_private.class.php:765
+msgid "There are no tags."
+msgstr "Não há tags."
+
+#: lib/xfw_private.class.php:794
+msgid "Private! options"
+msgstr "Opções do Private!"
+
+#: lib/xfw_private.class.php:794
+msgid "If you want to allow this user to access your Private! areas, edit this field to a date in the future."
+msgstr "Se deseja permitir que este usuário acesse sua área do Private! altere este campo para uma data no futuro."
+
+#: lib/xfw_private.class.php:950
+msgid " Please edit your password"
+msgstr " Por favor altere sua senha"
+
+#: lib/xfw_private.class.php:979
+msgid "This blog does not allow you to subscribe directly! Please contact the blog admin."
+msgstr "Este blog não permite assinaturas diretas! Contacte o administrador do blog."
+
+#: lib/xfw_private.class.php:982
+msgid "There is no blog with this name!"
+msgstr "Não há nenhum blog com este nome!"
+
+#: lib/xfw_private.class.php:984
+msgid "Subscribe to a blog"
+msgstr "Assinar um blog"
+
+#: lib/xfw_private.class.php:984
+msgid "Type in the subdomain of the blog"
+msgstr "Entre com o subdomínio do blog"
+
+#~ msgid "Private! Settings"
+#~ msgstr "Configurações do Private!"
+
+#~ msgid "More Access Rights"
+#~ msgstr "Mais permissões de acesso"
+
+#~ msgid "More details about allowed/forbidden areas"
+#~ msgstr "Mais detalhes sobre áres de permissão/proibição"
+
+#~ msgid "Sorry, you are locked out until <strong>%until%</strong>."
+#~ msgstr "Você está bloqueado até <strong>%until%</strong>."
+
+#~ msgid "Remove settings from database"
+#~ msgstr "Remover configurações do banco de dados"
+
+#~ msgid ""
+#~ "You should check this checkbox, if you want to uninstall this plugin. It "
+#~ "will remove all settings from your database."
+#~ msgstr ""
+#~ "Esta opção desinstala o plugin. Serão removidas de seu banco de dados "
+#~ "todas as configurações."
+
+#~ msgid "Remove user settings"
+#~ msgstr "Remover configurações de usuário"
+
+#~ msgid ""
+#~ "If you want to allow this user to access the Private! Area, please change "
+#~ "this field to a date in the future."
+#~ msgstr ""
+#~ "Se deseja permitir que este usuário acesse a área do Private! coloque uma "
+#~ "data futura."
+
+#~ msgid ""
+#~ "<p class=\"message\">Sorry, you must be logged in, to see this page.</p>"
+#~ msgstr ""
+#~ "<p class=\"message\">Você precisa estar logado para ver esta página.</p>"

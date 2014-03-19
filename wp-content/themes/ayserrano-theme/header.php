@@ -80,7 +80,7 @@
 						<ul>
 							<li>
 								<img src="<?php bloginfo('template_url'); ?>/img/social-media/asesores.png" alt="acceso asesores" />
-								<a href="#">ingreso asesores</a>
+								<a href="http://www.ayserrano.com/asesores/">ingreso asesores</a>
 							</li>
 							<li>
 								<img src="<?php bloginfo('template_url'); ?>/img/social-media/tel.png" alt="telefono" />

@@ -1,0 +1,599 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: User Files\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-24 20:15-0500\n"
+"PO-Revision-Date: 2012-01-24 20:15-0500\n"
+"Last-Translator: Scriptonite <Tom@whereyoursolutionis.com>\n"
+"Language-Team: Innovative Solutions <Sales@whereyoursolutionis.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SearchPath-0: D:\\Asus WebStorage\\web projects\\Wordpress Plugins\\mine\\user-files\\trunk\n"
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:195
+#: Plugins\mine\user-files\trunk/user_files.php:768
+msgid "No Files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:211
+msgid "User Files Settings"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:211
+#: Plugins\mine\user-files\trunk/user_files.php:596
+msgid "User Files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:213
+#: Plugins\mine\user-files\trunk/functions.php:231
+msgid "Manage Files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:215
+#: Plugins\mine\user-files\trunk/functions.php:423
+#: Plugins\mine\user-files\trunk/user_files.php:1293
+msgid "Add Files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:217
+msgid "Categories"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:219
+msgid "Manage Icons"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:221
+msgid "FTP Paths"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:224
+msgid "Help"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:261
+#: Plugins\mine\user-files\trunk/user_files.php:413
+#: Plugins\mine\user-files\trunk/user_files.php:1147
+msgid "The file has been deleted"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:265
+#: Plugins\mine\user-files\trunk/user_files.php:417
+#: Plugins\mine\user-files\trunk/user_files.php:1151
+msgid "There was an error deleting the file, please try again!"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:302
+msgid "An adminisrator has successfully been notified of your upload."
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:309
+#: Plugins\mine\user-files\trunk/user_files.php:1050
+#: Plugins\mine\user-files\trunk/user_files.php:1657
+msgid "There was an error uploading the file, please try again!"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:336
+#: Plugins\mine\user-files\trunk/user_files.php:543
+#: Plugins\mine\user-files\trunk/user_files.php:1190
+msgid "or"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:339
+#: Plugins\mine\user-files\trunk/user_files.php:546
+#: Plugins\mine\user-files\trunk/user_files.php:1193
+msgid "Show all categories"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:354
+#: Plugins\mine\user-files\trunk/user_files.php:588
+#: Plugins\mine\user-files\trunk/user_files.php:1208
+msgid "Filter"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:362
+#: Plugins\mine\user-files\trunk/user_files.php:1361
+msgid "Your Files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:399
+#: Plugins\mine\user-files\trunk/user_files.php:1271
+msgid "No files found for"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:403
+#: Plugins\mine\user-files\trunk/user_files.php:1275
+msgid "Nothing found for category"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:409
+#: Plugins\mine\user-files\trunk/user_files.php:1280
+#: Plugins\mine\user-files\trunk/user_files.php:1395
+#: Plugins\mine\user-files\trunk/widget.php:46
+msgid "You have no files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:435
+msgid "Choose a file to upload, your upload limit is"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:462
+#: Plugins\mine\user-files\trunk/user_files.php:1109
+#: Plugins\mine\user-files\trunk/user_files.php:1332
+#: Plugins\mine\user-files\trunk/widget.php:147
+msgid "Upload File"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:553
+msgid "A new file at"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:553
+msgid "has just uploaded"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:553
+msgid "to category"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:554
+msgid "An administrator has successfully been notified of your upload."
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/functions.php:561
+msgid "Error with file upload"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:201
+#: Plugins\mine\user-files\trunk/user_files.php:443
+msgid "The folder has been deleted"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:205
+#: Plugins\mine\user-files\trunk/user_files.php:447
+msgid "There was an error deleting the folder, please try again!"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:220
+msgid "File Manager Options"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:232
+msgid "This will delete all files, folders, categories, icons, etc. Are you sure you want to do this?"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:233
+msgid "Yes"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:233
+msgid "No"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:309
+msgid "Settings Saved"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:327
+msgid "Show Dashboard Widget"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:331
+msgid "Show dashboard menu link"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:334
+msgid "Allow users to add files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:337
+msgid "Allow users to delete files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:341
+msgid "Show credit link on user page? Not expected, but certainly appreciated!"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:341
+msgid "All other banners and ads are visible to user file admins only."
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:349
+msgid "Send email upload notifcations to"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:349
+msgid "leave blank to not be notified of uploads"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:353
+msgid "User File Manager supports custom email notifications to be sent out when you upload a file for a user. Variables allowed are"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:357
+msgid "Email Subject"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:369
+msgid "Save Options"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:385
+msgid "Uninstall User File Manager"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:496
+msgid "Categories have been changes successfully"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:500
+msgid "There was an error changing"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:540
+msgid "Search for File"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:562
+msgid "For all users"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:614
+msgid "Change"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:656
+#: Plugins\mine\user-files\trunk/user_files.php:727
+#: Plugins\mine\user-files\trunk/user_files.php:744
+#: Plugins\mine\user-files\trunk/user_files.php:798
+#: Plugins\mine\user-files\trunk/user_files.php:859
+msgid "User Login"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:656
+#: Plugins\mine\user-files\trunk/user_files.php:727
+#: Plugins\mine\user-files\trunk/user_files.php:744
+#: Plugins\mine\user-files\trunk/user_files.php:798
+#: Plugins\mine\user-files\trunk/user_files.php:859
+msgid "User Name"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:656
+#: Plugins\mine\user-files\trunk/user_files.php:727
+#: Plugins\mine\user-files\trunk/user_files.php:744
+#: Plugins\mine\user-files\trunk/user_files.php:798
+#: Plugins\mine\user-files\trunk/user_files.php:859
+msgid "Delete Folder"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:709
+msgid "No Files Found"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:772
+msgid "No files found"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:820
+msgid "No files found for this user in category"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:903
+msgid "is the default category. You cannot delete this unless you change the default category."
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:918
+msgid "This is already a cataegory."
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:928
+msgid " has been added"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:932
+msgid "There was an error adding the category"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:946
+msgid "is now default"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:983
+msgid "Add Category"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:994
+msgid "Upload Files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1045
+msgid "The file "
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1046
+msgid "has been uploaded to "
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1065
+msgid "Files for user"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1103
+msgid "Notify User of Upload"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1305
+#: Plugins\mine\user-files\trunk/widget.php:120
+msgid "Choose a file to upload, your upload limit is "
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1340
+msgid "You must be logged in to view files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1386
+msgid "Download"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1646
+msgid "The file"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1646
+msgid "has been uploaded"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1677
+msgid "Extension already exists, please delete the current extension set before uploading a new one."
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1712
+msgid "You must have both a file and extension"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1726
+msgid "File Deleted"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1731
+msgid "There was an error deleting this extension"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1740
+msgid "Icons"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1757
+msgid "New Icon"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1758
+msgid "Upload Icon file"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1763
+msgid "Extension"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1765
+msgid "Add"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1785
+msgid "Files can be uploaded to the users folder via FTP as well as through the upload page. If the users has no folder press create folder to create the users file folder."
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1799
+msgid "User Paths for FTP upload"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1799
+msgid "User files folder is located"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1799
+msgid "Folder Number"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/user_files.php:1822
+msgid "Create Folder"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/widget.php:51
+msgid "You must log in to view files"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/widget.php:74
+#: Plugins\mine\user-files\trunk/widget.php:173
+msgid "Title:"
+msgstr ""
+
+#: D:\Asus
+#: WebStorage\web projects\Wordpress
+#: Plugins\mine\user-files\trunk/widget.php:154
+msgid "You must login to upload files"
+msgstr ""
+
