@@ -276,6 +276,11 @@ h2.subtitle
 
 }
 
+.height-600
+{
+	min-height: 600px;
+}
+
 /*Tabla Formateada*/
 
 
@@ -428,7 +433,7 @@ ul, ol { margin: 0 0 10px 0; }
 
 .entry 
 {
-	min-height: 600px;
+	
 }
 .entry a { }
 .entry a:hover { }

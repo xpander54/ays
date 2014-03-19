@@ -32,7 +32,7 @@ Template Name: servicios
 
 			<?php //include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
-			<div class="entry">
+			<div class="entry height-600">
 
 				<?php the_content(); ?>
 
