@@ -1,0 +1,7 @@
+
+Total of 1 version released.
+
+== Changelog ==
+
+= 0.1 =
+A very basic version to customize wordpress login page.

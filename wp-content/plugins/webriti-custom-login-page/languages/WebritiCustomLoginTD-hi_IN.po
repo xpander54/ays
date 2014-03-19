@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-29 12:27+0530\n"
+"PO-Revision-Date: 2013-11-29 12:28+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: wp-login-logo.php:41
+msgid "Webriti Custom Login"
+msgstr "वेबरीति कस्टम लॉगइन"
+
+#: wp-login-logo.php:133
+msgid "Settings successfully saved."
+msgstr "सेटिंग्स सफलतापूर्वक बना दी गई है।"
+
+#: wp-login-logo.php:168
+msgid "Login Page Customization & Settings"
+msgstr "लॉगिन पृष्ठ अनुकूलन और सेटिंग्स"
+
+#: wp-login-logo.php:180
+msgid "Check Preview"
+msgstr "पूर्वावलोकन"
+
+#: wp-login-logo.php:184
+msgid "Enable Customization"
+msgstr "अनुकूलन सक्षम"
+
+#: wp-login-logo.php:185
+msgid "Yes"
+msgstr "हाँ"
+
+#: wp-login-logo.php:186
+msgid "No"
+msgstr "नहीं"
+
+#: wp-login-logo.php:189
+msgid "Upload Custom Logo"
+msgstr "अपलोड कस्टम लोगो"
+
+#: wp-login-logo.php:199
+msgid "Custom Background Color"
+msgstr "कस्टम पृष्ठभूमि रंग"
+
+#: wp-login-logo.php:205
+msgid "Save Settings"
+msgstr "सेटिंग्स सहेजें"
+
+#: wp-login-logo.php:206
+msgid "Reset"
+msgstr "रीसेट"
