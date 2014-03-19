@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Unit
+ *
+ * @package Less
+ * @subpackage tree
+ */
 class Less_Tree_Unit extends Less_Tree{
 
 	var $numerator = array();
@@ -26,7 +31,7 @@ class Less_Tree_Unit extends Less_Tree{
 			$output->add( $this->numerator[0] );
 		}elseif( $this->denominator ){
 			$output->add( $this->denominator[0] );
-		}elseif( !Less_Environment::$strictUnits && $this->backupUnit ){
+		}elseif( !Less_Parser::$options['strictUnits'] && $this->backupUnit ){
 			$output->add( $this->backupUnit );
 			return ;
 		}
@@ -39,6 +44,11 @@ class Less_Tree_Unit extends Less_Tree{
 		}
 		return $returnStr;
 	}
+
+	function __toString(){
+		return $this->toString();
+	}
+
 
 	/**
 	 * @param Less_Tree_Unit $other

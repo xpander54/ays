@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Join Selector Visitor
+ *
+ * @package Less
+ * @subpackage visitor
+ */
 class Less_Visitor_joinSelector extends Less_Visitor{
 
 	public $contexts = array( array() );
@@ -26,7 +32,7 @@ class Less_Visitor_joinSelector extends Less_Visitor{
 		if( !$rulesetNode->root ){
 			$selectors = array();
 
-			if( $rulesetNode->selectors && count($rulesetNode->selectors) ){
+			if( $rulesetNode->selectors && $rulesetNode->selectors ){
 				foreach($rulesetNode->selectors as $selector){
 					if( $selector->getIsOutput() ){
 						$selectors[] = $selector;
@@ -34,7 +40,7 @@ class Less_Visitor_joinSelector extends Less_Visitor{
 				}
 			}
 
-			if( !count($selectors) ){
+			if( !$selectors ){
 				$rulesetNode->selectors = null;
 				$rulesetNode->rules = null;
 			}else{

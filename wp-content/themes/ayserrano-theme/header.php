@@ -130,14 +130,7 @@
 	             
 					     <div id="myCarousel" class="carousel slide">
 				 
-				                <ol class="carousel-indicators">
-				 
-				                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				                  <li data-target="#myCarousel" data-slide-to="1"></li>
-				                  <li data-target="#myCarousel" data-slide-to="2"></li>
-				                  <li data-target="#myCarousel" data-slide-to="3"></li>
-				 
-				                </ol>
+				                
 				 
 				                <!-- Carousel items -->
 				                <div class="carousel-inner">
@@ -145,6 +138,15 @@
 				                  
 									<div class="active item">
 							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld1.png" class="slide-img img" alt="DF">
+							       		
+										
+											
+
+								       		<div class="carousel-caption img-heading">
+	        									El <strong>ABC </strong> de los <strong>seguros</strong>
+	      									</div>
+										
+										
 							        </div>
 							        <div class="item">
 							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld2.png" class="slide-img img" alt="bienes raices">
@@ -160,7 +162,21 @@
 
 				 
 				                </div>
-				 
+
+				                <div class="indicadores">
+				                	
+
+
+					                <!-- <ol class="carousel-indicators">
+					                					 
+					                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					                  <li data-target="#myCarousel" data-slide-to="1"></li>
+					                  <li data-target="#myCarousel" data-slide-to="2"></li>
+					                  <li data-target="#myCarousel" data-slide-to="3"></li>
+					                					 
+					                </ol> -->
+					 
+				                </div>
 				                 
 				                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 				                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>

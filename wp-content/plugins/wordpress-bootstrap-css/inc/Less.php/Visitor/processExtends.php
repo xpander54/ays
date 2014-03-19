@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Process Extends Visitor
+ *
+ * @package Less
+ * @subpackage visitor
+ */
 class Less_Visitor_processExtends extends Less_Visitor{
 
 	public $allExtendsStack;
@@ -11,7 +16,9 @@ class Less_Visitor_processExtends extends Less_Visitor{
 	public function run( $root ){
 		$extendFinder = new Less_Visitor_extendFinder();
 		$extendFinder->run( $root );
-		if( !$extendFinder->foundExtends) { return $root; }
+		if( !$extendFinder->foundExtends){
+			return $root;
+		}
 
 		$root->allExtends = $this->doExtendChaining( $root->allExtends, $root->allExtends);
 
@@ -137,10 +144,9 @@ class Less_Visitor_processExtends extends Less_Visitor{
 
 		$allExtends	= end($this->allExtendsStack);
 		$paths_len = count($rulesetNode->paths);
-		$all_extend_len = count($allExtends);
 
 		// look at each selector path in the ruleset, find any extend matches and then copy, find and replace
-		for( $extendIndex = 0; $extendIndex < $all_extend_len; $extendIndex++ ){
+		foreach($allExtends as $allExtend){
 			for($pathIndex = 0; $pathIndex < $paths_len; $pathIndex++ ){
 
 				// extending extends happens initially, before the main pass
@@ -154,7 +160,7 @@ class Less_Visitor_processExtends extends Less_Visitor{
 					continue;
 				}
 
-				$this->ExtendMatch( $rulesetNode, $allExtends[$extendIndex], $selectorPath);
+				$this->ExtendMatch( $rulesetNode, $allExtend, $selectorPath);
 
 			}
 		}
@@ -175,6 +181,12 @@ class Less_Visitor_processExtends extends Less_Visitor{
 
 	private function findMatch($extend, $haystackSelectorPath ){
 
+
+		if( !$this->HasMatches($extend, $haystackSelectorPath) ){
+			return false;
+		}
+
+
 		//
 		// look through the haystack selector path to try and find the needle - extend.selector
 		// returns an array of selector matches that can then be replaced
@@ -184,6 +196,8 @@ class Less_Visitor_processExtends extends Less_Visitor{
 		$potentialMatches_len = 0;
 		$potentialMatch = null;
 		$matches = array();
+
+
 
 		// loop through the haystack elements
 		$haystack_path_len = count($haystackSelectorPath);
@@ -235,7 +249,32 @@ class Less_Visitor_processExtends extends Less_Visitor{
 				}
 			}
 		}
+
 		return $matches;
+	}
+
+
+	// Before going through all the nested loops, lets check to see if a match is possible
+	// Reduces Bootstrap 3.1 compile time from ~6.5s to ~5.6s
+	private function HasMatches($extend, $haystackSelectorPath){
+
+		if( !$extend->selector->cacheable ){
+			return true;
+		}
+
+		$first_el = $extend->selector->_oelements[0];
+
+		foreach($haystackSelectorPath as $hackstackSelector){
+			if( !$hackstackSelector->cacheable ){
+				return true;
+			}
+
+			if( in_array($first_el, $hackstackSelector->_oelements) ){
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 
@@ -244,16 +283,20 @@ class Less_Visitor_processExtends extends Less_Visitor{
 	 */
 	private function PotentialMatch( $potentialMatch, $needleElements, $haystackElement, $hackstackElementIndex ){
 
-		// selectors add " " onto the first element. When we use & it joins the selectors together, but if we don't
-		// then each selector in haystackSelectorPath has a space before it added in the toCSS phase. so we need to work out
-		// what the resulting combinator will be
-		$targetCombinator = $haystackElement->combinator->value;
-		if( $targetCombinator === '' && $hackstackElementIndex === 0 ){
-			$targetCombinator = ' ';
-		}
 
-		if( $potentialMatch['matched'] > 0 && $needleElements[ $potentialMatch['matched'] ]->combinator->value !== $targetCombinator ){
-			return null;
+		if( $potentialMatch['matched'] > 0 ){
+
+			// selectors add " " onto the first element. When we use & it joins the selectors together, but if we don't
+			// then each selector in haystackSelectorPath has a space before it added in the toCSS phase. so we need to work out
+			// what the resulting combinator will be
+			$targetCombinator = $haystackElement->combinator;
+			if( $targetCombinator === '' && $hackstackElementIndex === 0 ){
+				$targetCombinator = ' ';
+			}
+
+			if( $needleElements[ $potentialMatch['matched'] ]->combinator !== $targetCombinator ){
+				return null;
+			}
 		}
 
 		// if we don't match, null our match to indicate failure
@@ -303,8 +346,8 @@ class Less_Visitor_processExtends extends Less_Visitor{
 
 		for( $i = 0; $i < $elementValue1->elements_len; $i++ ){
 
-			if( $elementValue1->elements[$i]->combinator->value !== $elementValue2->elements[$i]->combinator->value ){
-				if( $i !== 0 || ($elementValue1->elements[$i]->combinator->value || ' ') !== ($elementValue2->elements[$i]->combinator->value || ' ') ){
+			if( $elementValue1->elements[$i]->combinator !== $elementValue2->elements[$i]->combinator ){
+				if( $i !== 0 || ($elementValue1->elements[$i]->combinator || ' ') !== ($elementValue2->elements[$i]->combinator || ' ') ){
 					return false;
 				}
 			}
@@ -355,6 +398,7 @@ class Less_Visitor_processExtends extends Less_Visitor{
 
 			$match = $matches[$matchIndex];
 			$selector = $selectorPath[ $match['pathIndex'] ];
+
 			$firstElement = new Less_Tree_Element(
 				$match['initialCombinator'],
 				$replacementSelector->elements[0]->value,

@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * toCSS Visitor
+ *
+ * @package Less
+ * @subpackage visitor
+ */
 class Less_Visitor_toCSS extends Less_VisitorReplacing{
 
 	private $charset;
@@ -22,7 +28,10 @@ class Less_Visitor_toCSS extends Less_VisitorReplacing{
 		return $ruleNode;
 	}
 
-	function visitMixinDefinition(){
+	function visitMixinDefinition($mixinNode){
+		// mixin definitions do not get eval'd - this means they keep state
+		// so we have to clear that state here so it isn't used if toCSS is called twice
+		$mixinNode->frames = array();
 		return array();
 	}
 
@@ -168,8 +177,8 @@ class Less_Visitor_toCSS extends Less_VisitorReplacing{
 
 		$paths = array();
 		foreach($rulesetNode->paths as $p){
-			if( $p[0]->elements[0]->combinator->value === ' ' ){
-				$p[0]->elements[0]->combinator = new Less_Tree_Combinator('');
+			if( $p[0]->elements[0]->combinator === ' ' ){
+				$p[0]->elements[0]->combinator = '';
 			}
 
 			foreach($p as $pi){
@@ -188,14 +197,17 @@ class Less_Visitor_toCSS extends Less_VisitorReplacing{
 		$ruleCache = array();
 		for( $i = count($rules)-1; $i >= 0 ; $i-- ){
 			$rule = $rules[$i];
-			if( $rule instanceof Less_Tree_Rule ){
+			if( $rule instanceof Less_Tree_Rule || $rule instanceof Less_Tree_NameValue ){
+
 				if( !isset($ruleCache[$rule->name]) ){
 					$ruleCache[$rule->name] = $rule;
 				}else{
 					$ruleList =& $ruleCache[$rule->name];
-					if( $ruleList instanceof Less_Tree_Rule ){
+
+					if( $ruleList instanceof Less_Tree_Rule || $ruleList instanceof Less_Tree_NameValue ){
 						$ruleList = $ruleCache[$rule->name] = array( $ruleCache[$rule->name]->toCSS() );
 					}
+
 					$ruleCSS = $rule->toCSS();
 					if( array_search($ruleCSS,$ruleList) !== false ){
 						array_splice($rules,$i,1);
@@ -209,7 +221,8 @@ class Less_Visitor_toCSS extends Less_VisitorReplacing{
 
 	function _mergeRules( &$rules ){
 		$groups = array();
-		$parts = array();
+
+		//obj($rules);
 
 		$rules_len = count($rules);
 		for( $i = 0; $i < $rules_len; $i++ ){
@@ -224,29 +237,56 @@ class Less_Visitor_toCSS extends Less_VisitorReplacing{
 
 				if( !isset($groups[$key]) ){
 					$groups[$key] = array();
-					$parts =& $groups[$key];
 				}else{
 					array_splice($rules, $i--, 1);
 					$rules_len--;
 				}
 
-				$parts[] = $rule;
+				$groups[$key][] = $rule;
 			}
 		}
+
 
 		foreach($groups as $parts){
 
 			if( count($parts) > 1 ){
 				$rule = $parts[0];
-
-				$values = array();
+				$spacedGroups = array();
+				$lastSpacedGroup = array();
+				$parts_mapped = array();
 				foreach($parts as $p){
-					$values[] = $p->value;
+					if( $p->merge === '+' ){
+						if( $lastSpacedGroup ){
+							$spacedGroups[] = self::toExpression($lastSpacedGroup);
+						}
+						$lastSpacedGroup = array();
+					}
+					$lastSpacedGroup[] = $p;
 				}
 
-				$rule->value = new Less_Tree_Value( $values );
+				$spacedGroups[] = self::toExpression($lastSpacedGroup);
+				$rule->value = self::toValue($spacedGroups);
 			}
 		}
+
+	}
+
+	static function toExpression($values){
+		$mapped = array();
+		foreach($values as $p){
+			$mapped[] = $p->value;
+		}
+		return new Less_Tree_Expression( $mapped );
+	}
+
+	static function toValue($values){
+		//return new Less_Tree_Value($values); ??
+
+		$mapped = array();
+		foreach($values as $p){
+			$mapped[] = $p;
+		}
+		return new Less_Tree_Value($mapped);
 	}
 }
 

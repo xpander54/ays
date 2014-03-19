@@ -214,7 +214,7 @@ class ICWP_Pure_Base_WPTB {
 
 		$sFullParentMenuId = $this->getFullParentMenuId();
 
-		add_menu_page( self::BaseTitle, $this->m_sPluginMenuTitle, self::BasePermissions, $sFullParentMenuId, array( $this, 'onDisplayMainMenu' ), $this->getImageUrl( 'icontrolwp_16x16.png' ) );
+		add_menu_page( self::BaseTitle, $this->m_sPluginMenuTitle, self::BasePermissions, $sFullParentMenuId, array( $this, 'onDisplayMainMenu' ), $this->getImageUrl( 'pluginlogo_16x16.png' ) );
 
 		//Create and Add the submenu items
 		$this->createPluginSubMenuItems();
@@ -357,7 +357,7 @@ class ICWP_Pure_Base_WPTB {
 
 	public function enqueuePluginAdminCss() {
 		$iRand = rand();
-		wp_register_style( 'worpit_plugin_css'.$iRand, $this->getCssUrl('worpit-plugin.css'), array('worpit_bootstrap_wpadmin_css_fixes'), $this->m_sVersion );
+		wp_register_style( 'worpit_plugin_css'.$iRand, $this->getCssUrl('plugin.css'), array('worpit_bootstrap_wpadmin_css_fixes'), $this->m_sVersion );
 		wp_enqueue_style( 'worpit_plugin_css'.$iRand );
 	}
 	
@@ -451,6 +451,7 @@ class ICWP_Pure_Base_WPTB {
 			return '';
 		}
 		$iCount = 0;
+		$sCollated='';
 		foreach ( $aAllOptions as $aOptionsSection ) {
 			
 			if ( $iCount == 0 ) {

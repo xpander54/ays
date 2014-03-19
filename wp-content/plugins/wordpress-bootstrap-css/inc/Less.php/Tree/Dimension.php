@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Dimension
+ *
+ * @package Less
+ * @subpackage tree
+ */
 class Less_Tree_Dimension extends Less_Tree{
 
 	public $value;
@@ -36,11 +41,11 @@ class Less_Tree_Dimension extends Less_Tree{
      */
 	public function genCSS( $output ){
 
-		if( Less_Environment::$strictUnits && !$this->unit->isSingular() ){
+		if( Less_Parser::$options['strictUnits'] && !$this->unit->isSingular() ){
 			throw new Less_Exception_Compiler("Multiple units in dimension. Correct the units or use the unit function. Bad unit: ".$this->unit->toString());
 		}
 
-		$value = $this->value;
+		$value = Less_Functions::fround( $this->value );
 		$strValue = (string)$value;
 
 		if( $value !== 0 && $value < 0.000001 && $value > -0.000001 ){
@@ -49,7 +54,7 @@ class Less_Tree_Dimension extends Less_Tree{
 			$strValue = preg_replace('/\.?0+$/','', $strValue);
 		}
 
-		if( Less_Environment::$compress ){
+		if( Less_Parser::$options['compress'] ){
 			// Zero values doesn't need a unit
 			if( $value === 0 && $this->unit->isLength() ){
 				$output->add( $strValue );
@@ -92,7 +97,7 @@ class Less_Tree_Dimension extends Less_Tree{
 			}else{
 				$other = $other->convertTo( $this->unit->usedUnits());
 
-				if( Less_Environment::$strictUnits && $other->unit->toString() !== $unit->toCSS() ){
+				if( Less_Parser::$options['strictUnits'] && $other->unit->toString() !== $unit->toCSS() ){
 					throw new Less_Exception_Compiler("Incompatible units. Change the units or use the unit function. Bad units: '".$unit->toString() . "' and ".$other->unit->toString()+"'.");
 				}
 
@@ -117,8 +122,16 @@ class Less_Tree_Dimension extends Less_Tree{
 	public function compare($other) {
 		if ($other instanceof Less_Tree_Dimension) {
 
-			$a = $this->unify();
-			$b = $other->unify();
+			if( $this->unit->isEmpty() || $other->unit->isEmpty() ){
+				$a = $this;
+				$b = $other;
+			} else {
+				$a = $this->unify();
+				$b = $other->unify();
+				if( $a->unit->compare($b->unit) !== 0 ){
+					return -1;
+				}
+			}
 			$aValue = $a->value;
 			$bValue = $b->value;
 
@@ -127,9 +140,6 @@ class Less_Tree_Dimension extends Less_Tree{
 			} elseif ($bValue < $aValue) {
 				return 1;
 			} else {
-				if( !$b->unit->isEmpty() && $a->unit->compare($b->unit) !== 0) {
-					return -1;
-				}
 				return 0;
 			}
 		} else {
@@ -138,7 +148,7 @@ class Less_Tree_Dimension extends Less_Tree{
 	}
 
 	function unify() {
-		return $this->convertTo(array('length'=> 'm', 'duration'=> 's', 'angle' => 'rad' ));
+		return $this->convertTo(array('length'=> 'px', 'duration'=> 's', 'angle' => 'rad' ));
 	}
 
     function convertTo($conversions) {
@@ -160,8 +170,7 @@ class Less_Tree_Dimension extends Less_Tree{
 			$group = Less_Tree_UnitConversions::${$groupName};
 
 			//numerator
-			$len = count($unit->numerator);
-			for($i=0; $i < $len; $i++ ){
+			foreach($unit->numerator as $i => $atomicUnit){
 				$atomicUnit = $unit->numerator[$i];
 				if( !isset($group[$atomicUnit]) ){
 					continue;
@@ -173,8 +182,7 @@ class Less_Tree_Dimension extends Less_Tree{
 			}
 
 			//denominator
-			$len = count($unit->denominator);
-			for($i=0; $i < $len; $i++ ){
+			foreach($unit->denominator as $i => $atomicUnit){
 				$atomicUnit = $unit->denominator[$i];
 				if( !isset($group[$atomicUnit]) ){
 					continue;

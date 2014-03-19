@@ -1,19 +1,20 @@
 <?php
 
-
-
-//
-// CSS @import node
-//
-// The general strategy here is that we don't want to wait
-// for the parsing to be completed, before we start importing
-// the file. That's because in the context of a browser,
-// most of the time will be spent waiting for the server to respond.
-//
-// On creation, we push the import path to our import queue, though
-// `import,push`, we also pass it a callback, which it'll call once
-// the file has been fetched, and parsed.
-//
+/**
+ * CSS @import node
+ *
+ * The general strategy here is that we don't want to wait
+ * for the parsing to be completed, before we start importing
+ * the file. That's because in the context of a browser,
+ * most of the time will be spent waiting for the server to respond.
+ *
+ * On creation, we push the import path to our import queue, though
+ * `import,push`, we also pass it a callback, which it'll call once
+ * the file has been fetched, and parsed.
+ *
+ * @package Less
+ * @subpackage tree
+ */
 class Less_Tree_Import extends Less_Tree{
 
 	public $options;
@@ -132,10 +133,12 @@ class Less_Tree_Import extends Less_Tree{
 			$path->value = Less_Environment::normalizePath($path->value);
 		}
 
+
+
 		return $path;
 	}
 
-	function compile($env) {
+	function compile( $env ){
 
 		$evald = $this->compileForImport($env);
 
@@ -152,8 +155,9 @@ class Less_Tree_Import extends Less_Tree{
 		if( $path_and_uri ){
 			list($full_path, $uri) = $path_and_uri;
 		}else{
-			$full_path = $uri = $this->getPath();
+			$full_path = $uri = $evald->getPath();
 		}
+
 
 		//import once
 		if( $evald->skip( $full_path, $env) ){
@@ -181,6 +185,7 @@ class Less_Tree_Import extends Less_Tree{
 			return new Less_Tree_Import( $this->compilePath( $env), $features, $this->options, $this->index);
 		}
 
+
 		return $this->ParseImport( $full_path, $uri, $env );
 	}
 
@@ -196,7 +201,24 @@ class Less_Tree_Import extends Less_Tree{
 
 		if( $evald_path ){
 
-			$import_dirs = array_merge( array( $this->currentFileInfo['currentDirectory'] => $this->currentFileInfo['uri_root'] ), Less_Parser::$options['import_dirs'] );
+			$import_dirs = array();
+
+			if( Less_Environment::isPathRelative($evald_path) ){
+				//if the path is relative, the file should be in the current directory
+				$import_dirs[ $this->currentFileInfo['currentDirectory'] ] = $this->currentFileInfo['uri_root'];
+
+			}else{
+				//otherwise, the file should be relative to the server root
+				$import_dirs[ $this->currentFileInfo['entryPath'] ] = $this->currentFileInfo['entryUri'];
+
+				//if the user supplied entryPath isn't the actual root
+				$import_dirs[ $_SERVER['DOCUMENT_ROOT'] ] = '';
+
+			}
+
+			// always look in user supplied import directories
+			$import_dirs = array_merge( $import_dirs, Less_Parser::$options['import_dirs'] );
+
 
 			foreach( $import_dirs as $rootpath => $rooturi){
 				if( is_callable($rooturi) ){
@@ -206,7 +228,8 @@ class Less_Tree_Import extends Less_Tree{
 						return array( $full_path, $uri );
 					}
 				}else{
-					$path = $rootpath.$evald_path;
+					$path = rtrim($rootpath,'/\\').'/'.ltrim($evald_path,'/\\');
+
 					if( file_exists($path) ){
 						$full_path = Less_Environment::normalizePath($path);
 						$uri = Less_Environment::normalizePath(dirname($rooturi.$evald_path));

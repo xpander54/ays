@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Ruleset
+ *
+ * @package Less
+ * @subpackage tree
+ */
 class Less_Tree_Ruleset extends Less_Tree{
 
 	protected $lookups;
@@ -22,10 +27,19 @@ class Less_Tree_Ruleset extends Less_Tree{
 	var $ruleset_id;
 	var $originalRuleset;
 
+	var $first_oelements;
 
 	public function SetRulesetIndex(){
 		$this->ruleset_id = Less_Parser::$next_id++;
 		$this->originalRuleset = $this->ruleset_id;
+
+		if( $this->selectors ){
+			foreach($this->selectors as $sel){
+				if( $sel->_oelements ){
+					$this->first_oelements[$sel->_oelements[0]] = true;
+				}
+			}
+		}
 	}
 
 	public function __construct($selectors, $rules, $strictImports = null){
@@ -58,10 +72,10 @@ class Less_Tree_Ruleset extends Less_Tree{
 
 		// Store the frames around mixin definitions,
 		// so they can be evaluated like closures when the time comes.
-		$ruleset_len = count($ruleset->rules);
-		for( $i = 0; $i < $ruleset_len; $i++ ){
-			if( $ruleset->rules[$i] instanceof Less_Tree_Mixin_Definition ){
-				$ruleset->rules[$i]->frames = array_slice($env->frames,0);
+		$rsRuleCnt = count($ruleset->rules);
+		for( $i = 0; $i < $rsRuleCnt; $i++ ){
+			if( $ruleset->rules[$i] instanceof Less_Tree_Mixin_Definition || $ruleset->rules[$i] instanceof Less_Tree_DetachedRuleset ){
+				$ruleset->rules[$i] = $ruleset->rules[$i]->compile($env);
 			}
 		}
 
@@ -71,14 +85,39 @@ class Less_Tree_Ruleset extends Less_Tree{
 		}
 
 		// Evaluate mixin calls.
-		$this->EvalMixinCalls( $ruleset, $env, $ruleset_len );
+		$this->EvalMixinCalls( $ruleset, $env, $rsRuleCnt );
 
 
-		for( $i=0; $i<$ruleset_len; $i++ ){
-			if(! ($ruleset->rules[$i] instanceof Less_Tree_Mixin_Definition) ){
+		// Evaluate everything else
+		for( $i=0; $i<$rsRuleCnt; $i++ ){
+			if(! ($ruleset->rules[$i] instanceof Less_Tree_Mixin_Definition || $ruleset->rules[$i] instanceof Less_Tree_DetachedRuleset) ){
 				$ruleset->rules[$i] = $ruleset->rules[$i]->compile($env);
 			}
 		}
+
+        // Evaluate everything else
+		for( $i=0; $i<$rsRuleCnt; $i++ ){
+			$rule = $ruleset->rules[$i];
+
+            // for rulesets, check if it is a css guard and can be removed
+			if( $rule instanceof Less_Tree_Ruleset && $rule->selectors && count($rule->selectors) === 1 ){
+
+                // check if it can be folded in (e.g. & where)
+				if( $rule->selectors[0]->isJustParentSelector() ){
+					array_splice($ruleset->rules,$i--,1);
+					$rsRuleCnt--;
+
+					for($j = 0; $j < count($rule->rules); $j++ ){
+						$subRule = $rule->rules[$j];
+						if( !($subRule instanceof Less_Tree_Rule) || !$subRule->variable ){
+							array_splice($ruleset->rules, ++$i, 0, array($subRule));
+							$rsRuleCnt++;
+						}
+					}
+
+                }
+            }
+        }
 
 
 		// Pop the stack
@@ -98,16 +137,17 @@ class Less_Tree_Ruleset extends Less_Tree{
 	 * Compile Less_Tree_Mixin_Call objects
 	 *
 	 * @param Less_Tree_Ruleset $ruleset
-	 * @param integer $ruleset_len
+	 * @param integer $rsRuleCnt
 	 */
-	private function EvalMixinCalls( $ruleset, $env, &$ruleset_len ){
-		for($i=0; $i < $ruleset_len; $i++){
+	private function EvalMixinCalls( $ruleset, $env, &$rsRuleCnt ){
+		for($i=0; $i < $rsRuleCnt; $i++){
 			$rule = $ruleset->rules[$i];
+
 			if( $rule instanceof Less_Tree_Mixin_Call ){
-				$rules = $rule->compile($env);
+				$rule = $rule->compile($env);
 
 				$temp = array();
-				foreach($rules as $r){
+				foreach($rule as $r){
 					if( ($r instanceof Less_Tree_Rule) && $r->variable ){
 						// do not pollute the scope if the variable is
 						// already there. consider returning false here
@@ -121,10 +161,28 @@ class Less_Tree_Ruleset extends Less_Tree{
 				}
 				$temp_count = count($temp)-1;
 				array_splice($ruleset->rules, $i, 1, $temp);
-				$ruleset_len += $temp_count;
+				$rsRuleCnt += $temp_count;
 				$i += $temp_count;
 				$ruleset->resetCache();
+
+			}elseif( $rule instanceof Less_Tree_RulesetCall ){
+
+				$rule = $rule->compile($env);
+				$rules = array();
+				foreach($rule->rules as $r){
+					if( ($r instanceof Less_Tree_Rule) && $r->variable ){
+						continue;
+					}
+					$rules[] = $r;
+				}
+
+				array_splice($ruleset->rules, $i, 1, $rules);
+				$temp_count = count($rules);
+				$rsRuleCnt += $temp_count - 1;
+				$i += $temp_count-1;
+				$ruleset->resetCache();
 			}
+
 		}
 	}
 
@@ -134,13 +192,32 @@ class Less_Tree_Ruleset extends Less_Tree{
 	 *
 	 */
 	private function PrepareRuleset($env){
+
+		$hasOnePassingSelector = false;
 		$selectors = array();
 		if( $this->selectors ){
+			Less_Tree_DefaultFunc::error("it is currently only allowed in parametric mixin guards,");
+
 			foreach($this->selectors as $s){
-				$selectors[] = $s->compile($env);
+				$selector = $s->compile($env);
+				$selectors[] = $selector;
+				if( $selector->evaldCondition ){
+					$hasOnePassingSelector = true;
+				}
 			}
+
+			Less_Tree_DefaultFunc::reset();
+		} else {
+			$hasOnePassingSelector = true;
 		}
-		$ruleset = new Less_Tree_Ruleset($selectors, $this->rules, $this->strictImports);
+
+		if( $this->rules && $hasOnePassingSelector ){
+			$rules = $this->rules;
+		}else{
+			$rules = array();
+		}
+
+		$ruleset = new Less_Tree_Ruleset($selectors, $rules, $this->strictImports);
 
 		$ruleset->originalRuleset = $this->ruleset_id;
 
@@ -148,12 +225,13 @@ class Less_Tree_Ruleset extends Less_Tree{
 		$ruleset->firstRoot = $this->firstRoot;
 		$ruleset->allowImports = $this->allowImports;
 
+
 		// push the current ruleset to the frames stack
 		$env->unshiftFrame($ruleset);
 
 
 		// Evaluate imports
-		if ($ruleset->root || $ruleset->allowImports || !$ruleset->strictImports) {
+		if( $ruleset->root || $ruleset->allowImports || !$ruleset->strictImports ){
 			$ruleset->evalImports($env);
 		}
 
@@ -197,72 +275,74 @@ class Less_Tree_Ruleset extends Less_Tree{
 	}
 
 	public function matchArgs($args){
-		return !is_array($args) || !$args;
+		return !$args;
 	}
 
+	// lets you call a css selector with a guard
 	public function matchCondition( $args, $env ){
 		$lastSelector = end($this->selectors);
+
+		if( !$lastSelector->evaldCondition ){
+			return false;
+		}
 		if( $lastSelector->condition && !$lastSelector->condition->compile( $env->copyEvalEnv( $env->frames ) ) ){
 			return false;
 		}
 		return true;
 	}
 
-	function resetCache() {
+	function resetCache(){
 		$this->_rulesets = null;
 		$this->_variables = null;
 		$this->lookups = array();
 	}
 
 	public function variables(){
-
-		if( !$this->_variables ){
-			$this->_variables = array();
-			foreach( $this->rules as $r){
-				if ($r instanceof Less_Tree_Rule && $r->variable === true) {
-					$this->_variables[$r->name] = $r;
-				}
+		$this->_variables = array();
+		foreach( $this->rules as $r){
+			if ($r instanceof Less_Tree_Rule && $r->variable === true) {
+				$this->_variables[$r->name] = $r;
 			}
 		}
-
-		return $this->_variables;
 	}
 
 	public function variable($name){
-		$vars = $this->variables();
-		return isset($vars[$name]) ? $vars[$name] : null;
+
+		if( is_null($this->_variables) ){
+			$this->variables();
+		}
+		return isset($this->_variables[$name]) ? $this->_variables[$name] : null;
 	}
 
-	public function find( $selector, $self = null, $env = null){
+	public function find( $selector, $self = null ){
 
-		if( !$self ){
-			$self = $this->ruleset_id;
-		}
+		$key = implode(' ',$selector->_oelements);
 
-		$key = $selector->toCSS();
+		if( !isset($this->lookups[$key]) ){
 
-		if( !array_key_exists($key, $this->lookups) ){
+			if( !$self ){
+				$self = $this->ruleset_id;
+			}
+
 			$this->lookups[$key] = array();
 
+			$first_oelement = $selector->_oelements[0];
 
 			foreach($this->rules as $rule){
+				if( $rule instanceof Less_Tree_Ruleset && $rule->ruleset_id != $self ){
 
-				//if( ($rule instanceof Less_Tree_Ruleset) || ($rule instanceof Less_Tree_Mixin_Definition) ){
-				if( $rule instanceof Less_Tree_Ruleset ){
+					if( isset($rule->first_oelements[$first_oelement]) ){
 
-					if( $rule->ruleset_id == $self ){
-						continue;
-					}
-
-					foreach( $rule->selectors as $ruleSelector ){
-						$match = $selector->match($ruleSelector);
-						if( $match ){
-							if( $selector->elements_len > $match ){
-								$this->lookups[$key] = array_merge($this->lookups[$key], $rule->find( new Less_Tree_Selector(array_slice($selector->elements, $match)), $self, $env));
-							} else {
-								$this->lookups[$key][] = $rule;
+						foreach( $rule->selectors as $ruleSelector ){
+							$match = $selector->match($ruleSelector);
+							if( $match ){
+								if( $selector->elements_len > $match ){
+									$this->lookups[$key] = array_merge($this->lookups[$key], $rule->find( new Less_Tree_Selector(array_slice($selector->elements, $match)), $self));
+								} else {
+									$this->lookups[$key][] = $rule;
+								}
+								break;
 							}
-							break;
 						}
 					}
 				}
@@ -273,9 +353,9 @@ class Less_Tree_Ruleset extends Less_Tree{
 	}
 
 
-    /**
-     * @see Less_Tree::genCSS
-     */
+	/**
+	 * @see Less_Tree::genCSS
+	 */
 	public function genCSS( $output ){
 
 		if( !$this->root ){
@@ -283,7 +363,7 @@ class Less_Tree_Ruleset extends Less_Tree{
 		}
 
 		$tabRuleStr = $tabSetStr = '';
-		if( !Less_Environment::$compress ){
+		if( !Less_Parser::$options['compress'] ){
 			if( Less_Environment::$tabLevel ){
 				$tabRuleStr = "\n".str_repeat( '  ' , Less_Environment::$tabLevel );
 				$tabSetStr = "\n".str_repeat( '  ' , Less_Environment::$tabLevel-1 );
@@ -321,17 +401,19 @@ class Less_Tree_Ruleset extends Less_Tree{
 			$paths_len = count($this->paths);
 			for( $i = 0; $i < $paths_len; $i++ ){
 				$path = $this->paths[$i];
-				Less_Environment::$firstSelector = true;
+				$firstSelector = true;
+
 				foreach($path as $p){
-					$p->genCSS( $output );
-					Less_Environment::$firstSelector = false;
+					$p->genCSS( $output, $firstSelector );
+					$firstSelector = false;
 				}
+
 				if( $i + 1 < $paths_len ){
 					$output->add( ',' . $tabSetStr );
 				}
 			}
 
-			$output->add( (Less_Environment::$compress ? '{' : " {") . $tabRuleStr );
+			$output->add( (Less_Parser::$options['compress'] ? '{' : " {") . $tabRuleStr );
 		}
 
 		// Compile rules and rulesets
@@ -373,7 +455,7 @@ class Less_Tree_Ruleset extends Less_Tree{
 			$rulesetNodes[$i]->genCSS( $output);
 		}
 
-		if( !Less_Environment::$compress && $this->firstRoot ){
+		if( !Less_Parser::$options['compress'] && $this->firstRoot ){
 			$output->add( "\n" );
 		}
 
@@ -381,7 +463,9 @@ class Less_Tree_Ruleset extends Less_Tree{
 
 
 	function markReferenced(){
-
+		if( !$this->selectors ){
+			return;
+		}
 		foreach($this->selectors as $selector){
 			$selector->markReferenced();
 		}
