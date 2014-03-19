@@ -1,42 +1,51 @@
 <?php
 
-//less.js : lib/less/tree/element.js
-
+/**
+ * Element
+ *
+ * @package Less
+ * @subpackage tree
+ */
 class Less_Tree_Element extends Less_Tree{
 
-	public $combinator;
+	public $combinator = '';
 	public $value = '';
 	public $index;
 	public $currentFileInfo;
 	public $type = 'Element';
 
+	public $value_is_object = false;
+
 	public function __construct($combinator, $value, $index = null, $currentFileInfo = null ){
-		if( ! ($combinator instanceof Less_Tree_Combinator)) {
-			$combinator = new Less_Tree_Combinator($combinator);
+
+		$this->value = $value;
+		$this->value_is_object = is_object($value);
+
+		if( $combinator ){
+			$this->combinator = $combinator;
 		}
 
-		if( !is_null($value) ){
-			$this->value = $value;
-		}
-
-		$this->combinator = $combinator;
 		$this->index = $index;
 		$this->currentFileInfo = $currentFileInfo;
 	}
 
 	function accept( $visitor ){
-		$this->combinator = $visitor->visitObj( $this->combinator );
-		if( is_object($this->value) ){ //object or string
+		if( $this->value_is_object ){ //object or string
 			$this->value = $visitor->visitObj( $this->value );
 		}
 	}
 
-	public function compile($env) {
-		return new Less_Tree_Element($this->combinator,
-				is_string($this->value) ? $this->value : $this->value->compile($env),
-				$this->index,
-				$this->currentFileInfo
-		);
+	public function compile($env){
+
+		if( Less_Environment::$mixin_stack ){
+			return new Less_Tree_Element($this->combinator, ($this->value_is_object ? $this->value->compile($env) : $this->value), $this->index, $this->currentFileInfo );
+		}
+
+		if( $this->value_is_object ){
+			$this->value = $this->value->compile($env);
+		}
+
+		return $this;
 	}
 
     /**
@@ -48,15 +57,19 @@ class Less_Tree_Element extends Less_Tree{
 
 	public function toCSS(){
 
-		$value = $this->value;
-		if( !is_string($value) ){
-			$value = $value->toCSS();
+		if( $this->value_is_object ){
+			$value = $this->value->toCSS();
+		}else{
+			$value = $this->value;
 		}
 
-		if( $value === '' && $this->combinator->value[0] === '&' ){
+
+		if( $value === '' && $this->combinator && $this->combinator === '&' ){
 			return '';
 		}
-		return $this->combinator->toCSS() . $value;
+
+
+		return Less_Environment::$_outputMap[$this->combinator] . $value;
 	}
 
 }

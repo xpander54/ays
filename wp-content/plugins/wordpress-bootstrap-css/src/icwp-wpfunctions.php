@@ -115,10 +115,11 @@ class ICWP_WpFunctions_WPTB {
 	
 	/**
 	 * @param string $insKey
-	 * @param mixed $inoObject
+	 * @param mixed $inmData
+	 * @param integer $innExpires
 	 * @return boolean
 	 */
-	public function setTransient( $insKey, $inmData, $innExpires ) {
+	public function setTransient( $insKey, $inmData, $innExpires = 0 ) {
 		// TODO: Handle multisite
 		
 		if ( version_compare( $this->getWordPressVersion(), '2.7.9', '<=' ) ) {

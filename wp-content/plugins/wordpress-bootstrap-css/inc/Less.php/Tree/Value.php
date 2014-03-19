@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Value
+ *
+ * @package Less
+ * @subpackage tree
+ */
 class Less_Tree_Value extends Less_Tree{
 
 	public $type = 'Value';
@@ -35,7 +40,7 @@ class Less_Tree_Value extends Less_Tree{
 		for($i = 0; $i < $len; $i++ ){
 			$this->value[$i]->genCSS( $output );
 			if( $i+1 < $len ){
-				$output->add( Less_Environment::$comma_space );
+				$output->add( Less_Environment::$_outputMap[','] );
 			}
 		}
 	}

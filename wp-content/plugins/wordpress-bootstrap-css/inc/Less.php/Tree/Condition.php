@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Condition
+ *
+ * @package Less
+ * @subpackage tree
+ */
 class Less_Tree_Condition extends Less_Tree{
 
 	public $op;
@@ -41,7 +47,7 @@ class Less_Tree_Condition extends Less_Tree{
 				}elseif( Less_Parser::is_method($b, 'compare') ){
 					$result = $b->compare($a);
 				}else{
-					throw new Less_Exception_Compiler('Unable to perform comparison', $this->index);
+					throw new Less_Exception_Compiler('Unable to perform comparison', null, $this->index);
 				}
 
 				switch ($result) {

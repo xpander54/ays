@@ -28,9 +28,6 @@ if ( !class_exists('HLT_BootstrapLess') ):
 
 class HLT_BootstrapLess extends HLT_BootstrapLess_Base {
 	
-	const LessOptionsPrefix = 'less_';
-	
-	static public $LESS_PREFIX;
 	static public $LESS_OPTIONS_DB_KEY = 'all_less_options';
 
 	protected function initPluginOptions() {

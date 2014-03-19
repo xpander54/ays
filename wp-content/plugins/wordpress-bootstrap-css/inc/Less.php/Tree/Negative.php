@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Negative
+ *
+ * @package Less
+ * @subpackage tree
+ */
 class Less_Tree_Negative extends Less_Tree{
 
 	public $value;
@@ -23,7 +28,7 @@ class Less_Tree_Negative extends Less_Tree{
 	}
 
 	function compile($env) {
-		if( $env->isMathOn() ){
+		if( Less_Environment::isMathOn() ){
 			$ret = new Less_Tree_Operation('*', array( new Less_Tree_Dimension(-1), $this->value ) );
 			return $ret->compile($env);
 		}

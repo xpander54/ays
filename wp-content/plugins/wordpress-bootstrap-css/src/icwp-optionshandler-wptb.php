@@ -21,7 +21,7 @@ if ( !class_exists('ICWP_OptionsHandler_Wptb') ):
 
 class ICWP_OptionsHandler_Wptb extends ICWP_OptionsHandler_Base_WPTB {
 
-	const TwitterVersion			= '3.1.0'; //should reflect the Bootstrap version folder name
+	const TwitterVersion			= '3.1.1'; //should reflect the Bootstrap version folder name
 	const TwitterVersionLegacy		= '2.3.2'; //should reflect the Bootstrap version folder name
 	const NormalizeVersion			= '3.0.0';
 	const YUI3Version				= '3.10.0';
