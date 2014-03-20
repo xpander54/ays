@@ -10,6 +10,8 @@
 				<?php// include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
 					<div class="main">
+
+						<h2><a href="http://www.ayserranosc.wix.com/inicio">Visita sitio temporal</a></h2>
 						
 						<img src="<?php bloginfo('template_url');?>/img/construccion.png" alt="en construccion" class="thumbnail-img">
 
