@@ -9,7 +9,11 @@
 
 				<?php// include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
-				
+					<div class="main">
+						
+						<img src="<?php bloginfo('template_url');?>/img/construccion.png" alt="en construccion" class="thumbnail-img">
+
+					</div>
 					
 					<div class="row">
 
