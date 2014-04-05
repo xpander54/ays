@@ -8,6 +8,8 @@
 					
 				
 					&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>
+
+					- <a href="#">aviso de privacidad</a>
 				
 				</div>
 			

@@ -40,7 +40,36 @@ Author: HD
 }
 
 
+.index-txt1
+{
+	position: absolute;
+	right: 0;
+	background: #006990;
+	font-size: 3em;
+	border: solid 5px #fff;
+	padding: .2em;
+	color: #fff;
+	box-shadow: -5px 9px 11px 0px rgba(50, 50, 50, 0.75);
+	margin: -100px 30px;
+}
+
+.gris
+{
+	color: #A9A9A9;
+}
+
+.rojo
+{
+	color: #9E2A06;
+}
+
+.azul
+{
+	color: #004C69;
+}
+
 /*/Fonts*/
+
 
 *
 {
@@ -109,7 +138,7 @@ Author: HD
 }
 .signin a:hover
 {
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	color: rgb(135,145,161);
 }
 
@@ -156,23 +185,33 @@ Author: HD
 	float: left;
 	margin: 0 1em;
 	padding: .7em .3em;
-	font-size: 1.7em;
+	font-size: 1.4em;
 	font-weight: bold;
 	height: 70px;
+
 }
 .menu1 li:hover
 {
 	background: #fff;
 }
 
+.top-btn a:hover
+{
+	text-decoration: none;
+	background: red;
+}
+
 .menu1 li:hover a
 {
 	color: #5DB4EC;
+	text-decoration: none;
 }
 
 .menu1 a
 {
 	color: rgb(240, 247, 254);
+	padding: 2em 0;
+	font-family: 'Coda', sans-serif;
 }
 
 
@@ -199,6 +238,12 @@ Author: HD
 	height: 400px;
 }
 
+.slide-index2
+{
+	width: 50%;
+	margin: 0 auto;
+}
+
 .indicadores
 {	
 	padding: 0 0 0px 0;
@@ -216,6 +261,11 @@ Author: HD
 	font-size: 5em !important;
 	font-family: montsbold;
 	padding-top: 2em;
+}
+
+.carousel2
+{
+	margin: 0 auto;
 }
 
 /*Pages*/
@@ -264,6 +314,12 @@ h2.subtitle
 	margin: 0 auto;
 }
 
+.bg-gris
+{
+	background: #F5F5F5;
+}
+
+
 .panel-body li
 {
 	list-style: none;
@@ -280,13 +336,59 @@ h2.subtitle
 {
 	min-height: 600px;
 }
+.height-1200
+{
+	min-height: 1200px;
+}
 
+
+.center80
+{
+	max-width: 90%;
+}
+
+.coberturas-img-circle
+{
+	width: 70%;
+}
+
+.clear-fix:after
+{
+	content: “”;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.float-left
+{
+	float: left;
+}
+
+.entry-contacto
+{
+	background: #E2E2EC;
+}
+
+.top-btn
+{
+	right: 0;
+	position: absolute;
+	font-size: 5em;
+	text-decoration: none;
+}
+
+.top-btn-div a:hover
+{
+	text-decoration: none;
+}
 /*Tabla Formateada*/
 
 
 .tabla-servicios {
 	margin:0px;padding:0px;
-	width:100%;
+	width:90%;
 	box-shadow: 10px 10px 5px #888888;
 	border:0px solid #000000;
 	
@@ -315,16 +417,19 @@ h2.subtitle
 	-moz-border-radius-bottomright:0px;
 	-webkit-border-bottom-right-radius:0px;
 	border-bottom-right-radius:0px;
+
 }
 .tabla-servicios table tr:first-child td:first-child {
 	-moz-border-radius-topleft:0px;
 	-webkit-border-top-left-radius:0px;
 	border-top-left-radius:0px;
+
 }
 .tabla-servicios table tr:first-child td:last-child {
 	-moz-border-radius-topright:0px;
 	-webkit-border-top-right-radius:0px;
 	border-top-right-radius:0px;
+
 }.tabla-servicios tr:last-child td:first-child{
 	-moz-border-radius-bottomleft:0px;
 	-webkit-border-bottom-left-radius:0px;
@@ -333,24 +438,25 @@ h2.subtitle
 	
 }
 .tabla-servicios tr:nth-child(odd){ background-color:#5db4ec; }
-.tabla-servicios tr:nth-child(even)    { background-color:#ffffff; }.tabla-servicios td{
-	vertical-align:middle;
-	
-	
+.tabla-servicios tr:nth-child(even)    { background-color:#ffffff; }
+.tabla-servicios td{
+	vertical-align:middle;	
 	border:0px solid #000000;
 	border-width:0px 0px 0px 0px;
 	text-align:center;
-	padding:16px;
-	font-size:1em;
+	padding:3em 0;
+	font-size:1.3em;
 	font-family:montsbold;
 	font-weight:normal;
 	color:#000000;
 }.tabla-servicios tr:last-child td{
+
 	border-width:0px 0px 0px 0px;
 }.tabla-servicios tr td:last-child{
 	border-width:0px 0px 0px 0px;
 }.tabla-servicios tr:last-child td:last-child{
 	border-width:0px 0px 0px 0px;
+
 }
 .tabla-servicios tr:first-child td{
 		background:-o-linear-gradient(bottom, #5db4ec 5%, #5db4ec 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5db4ec), color-stop(1, #5db4ec) );
@@ -365,6 +471,7 @@ h2.subtitle
 	font-family:Arial;
 	font-weight:bold;
 	color:#ffffff;
+
 }
 .tabla-servicios tr:first-child:hover td{
 	background:-o-linear-gradient(bottom, #5db4ec 5%, #5db4ec 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5db4ec), color-stop(1, #5db4ec) );
@@ -372,12 +479,15 @@ h2.subtitle
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#5db4ec", endColorstr="#5db4ec");	background: -o-linear-gradient(top,#5db4ec,5db4ec);
 
 	background-color:#5db4ec;
+
 }
 .tabla-servicios tr:first-child td:first-child{
 	border-width:0px 0px 0px 0px;
+
 }
 .tabla-servicios tr:first-child td:last-child{
 	border-width:0px 0px 0px 0px;
+
 }
 
 
@@ -396,6 +506,15 @@ h2.subtitle
 	color: rgb(240, 247, 254);
 	font-size: 1.1em;
 	padding: .3em 0;
+}
+
+#footer a
+{
+	color: #fff;
+}
+#footer a:hover
+{
+	color: #5DB4EC;
 }
 /*Custom CSS*/
 
@@ -417,7 +536,7 @@ h3 { }
 
 p { margin: 0 0 10px 0; }
 a { }
-a:hover { } 
+a:hover { text-decoration: none !important; } 
 
 blockquote { }
 blockquote p { }
@@ -436,7 +555,7 @@ ul, ol { margin: 0 0 10px 0; }
 	
 }
 .entry a { }
-.entry a:hover { }
+.entry a:hover { text-decoration: none; }
 
 pre { }
 code, tt { }
