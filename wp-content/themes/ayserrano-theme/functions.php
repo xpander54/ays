@@ -10,6 +10,8 @@
 	   wp_enqueue_script('jquery');
        wp_register_script('script', (get_bloginfo('template_directory').'/js/script.js'));
        wp_enqueue_script('script');
+       wp_register_script('shadowbox', (get_template_directory_uri() . "/shadowbox/shadowbox.js"), false);
+       wp_enqueue_script('shadowbox');
 
 	}
 

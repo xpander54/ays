@@ -9,7 +9,9 @@
 				
 					&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>
 
-					- <a href="#">aviso de privacidad</a>
+					<a onclick="openPrivacyBox()" href="javascript:void(0);">
+						aviso de privacidad
+					</a>
 				
 				</div>
 			

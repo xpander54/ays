@@ -31,6 +31,8 @@
 
 	</title>
 
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/shadowbox/shadowbox.css">
+
 	<link href='http://fonts.googleapis.com/css?family=Coda:800' rel='stylesheet' type='text/css'>
 	
 	<link rel="shortcut icon" href="/favicon.ico">

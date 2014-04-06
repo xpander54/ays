@@ -34,7 +34,7 @@ Template Name: servicios
 
 			<?php //include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
-			<div class="entry height-1200">
+			<div class="entry height-600">
 
 				<div class="col-sm-10 col-sm-offset-1">
 
