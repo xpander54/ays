@@ -8,6 +8,10 @@
 					
 				
 					&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>
+
+					<a onclick="openPrivacyBox()" href="javascript:void(0);">
+						aviso de privacidad
+					</a>
 				
 				</div>
 			

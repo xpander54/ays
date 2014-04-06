@@ -11,11 +11,11 @@ Template Name: contacto
 		<div class="post" id="post-<?php the_ID(); ?>">
 
 
-			<h2><?php// the_title(); ?></h2>
+			<!-- <h2><?php// the_title(); ?></h2> -->
 
 			<?php //include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
-			<div class="entry">
+			<div class="entry entry-contacto">
 
 				<?php the_content(); ?>
 
@@ -26,7 +26,17 @@ Template Name: contacto
 
 			</div>
 
+			<div class="top-btn-div">
+				
+				<a class='top-btn' title='regresar' href="#body1">
+	  				^
+	  			</a>
+			
+			</div>
+
 			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+
+
 
 		</div>
 		

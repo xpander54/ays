@@ -31,7 +31,9 @@
 
 	</title>
 
-	
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/shadowbox/shadowbox.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Coda:800' rel='stylesheet' type='text/css'>
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
@@ -42,12 +44,14 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
 
+
+
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id='body1' <?php body_class(); ?>>
 	
 
 	
@@ -67,12 +71,12 @@
 					</div>
 
 					<div class="social-icons">
-						<ul>
-							<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/social-media/twitter.png" alt="Twitter"></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/social-media/facebook.png" alt="Facebook"></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/social-media/gplus.png" alt="Google Plus"></a></li>
-							<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/social-media/linkdin.png" alt="Linked In"></a></li>
-						</ul>
+						<!-- <ul>
+							<li><a href="#"><img src="<?php// bloginfo('template_url'); ?>/img/social-media/twitter.png" alt="Twitter"></a></li>
+							<li><a href=""><img src="<?php// bloginfo('template_url'); ?>/img/social-media/facebook.png" alt="Facebook"></a></li>
+							<li><a href=""><img src="<?php// bloginfo('template_url'); ?>/img/social-media/gplus.png" alt="Google Plus"></a></li>
+							<li><a href=""><img src="<?php// bloginfo('template_url'); ?>/img/social-media/linkdin.png" alt="Linked In"></a></li>
+						</ul> -->
 
 					</div>
 					
@@ -137,16 +141,7 @@
 				 
 				                  
 									<div class="active item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld1.png" class="slide-img img" alt="DF">
-							       		
-										
-											
-
-								       		<div class="carousel-caption img-heading">
-	        									El <strong>ABC </strong> de los <strong>seguros</strong>
-	      									</div>
-										
-										
+							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld1.png" class="slide-img img" alt="DF">									
 							        </div>
 							        <div class="item">
 							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld2.png" class="slide-img img" alt="bienes raices">
@@ -188,6 +183,8 @@
 				 
 				            
 				<!--Slide Bootstrap-->
+
+				
 
 			</div>
 

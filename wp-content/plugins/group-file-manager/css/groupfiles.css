@@ -1,0 +1,28 @@
+                        #groupfiles  table
+{
+
+width:100%;
+
+}      
+
+#groupfiles td
+{
+
+border: 1px;
+padding:1px;
+}
+#groupfiles thead   
+{
+text-align:left;
+font-size: 1.3em;
+} 
+
+#groupfiles h2   
+{
+text-decoration:underline;
+font-size: 2em;
+margin-bottom:4px;
+} 
+
+
+              

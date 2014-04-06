@@ -28,11 +28,15 @@ Template Name: servicios
 
 			</div>
 
-			<h2><?php// the_title(); ?></h2>
+			<!-- <h2>
+				<?php// the_title(); ?>
+			</h2> -->
 
 			<?php //include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
 			<div class="entry height-600">
+
+				<div class="col-sm-10 col-sm-offset-1">
 
 				<?php the_content(); ?>
 
@@ -40,11 +44,24 @@ Template Name: servicios
 
 			</div>
 
+			</div>
+
+			</div>
+
+			<div class="top-btn-div">
+				
+				<a class='top-btn' title='regresar' href="#body1">
+	  				^
+	  			</a>
+			
+			</div>
+
 			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
 		</div>
-		
+		<!-- 
 		<?php // comments_template(); ?>
+		 -->
 
 		<?php endwhile; endif; ?>
 
