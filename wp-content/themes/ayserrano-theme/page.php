@@ -17,12 +17,13 @@
 				 -->
 
 					<div class="main">
-						<div class="index-txt1">
-	        				El <span class='gris'>A</span><span class='rojo'>B</span><span class='azul'>C</span> de los <strong>seguros</strong>
-	      				</div>
+						<!-- <div class="index-txt1">
+							        				El <span class='gris'>A</span><span class='rojo'>B</span><span class='azul'>C</span> de los <strong>seguros</strong>
+							      				</div> -->
+
 						<div class="sitio-temporal">
 							
-							<!-- <a href="http://www.ayserranosc.wix.com/inicio">Visita sitio temporal</a> -->
+							<a style="font-family: 'Coda', sans-serif; font-size: 3.3em; " href="http://www.ayserranosc.wix.com/inicio">Visita sitio temporal</a>
 						
 						</div>
 						
