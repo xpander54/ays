@@ -1,5 +1,9 @@
 <aside>
 
+    <?php query_posts('p=29'); if(have_posts()) : the_post(); ?>
+     <?php the_content(); ?>
+    <?php endif; ?>
+
     <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
     
         <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
