@@ -299,6 +299,12 @@ h2.subtitle
 	margin-left: 1.5em;
 }
 
+.subtitle
+{
+	color: #494999 !important;
+	padding-left: 1em;
+}
+
 .cobertura-img
 {
 	margin: 1em auto;
