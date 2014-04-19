@@ -11,6 +11,13 @@
     	<?php get_search_form(); ?>
     
     	<?php //wp_list_pages('title_li=<h2>Pages</h2>' ); ?>
+
+        <h2>Login</h2>
+        <ul>
+            <?php wp_register(); ?>
+            <li><?php wp_loginout(); ?></li>
+            <?php wp_meta(); ?>
+        </ul>
     
     	<h2>Archivo</h2>
     	<ul>
@@ -24,12 +31,7 @@
         
     	<?php wp_list_bookmarks(); ?>
     
-    	<h2>Login</h2>
-    	<ul>
-    		<?php wp_register(); ?>
-    		<li><?php wp_loginout(); ?></li>
-    		<?php wp_meta(); ?>
-    	</ul>
+    	
     	
     	<!-- <h2>Subscribe</h2>
         <ul>
