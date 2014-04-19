@@ -111,7 +111,7 @@
 								      <h4 class="panel-title">
 								        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 								          Solamente con la prevención correcta podemos protegernos de los incidentes que surjan, para ello vale la pena cuestionarse sobre lo siguiente:
- 
+ 											
 								        </a>
 								      </h4>
 								    </div>

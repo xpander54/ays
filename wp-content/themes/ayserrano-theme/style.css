@@ -662,6 +662,7 @@ h2.subtitle
 	color: rgb(240, 247, 254);
 	font-size: 1.1em;
 	padding: .3em 0;
+	z-index: 200;
 }
 
 #footer a

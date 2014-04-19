@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 
-	<div class="main">
+	<div class="main" style='min-height:1000px;'>
 
 		
 
-		<div class="col-sm-9">
+		<div class="col-sm-7">
 			
 
 		
@@ -42,7 +42,7 @@
 
 		</div>
 		
-		<div class="col-sm-3">
+		<div class="col-sm-5">
 			
 
 
