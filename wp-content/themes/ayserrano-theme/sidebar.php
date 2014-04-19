@@ -1,6 +1,6 @@
 <aside class='asesores_list'>
 
-    <?php query_posts('p=29'); if(have_posts()) : the_post(); ?>
+    <?php query_posts('p=59'); if(have_posts()) : the_post(); ?>
      <?php the_content(); ?>
     <?php endif; ?>
 
