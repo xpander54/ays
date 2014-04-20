@@ -4,7 +4,7 @@
 		
 
 
-		<div class="col-sm-9">
+		<div class="col-sm-7">
 			
 
 
@@ -35,7 +35,7 @@
 			<?php endwhile; endif; ?>
 		
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-5">
 
 
 

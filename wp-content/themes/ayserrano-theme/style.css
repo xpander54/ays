@@ -88,6 +88,7 @@ Author: HD
 	width: 100%; 
 	margin: 0px;
 	position: absolute; 
+	padding-bottom: 10em;
 }
 
 .main
@@ -535,6 +536,11 @@ h2.subtitle
 {
 	margin-top: 1.2em;
 	font-size: 1.6em;
+}
+
+.asesores_list ul
+{
+	list-style: none;
 }
 
 /*/Slide texto servicios*/
