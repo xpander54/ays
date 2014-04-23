@@ -17,9 +17,9 @@
 				 -->
 
 					<div class="main">
-						<!-- <div class="index-txt1">
-							        				El <span class='gris'>A</span><span class='rojo'>B</span><span class='azul'>C</span> de los <strong>seguros</strong>
-							      				</div> -->
+						<div class="index-txt1">
+							El <span class='gris'>A</span><span class='rojo'>B</span><span class='azul'>C</span> de los <strong>seguros</strong>
+						</div> 
 
 						
 						
@@ -69,7 +69,7 @@
 								    <div class="panel-heading">
 								      <h4 class="panel-title">
 								        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-								          AySerrano
+								          ¿Quiénes Somos?
 								        </a>
 								      </h4>
 								    </div>

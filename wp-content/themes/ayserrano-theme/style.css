@@ -324,6 +324,33 @@ h2.subtitle
 	margin: 0 auto;
 }
 
+.cobertura-circle {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background: orange;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: .1em;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #F5F5F5; 
+	float: left;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.cobertura-ttl
+{
+	float: left;
+	padding: 0 .5em;
+	font-size: 1.3em;
+}
+
+.cobertura-pnl
+{
+	height: 50px;
+}
+
 .bg-gris
 {
 	background: #F5F5F5;

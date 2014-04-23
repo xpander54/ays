@@ -111,12 +111,7 @@
 					<div class="menu1">
 						<?php wp_nav_menu(array('menu' => 'menu1')); ?>
 
-						<!-- <ul>
-							<li><a href="#">Inicio</a></li>
-							<li><a href="#">Coberturas</a></li>
-							<li><a href="#">Servicios</a></li>
-							<li><a href="#">Contacto</a></li>
-						</ul> -->
+						
 					</div>
 
 				</div>
@@ -183,6 +178,7 @@
 				 
 				            
 				<!--Slide Bootstrap-->
+				
 
 				
 
