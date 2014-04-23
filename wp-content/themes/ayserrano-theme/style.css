@@ -78,6 +78,11 @@ Author: HD
 ;	text-align: justify;
 }
 
+.shadowbox-nfo
+{
+	color: #F5F5F5;
+}
+
 .float-right
 {
 	float: right;
@@ -90,6 +95,8 @@ Author: HD
 	position: absolute; 
 	padding-bottom: 10em;
 }
+
+
 
 .main
 {
