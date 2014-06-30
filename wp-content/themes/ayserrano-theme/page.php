@@ -18,7 +18,7 @@
 
 					<div class="main">
 						<div class="index-txt1">
-							El <span class='gris'>A</span><span class='rojo'>B</span><span class='azul'>C</span> del <strong>Arrendamiento Profesional</strong>
+							El <span class='cobertura-index'>A</span><span class='cobertura-index'>B</span><span class='cobertura-index'>C</span> del <strong>Arrendamiento Profesional</strong>
 						</div> 
 
 						

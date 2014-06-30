@@ -8,9 +8,17 @@
 	   <meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
 
+	<meta name="description" content="Con el seguro de arrendamiento de AySerrano no tendrás de que preocuparte; actuamos inmediatamente en caso de cualquier imprevisto con tu inquilino." />
+
 	<title>
+		
+		Seguro de Arrendamiento que protege tu patrimonio - AySerrano
+
+	</title>
+
+	<!-- <title>
 		   
-		   <?php
+		   <?php/*
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
@@ -27,9 +35,9 @@
 		          bloginfo('name'); }
 		      if ($paged>1) {
 		         echo ' - page '. $paged; }
-		   ?>
-
-	</title>
+		   */?>
+	
+	</title> -->
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/shadowbox/shadowbox.css">
 
@@ -124,6 +132,24 @@
 
 				<div class="slide1 hidden-xs">
 
+					<article class="coberturas-wrap-index">
+
+						
+						<div class="coberturas-indx-ttl">
+							<h2>
+								
+								Coberturas
+
+							</h2>
+							
+						</div>
+						<ul class="coberturas-indx-list">
+							<li><a href=""><span class='cobertura-index'>A</span> Básica</a></li>
+							<li><a href=""><span class='cobertura-index'>B</span> Jurídica</a></li>
+							<li><a href=""><span class='cobertura-index'>C</span> Jurídica más daños</a></li>
+						</ul>
+					</article>
+
 
 					<!--Slide Bootstrap-->
 	             
@@ -136,16 +162,16 @@
 				 
 				                  
 									<div class="active item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld1.png" class="slide-img img" alt="DF">									
+							          <img src="<?php bloginfo('template_url');?>/img/slide2/1.png" class="slide-img img" alt="DF">									
 							        </div>
 							        <div class="item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld2.png" class="slide-img img" alt="bienes raices">
+							          <img src="<?php bloginfo('template_url');?>/img/slide2/2.png" class="slide-img img" alt="bienes raices">
 							        </div>
 							        <div class="item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld3.png" alt="seguro de arrendamiento" class="img slide-img">
+							          <img src="<?php bloginfo('template_url');?>/img/slide2/3.png" alt="seguro de arrendamiento" class="img slide-img">
 							        </div>
 							        <div class="item">
-							          <img src="<?php bloginfo('template_url');?>/img/slide1/sld4.png" alt="AySerrano" class="img slide-img">
+							          <img src="<?php bloginfo('template_url');?>/img/slide2/5.png" alt="AySerrano" class="img slide-img">
 							        </div>
 
 
