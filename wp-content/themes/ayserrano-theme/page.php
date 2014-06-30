@@ -34,28 +34,28 @@
 
 						<div class=" col-sm-12 ">
 
-							 <div class="row">
-
+							 <!-- <div class="row">
+							 
 							 	<div class=" col-sm-2 line-subtitle">
-						
-								</div>	
-								
-								
-								<div class="col-sm-2 col-subtitle">
-										<h2 class='subtitle'>
-											
-											Empresa
-										</h2>
-
-								</div>
-								<div class="col-sm-7 line-subtitle">
-									
-								</div>
-
-								
-
-							
-							</div>
+							 						
+							 								</div>	
+							 								
+							 								
+							 								<div class="col-sm-2 col-subtitle">
+							 										<h2 class='subtitle'>
+							 											
+							 											Empresa
+							 										</h2>
+							 								
+							 								</div>
+							 								<div class="col-sm-7 line-subtitle">
+							 									
+							 								</div>
+							 
+							 								
+							 
+							 							
+							 							</div> -->
 
 							<div class="row">
 
@@ -106,18 +106,18 @@
 								  </div>
 								 
 								 
-								  <div class="panel panel-default">
+								  <!-- <div class="panel panel-default">
 								    <div class="panel-heading">
 								      <h4 class="panel-title">
 								        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 								          Solamente con la prevención correcta podemos protegernos de los incidentes que surjan, para ello vale la pena cuestionarse sobre lo siguiente:
- 											
+								   											
 								        </a>
 								      </h4>
 								    </div>
 								    <div id="collapseTwo" class="panel-collapse collapse in">
 								      <div class="panel-body">
-
+								  
 								      	<ul>
 								      		<li>¿Sabe que hacer si le dejan de pagar la renta?</li>
 								      		<li>¿Tiene miedo de potenciales daños a su patrimonio?</li>
@@ -126,12 +126,12 @@
 								      		<li>¿Le gustaría que esos problemas, no fueran suyos?</li>
 								      	</ul>
 								        
-										
-
-
+								  										
+								  
+								  
 								      </div>
 								    </div>
-								  </div>
+								  </div> -->
 								 
 								 
 								  

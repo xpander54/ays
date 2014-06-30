@@ -10,8 +10,8 @@ Template Name: servicios
 			
 		<div class="post" id="post-<?php the_ID(); ?>">
 <br>
-			<div class="row hidden-xs">
-
+			<!-- <div class="row hidden-xs">
+			
 				<div class="col-sm-3 col-sm-offset-1">
 					 <img src="<?php bloginfo('template_url');?>/img/servicios/ange.png" alt="AySerrano" class="img-thumbnail">
 					
@@ -25,8 +25,8 @@ Template Name: servicios
 					
 				</div>
 				
-
-			</div>
+			
+			</div> -->
 
 			<!-- <h2>
 				<?php// the_title(); ?>
